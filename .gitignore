@@ -1,0 +1,28 @@
+# Ambiente virtual e cache do Python
+.venv/
+__pycache__/
+*.py[cod]
+
+# Segredos / configuracao local
+.env
+
+# Dados coletados (podem conter dados pessoais/sensiveis)
+data/*.csv
+
+# Cache de ferramentas
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Build / empacotamento
+dist/
+build/
+*.egg-info/
+
+# Editor / SO
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store

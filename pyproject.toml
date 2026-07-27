@@ -1,0 +1,63 @@
+[project]
+name = "julgame-scraper"
+version = "0.1.0"
+description = "Coleta de comentarios do subreddit julga-me para pesquisa de TCC sobre discurso ofensivo direcionado a mulheres"
+authors = [
+    {name = "Cynthia Neiva"}
+]
+requires-python = ">=3.12,<4.0"
+dependencies = [
+    "praw (>=8.0.2,<9.0.0)",
+    "pandas (>=3.0.5,<4.0.0)",
+    "python-dotenv (>=1.2.2,<2.0.0)",
+    "tqdm (>=4.69.1,<5.0.0)",
+    "requests (>=2.34.2,<3.0.0)",
+    "beautifulsoup4 (>=4.15.0,<5.0.0)",
+    "lxml (>=6.1.1,<7.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "pytest (>=9.1.1,<10.0.0)",
+    "ruff (>=0.16.0,<0.17.0)",
+    "taskipy (>=1.14.1,<2.0.0)",
+    "pytest-cov (>=7.1.0,<8.0.0)"
+]
+
+[tool.poetry]
+packages = [{ include = "julgame_scraper", from = "src" }]
+
+[tool.taskipy.tasks]
+lint = "ruff check ."
+format = "ruff format ."
+check = "ruff check --fix . && ruff format ."
+test = "pytest"
+cov = "pytest --cov=julgame_scraper --cov-report=term-missing"
+scrape = "python -m julgame_scraper.scraper"
+scrape-post-json = "python -m julgame_scraper.reddit_json"
+run = "python main.py"
+
+[tool.ruff]
+line-length = 79
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM", "D"]
+ignore = ["D203", "D213", "D401"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["D100", "D103"]
+
+[tool.ruff.lint.pydocstyle]
+convention = "numpy"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.coverage.run]
+source = ["src/julgame_scraper"]
