@@ -1,5 +1,5 @@
 [project]
-name = "julgame-scraper"
+name = "reddit-misogyny-scraper"
 version = "0.1.0"
 description = "Coleta de comentarios do subreddit julga-me para pesquisa de TCC sobre discurso ofensivo direcionado a mulheres"
 authors = [
