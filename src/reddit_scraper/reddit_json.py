@@ -9,7 +9,7 @@ ate a URL canonica do post antes de buscar o JSON.
 
 Aviso: em alguns ambientes (ex.: IPs de datacenter/cloud) o Reddit
 bloqueia requisicoes a ``.json`` com 403, mesmo sem OAuth envolvido.
-Nesse caso, use `julgame_scraper.html_scraper`.
+Nesse caso, use `reddit_scraper.html_scraper`.
 
 Limitacao: assim como a pagina normal do Reddit, uma unica chamada nao
 traz comentarios colapsados por "load more comments" (stubs
@@ -27,7 +27,11 @@ from pathlib import Path
 import pandas as pd
 import requests
 
-from julgame_scraper.keywords import OFFENSIVE_KEYWORDS, contains_keyword
+from reddit_scraper.keywords import (
+    OFFENSIVE_KEYWORDS_BY_CATEGORY,
+    format_matches,
+    match_categories,
+)
 
 logging.basicConfig(
     level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s"
@@ -35,7 +39,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 USER_AGENT = (
-    "julgame-scraper/0.1 (TCC pesquisa academica sobre discurso ofensivo)"
+    "reddit-scraper/0.1 (TCC pesquisa academica sobre discurso ofensivo)"
 )
 REQUEST_DELAY_SECONDS = 2.0
 REQUEST_TIMEOUT_SECONDS = 10
@@ -92,7 +96,7 @@ def flatten_comments(
     children: list[dict],
     submission_id: str,
     submission_title: str,
-    keywords: list[str] | None = None,
+    keywords_by_category: dict[str, list[str]] | None = None,
 ) -> list[dict]:
     """Converte a arvore de comentarios do JSON em uma lista plana.
 
@@ -104,22 +108,28 @@ def flatten_comments(
         Id do post ao qual os comentarios pertencem.
     submission_title : str
         Titulo do post.
-    keywords : list[str] or None
-        Termos usados no filtro heuristico. Usa
-        `OFFENSIVE_KEYWORDS` quando omitido.
+    keywords_by_category : dict[str, list[str]] or None
+        Termos agrupados por categoria, usados no filtro heuristico.
+        Usa `OFFENSIVE_KEYWORDS_BY_CATEGORY` quando omitido.
 
     Returns
     -------
     list[dict]
         Uma entrada por comentario, incluindo respostas aninhadas.
     """
-    keywords = keywords if keywords is not None else OFFENSIVE_KEYWORDS
+    keywords_by_category = (
+        keywords_by_category
+        if keywords_by_category is not None
+        else OFFENSIVE_KEYWORDS_BY_CATEGORY
+    )
     rows = []
     for child in children:
         if child.get("kind") != "t1":
             continue  # skip "more" stubs (collapsed comments)
         data = child["data"]
         body = data.get("body") or ""
+        matches = match_categories(body, keywords_by_category)
+        flagged_categories, matched_keywords = format_matches(matches)
         rows.append(
             {
                 "submission_id": submission_id,
@@ -129,7 +139,9 @@ def flatten_comments(
                 "body": body,
                 "score": data.get("score"),
                 "created_utc": data.get("created_utc"),
-                "flagged_by_keyword": contains_keyword(body, keywords),
+                "flagged_by_keyword": bool(matches),
+                "flagged_categories": flagged_categories,
+                "matched_keywords": matched_keywords,
             }
         )
         replies = data.get("replies")
@@ -137,7 +149,10 @@ def flatten_comments(
             reply_children = replies.get("data", {}).get("children", [])
             rows.extend(
                 flatten_comments(
-                    reply_children, submission_id, submission_title, keywords
+                    reply_children,
+                    submission_id,
+                    submission_title,
+                    keywords_by_category,
                 )
             )
     return rows

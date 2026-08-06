@@ -1,16 +1,13 @@
 [project]
 name = "reddit-misogyny-scraper"
 version = "0.1.0"
-description = "Coleta de comentarios do subreddit julga-me para pesquisa de TCC sobre discurso ofensivo direcionado a mulheres"
+description = "Coleta de comentarios de subreddits do Reddit para pesquisa de TCC sobre discurso ofensivo direcionado a mulheres"
 authors = [
     {name = "Cynthia Neiva"}
 ]
 requires-python = ">=3.12,<4.0"
 dependencies = [
-    "praw (>=8.0.2,<9.0.0)",
     "pandas (>=3.0.5,<4.0.0)",
-    "python-dotenv (>=1.2.2,<2.0.0)",
-    "tqdm (>=4.69.1,<5.0.0)",
     "requests (>=2.34.2,<3.0.0)",
     "beautifulsoup4 (>=4.15.0,<5.0.0)",
     "lxml (>=6.1.1,<7.0.0)"
@@ -30,16 +27,15 @@ dev = [
 ]
 
 [tool.poetry]
-packages = [{ include = "julgame_scraper", from = "src" }]
+packages = [{ include = "reddit_scraper", from = "src" }]
 
 [tool.taskipy.tasks]
 lint = "ruff check ."
 format = "ruff format ."
 check = "ruff check --fix . && ruff format ."
 test = "pytest"
-cov = "pytest --cov=julgame_scraper --cov-report=term-missing"
-scrape = "python -m julgame_scraper.scraper"
-scrape-post-json = "python -m julgame_scraper.reddit_json"
+cov = "pytest --cov=reddit_scraper --cov-report=term-missing"
+scrape-post-json = "python -m reddit_scraper.reddit_json"
 run = "python main.py"
 
 [tool.ruff]
@@ -60,4 +56,4 @@ convention = "numpy"
 testpaths = ["tests"]
 
 [tool.coverage.run]
-source = ["src/julgame_scraper"]
+source = ["src/reddit_scraper"]

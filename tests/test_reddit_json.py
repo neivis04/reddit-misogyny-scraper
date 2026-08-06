@@ -1,4 +1,4 @@
-from julgame_scraper.reddit_json import flatten_comments
+from reddit_scraper.reddit_json import flatten_comments
 
 
 def _comment(comment_id: str, body: str, replies=None) -> dict:
@@ -15,6 +15,9 @@ def _comment(comment_id: str, body: str, replies=None) -> dict:
     }
 
 
+SAMPLE_CATEGORIES = {"Sexualidade": ["vadia"]}
+
+
 def test_flatten_comments_flat_list():
     """Deve retornar uma linha por comentario, na ordem original."""
     children = [
@@ -22,11 +25,13 @@ def test_flatten_comments_flat_list():
         _comment("c2", "que vadia"),
     ]
 
-    rows = flatten_comments(children, "sub1", "Titulo", keywords=["vadia"])
+    rows = flatten_comments(children, "sub1", "Titulo", SAMPLE_CATEGORIES)
 
     assert [row["comment_id"] for row in rows] == ["c1", "c2"]
     assert rows[0]["flagged_by_keyword"] is False
     assert rows[1]["flagged_by_keyword"] is True
+    assert rows[1]["flagged_categories"] == "Sexualidade"
+    assert rows[1]["matched_keywords"] == "vadia"
 
 
 def test_flatten_comments_ignores_more_stub():
