@@ -63,6 +63,8 @@ OFFENSIVE_KEYWORDS_BY_CATEGORY: dict[str, list[str]] = {
         "pelada",
         "puta",
         "pau",
+        "arrombada",
+        "fetiche",
     ],
     "Conduta moral": [
         "imoral",
@@ -108,12 +110,21 @@ OFFENSIVE_KEYWORDS_BY_CATEGORY: dict[str, list[str]] = {
         "exagerada",
         "chata",
         "reclamona",
-        "vitimista",
+        "vitima",
         "emotiva",
         "sensível",
         "chorona",
         "neurótica",
         "paranoica",
+    ],
+    "Criação": [
+        "pai",
+        "ausente",
+        "mãe",
+        "abandonada",
+        "criança",
+        "solo",
+        "filha",
     ],
 }
 

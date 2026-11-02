@@ -11,6 +11,12 @@ Aviso: em alguns ambientes (ex.: IPs de datacenter/cloud) o Reddit
 bloqueia requisicoes a ``.json`` com 403, mesmo sem OAuth envolvido.
 Nesse caso, use `reddit_scraper.html_scraper`.
 
+Desde 2026 o Reddit tambem passou a exigir login para alguns posts
+mesmo no endpoint ``.json`` (redireciona para ``/login/``). Assim como
+em `reddit_scraper.html_scraper`, isso vira `LoginRequiredError` e as
+requisicoes reusam o cookie configurado em `reddit_scraper.auth`,
+quando houver.
+
 Limitacao: assim como a pagina normal do Reddit, uma unica chamada nao
 traz comentarios colapsados por "load more comments" (stubs
 ``kind == "more"``) -- esses sao ignorados aqui. Para uma analise
@@ -23,10 +29,12 @@ import argparse
 import logging
 import time
 from pathlib import Path
+from urllib.parse import urlparse
 
 import pandas as pd
 import requests
 
+from reddit_scraper.auth import build_headers
 from reddit_scraper.keywords import (
     OFFENSIVE_KEYWORDS_BY_CATEGORY,
     format_matches,
@@ -43,6 +51,11 @@ USER_AGENT = (
 )
 REQUEST_DELAY_SECONDS = 2.0
 REQUEST_TIMEOUT_SECONDS = 10
+LOGIN_REQUIRED_PATH = "/login/"
+
+
+class LoginRequiredError(RuntimeError):
+    """Erro levantado quando o Reddit exige login para ver o post."""
 
 
 def resolve_post_url(url: str) -> str:
@@ -61,7 +74,7 @@ def resolve_post_url(url: str) -> str:
     """
     response = requests.get(
         url,
-        headers={"User-Agent": USER_AGENT},
+        headers=build_headers(USER_AGENT),
         allow_redirects=True,
         timeout=REQUEST_TIMEOUT_SECONDS,
     )
@@ -81,14 +94,26 @@ def fetch_post_json(post_url: str) -> list[dict]:
     -------
     list[dict]
         Payload decodificado, com dois elementos: post e comentarios.
+
+    Raises
+    ------
+    LoginRequiredError
+        Se o Reddit redirecionar para a tela de login (post NSFW ou
+        de subreddit restrito).
     """
     json_url = f"{post_url}.json"
     response = requests.get(
         json_url,
-        headers={"User-Agent": USER_AGENT},
+        headers=build_headers(USER_AGENT),
         timeout=REQUEST_TIMEOUT_SECONDS,
     )
     response.raise_for_status()
+    if LOGIN_REQUIRED_PATH in urlparse(response.url).path:
+        msg = (
+            f"Reddit exige login para ver este post (provavelmente "
+            f"NSFW ou restrito): {post_url}"
+        )
+        raise LoginRequiredError(msg)
     return response.json()
 
 
@@ -204,7 +229,10 @@ def collect_multiple_posts(urls: list[str]) -> pd.DataFrame:
     for index, url in enumerate(urls):
         if index > 0:
             time.sleep(REQUEST_DELAY_SECONDS)
-        frames.append(collect_post_comments(url))
+        try:
+            frames.append(collect_post_comments(url))
+        except LoginRequiredError as exc:
+            logger.warning("Pulando %s: %s", url, exc)
     return pd.concat(frames, ignore_index=True) if frames else pd.DataFrame()
 
 

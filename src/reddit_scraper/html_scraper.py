@@ -4,14 +4,22 @@ old.reddit.com ainda serve paginas renderizadas no servidor (ao
 contrario do site novo, que e uma SPA em React e so entrega o conteudo
 depois de rodar JS no navegador). Isso permite fazer scraping direto
 com requests + BeautifulSoup, sem precisar de credenciais da API
-oficial do Reddit.
+oficial do Reddit (PRAW/OAuth).
 
-Comentarios colapsados atras de "load more comments" sao buscados numa
-segunda etapa, via o endpoint ``api/morechildren.json`` (o mesmo usado
-pelo old.reddit.com internamente). Threads muito profundas podem ainda
-assim deixar alguns comentarios de fora, ja que essa segunda busca nao
-e repetida recursivamente para novos stubs "load more" encontrados
-dentro dela.
+Desde 2026 o Reddit exige login mesmo em old.reddit.com para alguns
+posts (ver `LoginRequiredError`). Para contornar isso sem OAuth, as
+requisicoes reusam o cookie de uma sessao ja autenticada no navegador,
+configurado conforme `reddit_scraper.auth`; sem esse cookie, o scraper
+continua funcionando normalmente para posts que nao exigem login.
+
+A pagina inicial e pedida com ``?limit=500`` (o maximo aceito pelo
+Reddit) para reduzir quantos comentarios ficam escondidos atras de
+"load more comments" desde a primeira resposta. Os que ainda ficarem
+sao buscados em rodadas seguintes, via o endpoint
+``api/morechildren.json`` (o mesmo usado pelo old.reddit.com
+internamente); se uma rodada trouxer novos stubs "load more" aninhados
+dentro dela, eles sao buscados na rodada seguinte, ate
+`MORE_CHILDREN_MAX_ROUNDS` rodadas ou nao haver mais stubs novos.
 """
 
 from __future__ import annotations
@@ -20,6 +28,7 @@ import logging
 import re
 import time
 import unicodedata
+from datetime import datetime
 from pathlib import Path
 from urllib.parse import urlparse
 
@@ -27,6 +36,7 @@ import pandas as pd
 import requests
 from bs4 import BeautifulSoup
 
+from reddit_scraper.auth import build_headers
 from reddit_scraper.keywords import (
     OFFENSIVE_KEYWORDS_BY_CATEGORY,
     format_matches,
@@ -51,10 +61,33 @@ MORE_CHILDREN_ONCLICK_RE = re.compile(
 )
 MORE_CHILDREN_URL = "https://old.reddit.com/api/morechildren.json"
 MORE_CHILDREN_CHUNK_SIZE = 100
+MORE_CHILDREN_MAX_ROUNDS = 6
+LOGIN_REQUIRED_PATH = "/login/"
+COMMENT_PAGE_LIMIT = 500
+
+
+class LoginRequiredError(RuntimeError):
+    """Erro levantado quando o Reddit exige login para ver o post.
+
+    Pode acontecer com qualquer post desde que o Reddit passou a
+    exigir conta logada em old.reddit.com (mais comum em posts NSFW ou
+    de subreddits restritos). Configurar um cookie de sessao via
+    `reddit_scraper.auth` evita esse erro para posts que a propria
+    conta usada tenha permissao de ver.
+    """
 
 
 def resolve_to_old_reddit(url: str) -> str:
     """Resolve redirecionamentos para a URL equivalente em old.reddit.com.
+
+    URLs que ja contem ``/comments/<id>/`` sao resolvidas localmente,
+    so trocando o dominio, sem nenhuma requisicao -- evita bater em
+    ``www.reddit.com``, cujo bloqueio anti-bot costuma ser mais
+    agressivo que o de ``old.reddit.com`` (ver 403 "Blocked"). Apenas
+    links de compartilhamento (``/s/...``), que nao trazem o id do
+    post na URL, precisam de uma requisicao para seguir o
+    redirecionamento -- essa requisicao e feita direto em
+    old.reddit.com, pelo mesmo motivo.
 
     Parameters
     ----------
@@ -67,9 +100,15 @@ def resolve_to_old_reddit(url: str) -> str:
     str
         URL canonica do post no dominio old.reddit.com.
     """
+    old_reddit_url = urlparse(url)._replace(netloc="old.reddit.com").geturl()
+
+    if POST_ID_RE.search(url):
+        canonical = old_reddit_url.split("?")[0].rstrip("/")
+        return urlparse(canonical)._replace(netloc="old.reddit.com").geturl()
+
     response = requests.get(
-        url,
-        headers={"User-Agent": USER_AGENT},
+        old_reddit_url,
+        headers=build_headers(USER_AGENT),
         allow_redirects=True,
         timeout=REQUEST_TIMEOUT_SECONDS,
     )
@@ -91,13 +130,25 @@ def fetch_html(url: str) -> str:
     -------
     str
         Conteudo HTML da pagina.
+
+    Raises
+    ------
+    LoginRequiredError
+        Se o Reddit redirecionar para a tela de login (post NSFW ou
+        de subreddit restrito).
     """
     response = requests.get(
         url,
-        headers={"User-Agent": USER_AGENT},
+        headers=build_headers(USER_AGENT),
         timeout=REQUEST_TIMEOUT_SECONDS,
     )
     response.raise_for_status()
+    if LOGIN_REQUIRED_PATH in urlparse(response.url).path:
+        msg = (
+            f"Reddit exige login para ver este post (provavelmente "
+            f"NSFW ou restrito): {url}"
+        )
+        raise LoginRequiredError(msg)
     return response.text
 
 
@@ -145,6 +196,32 @@ def extract_submission_title(soup: BeautifulSoup) -> str:
     if soup.title:
         return soup.title.get_text(strip=True)
     return ""
+
+
+def extract_comment_created_utc(comment_div) -> float | None:
+    """Extrai o timestamp UTC de publicacao a partir da tag ``<time>``.
+
+    Parameters
+    ----------
+    comment_div : bs4.Tag
+        Elemento ``div.thing.comment`` ja localizado na pagina.
+
+    Returns
+    -------
+    float or None
+        Timestamp Unix (segundos desde a epoch), ou None se a pagina
+        nao tiver a tag ``<time datetime="...">`` esperada.
+    """
+    time_tag = comment_div.find("time")
+    if time_tag is None:
+        return None
+    raw_datetime = time_tag.get("datetime")
+    if not raw_datetime:
+        return None
+    try:
+        return datetime.fromisoformat(raw_datetime).timestamp()
+    except ValueError:
+        return None
 
 
 def parse_comments(
@@ -215,6 +292,7 @@ def parse_comments(
                 "author": author,
                 "body": body,
                 "score": score,
+                "created_utc": extract_comment_created_utc(comment_div),
                 "flagged_by_keyword": bool(matches),
                 "flagged_categories": flagged_categories,
                 "matched_keywords": matched_keywords,
@@ -279,7 +357,7 @@ def fetch_more_children(link_id: str, children_ids: list[str]) -> list[dict]:
             "sort": "confidence",
             "limit_children": "false",
         },
-        headers={"User-Agent": USER_AGENT},
+        headers=build_headers(USER_AGENT),
         timeout=REQUEST_TIMEOUT_SECONDS,
     )
     response.raise_for_status()
@@ -329,6 +407,7 @@ def _rows_from_json_things(
                 "author": data.get("author") or "[deletado]",
                 "body": body,
                 "score": data.get("score"),
+                "created_utc": data.get("created_utc"),
                 "flagged_by_keyword": bool(matches),
                 "flagged_categories": flagged_categories,
                 "matched_keywords": matched_keywords,
@@ -348,17 +427,53 @@ def _rows_from_json_things(
     return rows
 
 
+def _more_stub_ids_from_things(things: list[dict]) -> list[str]:
+    """Varre nos ja buscados por novos stubs "more" aninhados.
+
+    Esses stubs aparecem quando um comentario que acabou de ser
+    buscado via `fetch_more_children` tem, ele mesmo, respostas
+    colapsadas demais para vir na mesma chamada -- sem essa varredura
+    elas ficariam de fora, mesmo em `collect_more_children_rows`.
+
+    Parameters
+    ----------
+    things : list[dict]
+        Nos ``t1``/``more`` retornados por `fetch_more_children`.
+
+    Returns
+    -------
+    list[str]
+        Ids (sem prefixo garantido) dos comentarios ainda colapsados.
+    """
+    ids: list[str] = []
+    for thing in things:
+        data = thing.get("data", {})
+        if thing.get("kind") == "more":
+            ids.extend(data.get("children", []))
+            continue
+        replies = data.get("replies")
+        if isinstance(replies, dict):
+            reply_things = replies.get("data", {}).get("children", [])
+            ids.extend(_more_stub_ids_from_things(reply_things))
+    return ids
+
+
 def collect_more_children_rows(
     submission_id: str,
     submission_title: str,
     children_ids: list[str],
     keywords_by_category: dict[str, list[str]] | None = None,
+    max_rounds: int = MORE_CHILDREN_MAX_ROUNDS,
 ) -> list[dict]:
     """Busca e converte os comentarios atras de "load more comments".
 
-    Se a busca falhar (ex.: endpoint bloqueado nesta rede), registra um
-    aviso e devolve o que ja tiver sido coletado ate ali, em vez de
-    propagar o erro.
+    Busca em rodadas: cada rodada pode revelar novos stubs "more"
+    aninhados dentro dos comentarios que acabaram de ser buscados
+    (ver `_more_stub_ids_from_things`), que entao sao buscados na
+    rodada seguinte, ate `max_rounds` rodadas ou nao haver mais stubs
+    novos. Se uma busca falhar (ex.: endpoint bloqueado nesta rede),
+    registra um aviso e devolve o que ja tiver sido coletado ate ali,
+    em vez de propagar o erro.
 
     Parameters
     ----------
@@ -371,6 +486,8 @@ def collect_more_children_rows(
     keywords_by_category : dict[str, list[str]] or None
         Termos agrupados por categoria, usados no filtro heuristico.
         Usa `OFFENSIVE_KEYWORDS_BY_CATEGORY` quando omitido.
+    max_rounds : int
+        Numero maximo de rodadas de busca por stubs aninhados.
 
     Returns
     -------
@@ -384,25 +501,52 @@ def collect_more_children_rows(
     )
     link_id = f"t3_{submission_id}"
     rows: list[dict] = []
+    pending = list(dict.fromkeys(children_ids))
+    seen: set[str] = set(pending)
+    made_any_request = False
 
-    for index in range(0, len(children_ids), MORE_CHILDREN_CHUNK_SIZE):
-        if index > 0:
-            time.sleep(REQUEST_DELAY_SECONDS)
-        chunk = children_ids[index : index + MORE_CHILDREN_CHUNK_SIZE]
-        try:
-            things = fetch_more_children(link_id, chunk)
-        except requests.RequestException as exc:
-            logger.warning(
-                "Falha ao buscar comentarios colapsados (%s); seguindo "
-                "so com os comentarios ja coletados.",
-                exc,
-            )
+    for _round in range(max_rounds):
+        if not pending:
             break
-        rows.extend(
-            _rows_from_json_things(
-                things, submission_id, submission_title, keywords_by_category
+        next_pending: list[str] = []
+        failed = False
+
+        for index in range(0, len(pending), MORE_CHILDREN_CHUNK_SIZE):
+            if made_any_request:
+                time.sleep(REQUEST_DELAY_SECONDS)
+            made_any_request = True
+            chunk = pending[index : index + MORE_CHILDREN_CHUNK_SIZE]
+            try:
+                things = fetch_more_children(link_id, chunk)
+            except requests.RequestException as exc:
+                logger.warning(
+                    "Falha ao buscar comentarios colapsados (%s); "
+                    "seguindo so com os comentarios ja coletados.",
+                    exc,
+                )
+                failed = True
+                break
+            rows.extend(
+                _rows_from_json_things(
+                    things,
+                    submission_id,
+                    submission_title,
+                    keywords_by_category,
+                )
             )
-        )
+            for stub_id in _more_stub_ids_from_things(things):
+                normalized = (
+                    stub_id
+                    if stub_id.startswith("t1_")
+                    else f"t1_{stub_id}"
+                )
+                if normalized not in seen:
+                    seen.add(normalized)
+                    next_pending.append(normalized)
+
+        if failed:
+            break
+        pending = next_pending
 
     return rows
 
@@ -469,7 +613,7 @@ def collect_post_comments(post_url: str) -> pd.DataFrame:
     logger.info("Extraindo comentarios de %s", post_url)
 
     old_reddit_url = resolve_to_old_reddit(post_url)
-    html = fetch_html(old_reddit_url)
+    html = fetch_html(f"{old_reddit_url}?limit={COMMENT_PAGE_LIMIT}")
     soup = BeautifulSoup(html, "lxml")
 
     submission_id = extract_submission_id(old_reddit_url)
@@ -484,6 +628,15 @@ def collect_post_comments(post_url: str) -> pd.DataFrame:
             submission_id, submission_title, more_ids
         )
         rows.extend(more_rows)
+
+    if not rows and not more_ids:
+        logger.warning(
+            "'%s': 0 comentarios encontrados -- confira manualmente se "
+            "a pagina nao veio bloqueada (js challenge/captcha) em vez "
+            "de realmente vazia: %s",
+            submission_title or submission_id,
+            post_url,
+        )
 
     logger.info(
         "'%s': %d comentarios coletados (%d visiveis + %d via 'load "
@@ -526,7 +679,12 @@ def collect_and_save_posts(urls: list[str], output_dir: Path) -> list[Path]:
 
         start_time = time.perf_counter()
 
-        df = collect_post_comments(url)
+        try:
+            df = collect_post_comments(url)
+        except LoginRequiredError as exc:
+            logger.warning("Pulando %s: %s", url, exc)
+            continue
+
         title = df["submission_title"].iloc[0] if not df.empty else ""
         submission_id = df["submission_id"].iloc[0] if not df.empty else "post"
 
