@@ -1,63 +1,90 @@
-﻿submission_id,submission_title,comment_id,author,body,score,flagged_by_keyword,flagged_categories,matched_keywords
+﻿submission_id,submission_title,comment_id,author,body,score,created_utc,flagged_by_keyword,flagged_categories,matched_keywords,keyword_occurrences
 1urc8ah,Aqui é o Brasil,oweoaja,AutoModerator,"Entre no nosso server do Discord:
 https://discord.gg/MaXeUcJx4
 I am a bot, and this action was performed automatically. Please
 contact the moderators of this subreddit
-if you have any questions or concerns.",,False,,
-1urc8ah,Aqui é o Brasil,owerfwo,Busy_Palpitation539,por um momento pensei que estava indo ver quedas de moto KKHKKKKKKKL,426.0,False,,
-1urc8ah,Aqui é o Brasil,oweykgi,Last_Cardiologist393,Achou que era o MajesticHooter? Olho no lance!,67.0,False,,
+if you have any questions or concerns.",,1783560993.0,False,,,0
+1urc8ah,Aqui é o Brasil,owerfwo,Busy_Palpitation539,por um momento pensei que estava indo ver quedas de moto KKHKKKKKKKL,438.0,1783562065.0,False,,,0
+1urc8ah,Aqui é o Brasil,oweykgi,Last_Cardiologist393,Achou que era o MajesticHooter? Olho no lance!,66.0,1783564520.0,False,,,0
 1urc8ah,Aqui é o Brasil,owhtb3m,NaturalIcy1274,"u/MajesticHooter
-tu é famoso, heim!",13.0,False,,
-1urc8ah,Aqui é o Brasil,owgkuss,Fast_Garbage_6656,Vô caí...,6.0,False,,
-1urc8ah,Aqui é o Brasil,owf1kko,rimzler,HAHAHAHA eu tbm. Já tava sofrendo pela mina mega gata se estrepar tbm,22.0,False,,
-1urc8ah,Aqui é o Brasil,owfa6sf,Capital_Safe8344,Cara o mesmo pensamento inclusive depois que vi quem era meu unico desejo era que caísse kk,11.0,False,,
-1urc8ah,Aqui é o Brasil,owh3hqe,criatividademenos1,"Nao tem como essa moto cair, ja que ela está orbitando...",6.0,False,,
-1urc8ah,Aqui é o Brasil,owgwb93,ZER0-V,"Ainda bem que não teve, nossas casas não são projetadas para aguentar o terremoto que esses dois iriam causar caso caíssem",3.0,False,,
-1urc8ah,Aqui é o Brasil,owgz8o6,stronkzer,"Se cai, quica kkkkkkkk",3.0,False,,
-1urc8ah,Aqui é o Brasil,owepwie,Last_Cardiologist393,Que rabão do caralho.,405.0,False,,
-1urc8ah,Aqui é o Brasil,owesl8e,Tyozao,Pensei o mesmo... Que rabetão enorme. É pra se acabar nessa gordinha.,157.0,True,Aparência física,gordinha
-1urc8ah,Aqui é o Brasil,oweydsg,Tall-Poetry-9111,Tenho nem pau pra isso,152.0,True,Sexualidade,pau
-1urc8ah,Aqui é o Brasil,owf0l6y,asmodeusart_-,O pau nem vai conseguir chegar de tanto raba que ela tem 😔,57.0,True,Sexualidade,pau
-1urc8ah,Aqui é o Brasil,owfkidq,Moist-Process5656,"Eu pensava o mesmo até sair com uma gordinha “lipada “, tinha uma raba enorme ( acredito que seja a maior que já torei).
-Chegou na hora do rala e rola pensei que só iria dar certo de 4, mas que nada …rolou legal em quase todas posições…só de ladinho que não dava para abraçar por trás prq a mandioca pulava fora kkk
-Obs.: todos falam que gordinha faz um boquete top, na minha vez ela não sabia e nem gostava de dar um talento no brinquedo 😔",58.0,True,Aparência física,gordinha
-1urc8ah,Aqui é o Brasil,owg6f3f,NotFunnyAlt,"As gordinhas da minha escola todas sabiam, porque era o jeito de chamar a atenção dos chads da escola, uma delas acabou até casando com um chad, hoje ele é pedreiro e eles tem 3 filhos.",48.0,True,Aparência física,gordinha
-1urc8ah,Aqui é o Brasil,owgxkaz,a3a4b5,Cara é rico e nem sabe.,21.0,False,,
-1urc8ah,Aqui é o Brasil,owhe0yp,Duque_de_Letto,Sugou a alma do caba pelo pinto de um jeito que chegou casar kkkkkkk,19.0,False,,
-1urc8ah,Aqui é o Brasil,owfcc2z,phantomofmay,Moisés meu amigo.,18.0,False,,
-1urc8ah,Aqui é o Brasil,owf3tao,Outrageous_Olive_489,Se o do XJ chega…,11.0,False,,
-1urc8ah,Aqui é o Brasil,owf9fmk,Ok-Statistician5899,Quem sabe?,9.0,False,,
-1urc8ah,Aqui é o Brasil,owg73gj,CHERLOPES,Esses obesos tem problema que o púbis engorda e acaba o penis entrar ali para dentro e não sobra nada para feia ali .,3.0,True,Aparência física,feia
+tu é famoso, heim!",14.0,1783605976.0,False,,,0
+1urc8ah,Aqui é o Brasil,owgkuss,Fast_Garbage_6656,Vô caí...,4.0,1783590497.0,False,,,0
+1urc8ah,Aqui é o Brasil,owf1kko,rimzler,HAHAHAHA eu tbm. Já tava sofrendo pela mina mega gata se estrepar tbm,23.0,1783565585.0,False,,,0
+1urc8ah,Aqui é o Brasil,owfa6sf,Capital_Safe8344,Cara o mesmo pensamento inclusive depois que vi quem era meu unico desejo era que caísse kk,10.0,1783568852.0,False,,,0
+1urc8ah,Aqui é o Brasil,owh3hqe,criatividademenos1,"Nao tem como essa moto cair, ja que ela está orbitando...",6.0,1783598196.0,False,,,0
+1urc8ah,Aqui é o Brasil,owgwb93,ZER0-V,"Ainda bem que não teve, nossas casas não são projetadas para aguentar o terremoto que esses dois iriam causar caso caíssem",4.0,1783595501.0,False,,,0
+1urc8ah,Aqui é o Brasil,owgz8o6,stronkzer,"Se cai, quica kkkkkkkk",2.0,1783596636.0,False,,,0
+1urc8ah,Aqui é o Brasil,owht1m3,Unfair_Animal3232,"Esse aí não morre mais em acidente de moto. Deus não ter força pra puxar e se cair no inferno, vai ser explosão estilo bomba hiroshima e nagasaki",0.0,1783605903.0,False,,,0
+1urc8ah,Aqui é o Brasil,owepwie,Last_Cardiologist393,Que rabão do caralho.,401.0,1783561541.0,False,,,0
+1urc8ah,Aqui é o Brasil,owesl8e,Tyozao,Pensei o mesmo... Que rabetão enorme. É pra se acabar nessa gordinha.,161.0,1783562456.0,True,Aparência física,gordinha,1
+1urc8ah,Aqui é o Brasil,oweydsg,Tall-Poetry-9111,Tenho nem pau pra isso,153.0,1783564455.0,True,Sexualidade,pau,1
+1urc8ah,Aqui é o Brasil,owf0l6y,asmodeusart_-,O pau nem vai conseguir chegar de tanto raba que ela tem 😔,60.0,1783565229.0,True,Sexualidade,pau,1
+1urc8ah,Aqui é o Brasil,,[deletado],[removed],,1783573039.0,False,,,0
+1urc8ah,Aqui é o Brasil,owg6f3f,NotFunnyAlt,"As gordinhas da minha escola todas sabiam, porque era o jeito de chamar a atenção dos chads da escola, uma delas acabou até casando com um chad, hoje ele é pedreiro e eles tem 3 filhos.",48.0,1783583287.0,True,Aparência física,gordinha,1
+1urc8ah,Aqui é o Brasil,owgxkaz,a3a4b5,Cara é rico e nem sabe.,21.0,1783595988.0,False,,,0
+1urc8ah,Aqui é o Brasil,owhe0yp,Duque_de_Letto,Sugou a alma do caba pelo pinto de um jeito que chegou casar kkkkkkk,19.0,1783601618.0,False,,,0
+1urc8ah,Aqui é o Brasil,owh9uxq,[deletado],Que isso Toddy,0.0,1783600317.0,False,,,0
+1urc8ah,Aqui é o Brasil,owfcc2z,phantomofmay,Moisés meu amigo.,20.0,1783569678.0,False,,,0
+1urc8ah,Aqui é o Brasil,owf3tao,Outrageous_Olive_489,Se o do XJ chega…,11.0,1783566407.0,False,,,0
+1urc8ah,Aqui é o Brasil,owf9fmk,Ok-Statistician5899,Quem sabe?,9.0,1783568563.0,False,,,0
+1urc8ah,Aqui é o Brasil,owg73gj,CHERLOPES,Esses obesos tem problema que o púbis engorda e acaba o penis entrar ali para dentro e não sobra nada para feia ali .,5.0,1783583624.0,True,Aparência física,feia,1
 1urc8ah,Aqui é o Brasil,owf0v3i,Tyozao,"Ah, que se foda... Eu tentaria. Fodi um de tamanho um pouco menor. E nem sou pauzudo.
 Eu tenho certeza que a mina curtia, pois ficava muito, mas muito molhada.
-Abriria com gosto e sentava a vara. Fácil.",15.0,True,Sexualidade,pau
+Abriria com gosto e sentava a vara. Fácil.",16.0,1783565326.0,True,Sexualidade,pau,1
 1urc8ah,Aqui é o Brasil,owf13hx,Tall-Poetry-9111,"Ah mas daí né, se a mina quiser dar pra você, não deu certo muda de posição
-Eu conheço meus limites e 15cm aí passa vergonha",7.0,False,,
-1urc8ah,Aqui é o Brasil,owfvk6p,Responsible-Ad-6742,"15CM da e sobra irmão, com 1 CM a mais uma com uma raba desse tamanho aí já pediu para eu mudar a posição porque estava machucando, pornografia enganou a gente.",3.0,True,Sexualidade,porno
+Eu conheço meus limites e 15cm aí passa vergonha",6.0,1783565411.0,False,,,0
+1urc8ah,Aqui é o Brasil,owfvk6p,Responsible-Ad-6742,"15CM da e sobra irmão, com 1 CM a mais uma com uma raba desse tamanho aí já pediu para eu mudar a posição porque estava machucando, pornografia enganou a gente.",3.0,1783578046.0,True,Sexualidade,porno,1
 1urc8ah,Aqui é o Brasil,owf54i4,Solidao-Eterna,"Discussão interessante essa de vocês.
 Eu também sempre tive a teoria, que para comer um rabão precisa de um pau bem grande, no caso dessa gordinha que tem um rabaço, precisa de um pau compatível, que é um pau enorme
 E você disse que com seus 15 passaria vergonha.
-Quanto acho que seria necessário ali? uns 22, 25?",1.0,True,Aparência física; Sexualidade,gordinha; pau
-1urc8ah,Aqui é o Brasil,owf5w7d,Tall-Poetry-9111,"Não faço ideia. A julgar o tamanho do patrimônio da donzela, a brincadeira começa nos 20cm no mínimo.",4.0,False,,
+Quanto acho que seria necessário ali? uns 22, 25?",1.0,1783566905.0,True,Aparência física; Sexualidade; Submissão,gordinha; pau; comer,5
+1urc8ah,Aqui é o Brasil,owf5w7d,Tall-Poetry-9111,"Não faço ideia. A julgar o tamanho do patrimônio da donzela, a brincadeira começa nos 20cm no mínimo.",4.0,1783567199.0,False,,,0
 1urc8ah,Aqui é o Brasil,owf74af,Solidao-Eterna,"PQP 20cm para começar?! 
 Eu passaria uma vergonha retumbante ali com esse dote ridículo.
 Comer uma cavaluda é o meu sonho, mas com esse lixo que mede apenas 13 cm vou ficar só no sonho mesmo 🫠💩☹️
 Agora uma pergunta já que estamos falando sobre dotes físicos.
 Qual o equivalente masculino a uma mulher que tem um rabão? 
-E a uma que tem um peitão bem grande?",1.0,False,,
-1urc8ah,Aqui é o Brasil,owfe0wm,TemporaryPassage6173,"É só calçar um tênis. Com aderência certa, você consegue ir profundo",4.0,False,,
-1urc8ah,Aqui é o Brasil,owfd9rz,Historical_Stable709,"Cara, com um rabetão desse vc tem que ser esperto e escolher uma posição boa. De quatro com certeza vai flopar porque tem uns 30 cm de profundidade naquele rabo.",2.0,False,,
-1urc8ah,Aqui é o Brasil,owflo4w,StruggleAgreeable794,Duvido que esse gordão tenha smsmksksk,1.0,False,,
-1urc8ah,Aqui é o Brasil,owf5bi3,RamonSaints,"É impossível esses dois já terem feito sexo, a geografia não permite.",14.0,True,Sexualidade,sexo
-1urc8ah,Aqui é o Brasil,owgbxw7,UYMitico,Se necesita una extensión.,2.0,False,,
-1urc8ah,Aqui é o Brasil,owetm4q,holchansg,"Agora faz a conta, a barriga dele + a raba dessa mulher... pelos meus calculos ou ele tem 45cm de rola ou ele nunca encostou no biscoito.",65.0,False,,
+E a uma que tem um peitão bem grande?",1.0,1783567666.0,True,Submissão,comer,1
+1urc8ah,Aqui é o Brasil,owf8as3,Tall-Poetry-9111,"Essa é fácil meu man, homem tem que ir pra academia. Tem que ter braço, peito, coxa, bunda, costas...
+Em pleno 2026 homem que não treina pra ficar gigante ou pelo menos forte é o mesmo que nada.",0.0,1783568123.0,True,Aparência física,bunda,1
+1urc8ah,Aqui é o Brasil,owfa1qw,Solidao-Eterna,"Bunda grande e peito grande são atributos relacionados a atração sexual, então pra mim o equivalente a uma mulher com um rabão é um cara bem roludo e o equivalente a uma mulher bem peituda é um cara que tem o pinto bem grosso
+O que adianta ter braço, peito, coxa e costas definidas mas ter 1.60, ser careca, feio de rosto e um lixo de pinto que mede 13 cm?
+E eu nem posso ficar musculoso com esse tamanho ridículo, e eu também não tenho ombros largos, quando eu falo que eu sou totalmente fodido fisicamente não é exagero.
+Eu sou a definição perfeita de subfive, o que os americanos chamam de lixo genético / genetic trash",3.0,1783568797.0,True,Aparência física,"bunda, peituda",2
+1urc8ah,Aqui é o Brasil,,[deletado],[removed],,1783567293.0,False,,,0
+1urc8ah,Aqui é o Brasil,owf95f0,Solidao-Eterna,"Caramba tu foi abençoado hein, as mulheres devem gamar em você só pelo tamanho do seu pinto, essa é uma das várias vantagens em ter uma rola monstro, Jamais terei esses privilégios 🫠💩
+ Fisicamente tu tem uma das duas coisas que as mulheres mais gostam num homem, a outra é a altura.
+Se com 22 tu ainda acha pouco, essa miniatura de pau que eu tenho aqui não faria absolutamente nada então
+Caramba cada vez que vejo essas coisas estou mais convencido que pinto pequeno é um lixo mesmo e não serve para nada, pro inferno viu 💩",1.0,1783568453.0,True,Sexualidade,pau,1
+1urc8ah,Aqui é o Brasil,,[deletado],[removed],,1783568702.0,False,,,0
+1urc8ah,Aqui é o Brasil,owfjnu3,PKT_kevin,kkkkkkkkkkk,1.0,1783572680.0,False,,,0
+1urc8ah,Aqui é o Brasil,owfbs11,Solidao-Eterna,"Kkkkkkkk também se tu não exagerou na medida nem mediu errado, 22 é um tamanho monstro, é um bagulho muito grande.
+Mas mesmo tendo essas ""desvantagens"" elas não cobrem as vantagens, acho que isso nem tem desvantagem.
+Pau grande é que nem ser alto, só tem vantagem, é muito valorizado, faz muita diferença, e as mulheres ADORAM",-1.0,1783569463.0,True,Sexualidade,pau,1
+1urc8ah,Aqui é o Brasil,owfchri,asmodeusart_-,Vai catar manga?,1.0,1783569740.0,False,,,0
+1urc8ah,Aqui é o Brasil,,[deletado],[removed],,1783575932.0,False,,,0
+1urc8ah,Aqui é o Brasil,owfw84b,EraSolquemefaltava,"Como é ""amigo""?",0.0,1783578362.0,False,,,0
+1urc8ah,Aqui é o Brasil,,[deletado],[removed],,1783578620.0,False,,,0
+1urc8ah,Aqui é o Brasil,owhopsv,Specialist_Purple744,"também fiquei molhada, me come gostoso velhote 😋😋😋🍆🍆",0.0,1783604716.0,False,,,0
+1urc8ah,Aqui é o Brasil,owfe0wm,TemporaryPassage6173,"É só calçar um tênis. Com aderência certa, você consegue ir profundo",3.0,1783570349.0,False,,,0
+1urc8ah,Aqui é o Brasil,owfd9rz,Historical_Stable709,"Cara, com um rabetão desse vc tem que ser esperto e escolher uma posição boa. De quatro com certeza vai flopar porque tem uns 30 cm de profundidade naquele rabo.",2.0,1783570046.0,False,,,0
+1urc8ah,Aqui é o Brasil,owflo4w,StruggleAgreeable794,Duvido que esse gordão tenha smsmksksk,1.0,1783573539.0,False,,,0
+1urc8ah,Aqui é o Brasil,owfwapi,stoner_woodcrafter,"o cara também não, fica tranquilo",0.0,1783578396.0,False,,,0
+1urc8ah,Aqui é o Brasil,owh40ez,Distinct-Actuary6898,"O namorado dela tbm não, rlx",0.0,1783598376.0,False,,,0
+1urc8ah,Aqui é o Brasil,owi7emw,anhanga7991,"Aquele rei momo provavelmente tbm não 
+😂😂😂",0.0,1783609673.0,False,,,0
+1urc8ah,Aqui é o Brasil,owf5bi3,RamonSaints,"É impossível esses dois já terem feito sexo, a geografia não permite.",14.0,1783566978.0,True,Sexualidade,sexo,1
+1urc8ah,Aqui é o Brasil,owgbxw7,UYMitico,Se necesita una extensión.,2.0,1783586073.0,False,,,0
+1urc8ah,Aqui é o Brasil,,[deletado],[removed],,1783573578.0,False,,,0
+1urc8ah,Aqui é o Brasil,owfmoaf,Tyozao,Tô nem aí... Não sou perfeccionista. Pra ser sincero até gosto.,1.0,1783573984.0,False,,,0
+1urc8ah,Aqui é o Brasil,owetm4q,holchansg,"Agora faz a conta, a barriga dele + a raba dessa mulher... pelos meus calculos ou ele tem 45cm de rola ou ele nunca encostou no biscoito.",66.0,1783562808.0,False,,,0
 1urc8ah,Aqui é o Brasil,owf1cfz,fernandogod12,"Kkkkkkk
-Fat bengala",8.0,False,,
+Fat bengala",8.0,1783565501.0,False,,,0
 1urc8ah,Aqui é o Brasil,owggjqn,mailusernamepassword,"Deus ou a Natureza (o que tu preferir) fez a mulher de um jeito que a gordura da raba não atrapalha o coito de quatro. É só os envolvidos se posicionarem bem. Falo isso com a experiência de quem já macetou a mãe de quem está lendo, aquela popozuda de proporções continentais.
-Agora o tamanho do rolha de poço deve atrapalhar mas não tenho tanta propriedade para falar porque eu sou magro.",2.0,False,,
+Agora o tamanho do rolha de poço deve atrapalhar mas não tenho tanta propriedade para falar porque eu sou magro.",3.0,1783588393.0,False,,,0
 1urc8ah,Aqui é o Brasil,owf5wq6,Necessary_Dirt_4534,"Eu me acabava nesse rabão gostoso.  🥵
-E a gordinha também é bonitinha. 😏",26.0,True,Aparência física,gordinha
-1urc8ah,Aqui é o Brasil,owfcjrf,Last_Cardiologist393,<image>,18.0,False,,
+E a gordinha também é bonitinha. 😏",26.0,1783567204.0,True,Aparência física,gordinha,1
+1urc8ah,Aqui é o Brasil,owfcjrf,Last_Cardiologist393,<image>,19.0,1783569762.0,False,,,0
 1urc8ah,Aqui é o Brasil,owgw9nh,PerformanceOdd4236,"Para acabar com toda essa discussão de se conseguem ou não comer uma gordinha do rabão, vamos lá:
 Mano, todo mundo sabe que gordinha gostosa é melhor doque qualquer outro tipo de corpo feminino existente, isso é fato. Mas vc tem que saber como faz os trem. Gordinha é tipo final Boss, que se der certo, ganha pra vida.
 Então:
@@ -74,170 +101,230 @@ Então é isso,
 Gordinha supremacy
 .
 Recitemos o lema:
-“Oh gordinha, com suas curvas magníficas, seios fartos e bunda macia. Coloque minha cabeça entre suas coxas maravilhosas e deixe-me perecer aqui. Na noite mais fria, no dia mais quente; no início e no fim dos tempos, gordinha, eu te amarei.”",12.0,True,Aparência física; Sexualidade,"gordinha, velha, gostosa; sexo, pau"
-1urc8ah,Aqui é o Brasil,owh7uaq,IcyConversation5463,hahhah Tu e fã de uma Gordinha em hahaha,2.0,True,Aparência física,gordinha
-1urc8ah,Aqui é o Brasil,owh8ste,PerformanceOdd4236,"O se sou, me casei com uma não é por menos KSJDKDJDKD. A vida é boa.",1.0,False,,
-1urc8ah,Aqui é o Brasil,owevvar,Phinani,Queria ter a bunda desse tamanho. Inveja do cacete,11.0,False,,
-1urc8ah,Aqui é o Brasil,owezl0m,OneForm6545,"Essas gordelicia assim são uma maravilha, se eu fosse mulher queria ser assim",7.0,False,,
-1urc8ah,Aqui é o Brasil,owernnl,PikachuWithHerpes,"Pra comer um cuzão daquele, só tendo a ferramenta apropriada, infelizmente.",23.0,False,,
-1urc8ah,Aqui é o Brasil,oweseqa,ZeZeDeCatarro235687,Cê tá assistindo muito porno cara.,17.0,True,Sexualidade,porno
-1urc8ah,Aqui é o Brasil,owesv5b,WayAccomplished6689,Mas ele não mentiu,19.0,False,,
-1urc8ah,Aqui é o Brasil,owetday,MaximumPayne7,"Totalmente desperdiçado com o Gordao da XJ que como todos ja sabem pelo seu video vazado, tem um micro pericles.",7.0,True,Aparência física,gorda
-1urc8ah,Aqui é o Brasil,owf2p1m,JorraCreme69,se pá ele pode até ter 30cm de pika mas com 800 toneladas de banha na frente n da pra enxergar,8.0,False,,
-1urc8ah,Aqui é o Brasil,owezpyz,BrunoXande,Tem um vídeo vazado dele? Nunca vi,3.0,False,,
-1urc8ah,Aqui é o Brasil,owezlbg,Queijocosmico,"ainda bem que ela se separou dele, agora a punheta é sem peso na consciencia",2.0,False,,
-1urc8ah,Aqui é o Brasil,owf1850,rimzler,"A menos que foi muito muuuito recente, eles voltaram a ficar juntos de novo",5.0,False,,
-1urc8ah,Aqui é o Brasil,owf24o2,gabrielcachs,Já voltou,4.0,False,,
-1urc8ah,Aqui é o Brasil,owf228i,passoquito,Tá falando do cara ou da mina?,4.0,False,,
-1urc8ah,Aqui é o Brasil,owf2b66,Last_Cardiologist393,"Eu tô falando da rabuda, não da peituda",1.0,False,,
-1urc8ah,Aqui é o Brasil,owf86st,DonViniciuss,A raba dela mal consegue se manter na traseira da moto de tão grande kkk,4.0,False,,
-1urc8ah,Aqui é o Brasil,owfe7yf,Fair-Distance371,Mas isso não é por conta dela e sim dele,4.0,False,,
-1urc8ah,Aqui é o Brasil,owfe0cc,Fair-Distance371,"Realmente, é tão grande que deixa o da mulher atrás dele pequeno",1.0,False,,
+“Oh gordinha, com suas curvas magníficas, seios fartos e bunda macia. Coloque minha cabeça entre suas coxas maravilhosas e deixe-me perecer aqui. Na noite mais fria, no dia mais quente; no início e no fim dos tempos, gordinha, eu te amarei.”",12.0,1783595484.0,True,Aparência física; Sexualidade; Submissão,"gordinha, velha, bunda, gostosa; sexo, pau; comer",14
+1urc8ah,Aqui é o Brasil,owh7uaq,IcyConversation5463,hahhah Tu e fã de uma Gordinha em hahaha,2.0,1783599668.0,True,Aparência física,gordinha,1
+1urc8ah,Aqui é o Brasil,owh8ste,PerformanceOdd4236,"O se sou, me casei com uma não é por menos KSJDKDJDKD. A vida é boa.",1.0,1783599978.0,False,,,0
+1urc8ah,Aqui é o Brasil,owevvar,Phinani,Queria ter a bunda desse tamanho. Inveja do cacete,11.0,1783563585.0,True,Aparência física,bunda,1
+1urc8ah,Aqui é o Brasil,,[deletado],[removed],,1783572794.0,False,,,0
+1urc8ah,Aqui é o Brasil,owfvfit,SamFMorgan,Quem gosta de osso é cachorro,6.0,1783577984.0,False,,,0
+1urc8ah,Aqui é o Brasil,owg90yz,tiagofixe,Lá ele,1.0,1783584588.0,False,,,0
+1urc8ah,Aqui é o Brasil,owezl0m,OneForm6545,"Essas gordelicia assim são uma maravilha, se eu fosse mulher queria ser assim",7.0,1783564875.0,False,,,0
+1urc8ah,Aqui é o Brasil,owernnl,PikachuWithHerpes,"Pra comer um cuzão daquele, só tendo a ferramenta apropriada, infelizmente.",23.0,1783562140.0,True,Submissão,comer,1
+1urc8ah,Aqui é o Brasil,oweseqa,ZeZeDeCatarro235687,Cê tá assistindo muito porno cara.,18.0,1783562395.0,True,Sexualidade,porno,1
+1urc8ah,Aqui é o Brasil,owesv5b,WayAccomplished6689,Mas ele não mentiu,21.0,1783562550.0,False,,,0
+1urc8ah,Aqui é o Brasil,owess4e,PikachuWithHerpes,"Não, eu só não um virgem igual você. Anal é mais complicado com essas rabudas.",-4.0,1783562521.0,False,,,0
+1urc8ah,Aqui é o Brasil,owevgbr,ZeZeDeCatarro235687,"Moisés conseguiu abrir o mar vermelho, e você não consegue abrir uma nádega?",14.0,1783563443.0,False,,,0
+1urc8ah,Aqui é o Brasil,owfprq7,OnizukaBr100,Nesse caso aí tu vai ter que chamar mais duas pessoas pra cada um segurar uma banda.,0.0,1783575375.0,False,,,0
+1urc8ah,Aqui é o Brasil,owfqk39,ZeZeDeCatarro235687,"Tava falando de mulher, não da bunda do majin buu",1.0,1783575738.0,True,Aparência física,bunda,1
+1urc8ah,Aqui é o Brasil,owewbmp,PikachuWithHerpes,"Não se preocupe, meu jovem. Um dia você vai fazer sexo e entender. Por favor pare de passar vergonha aqui, ok?",-12.0,1783563741.0,True,Sexualidade,sexo,1
+1urc8ah,Aqui é o Brasil,owetfr9,MaximumPayne7,"Só saber a posição certa, irmão",8.0,1783562747.0,False,,,0
+1urc8ah,Aqui é o Brasil,owetp99,PikachuWithHerpes,"Quando começa com esses papos, você já está se entregando",9.0,1783562839.0,False,,,0
+1urc8ah,Aqui é o Brasil,oweu9ae,EstouSempreCerto,kkkkkkkkkkk calma deixa ele achar que ninguem percebeu,7.0,1783563032.0,False,,,0
+1urc8ah,Aqui é o Brasil,owetday,MaximumPayne7,"Totalmente desperdiçado com o Gordao da XJ que como todos ja sabem pelo seu video vazado, tem um micro pericles.",8.0,1783562724.0,True,Aparência física,gorda,1
+1urc8ah,Aqui é o Brasil,owf2p1m,JorraCreme69,se pá ele pode até ter 30cm de pika mas com 800 toneladas de banha na frente n da pra enxergar,7.0,1783565997.0,False,,,0
+1urc8ah,Aqui é o Brasil,owezpyz,BrunoXande,Tem um vídeo vazado dele? Nunca vi,4.0,1783564924.0,False,,,0
+1urc8ah,Aqui é o Brasil,owf0hts,BoaMorte54,"Pq você quer ver, irmão???",-3.0,1783565196.0,False,,,0
+1urc8ah,Aqui é o Brasil,owf1fjp,rimzler,"Pior que a projeção tá toda na tua conta, o cara não falou que queria ver.",9.0,1783565533.0,False,,,0
+1urc8ah,Aqui é o Brasil,owf154s,BrunoXande,"Não é isso kkkkk 
+Só fiquei curioso, algo assim iria estourar, mas não ouvi nada sobre",4.0,1783565427.0,False,,,0
+1urc8ah,Aqui é o Brasil,owgzngv,stronkzer,Eu quero preservar minha inocência e acreditar que ele quer ficar mandando pros amigos pra sacanear.,0.0,1783596795.0,False,,,0
+1urc8ah,Aqui é o Brasil,owh6ili,IcyConversation5463,kkkkkkk,0.0,1783599233.0,False,,,0
+1urc8ah,Aqui é o Brasil,owezlbg,Queijocosmico,"ainda bem que ela se separou dele, agora a punheta é sem peso na consciencia",3.0,1783564878.0,False,,,0
+1urc8ah,Aqui é o Brasil,owf1850,rimzler,"A menos que foi muito muuuito recente, eles voltaram a ficar juntos de novo",4.0,1783565458.0,False,,,0
+1urc8ah,Aqui é o Brasil,owf24o2,gabrielcachs,Já voltou,4.0,1783565787.0,False,,,0
+1urc8ah,Aqui é o Brasil,,[deletado],[removed],,1783565762.0,False,,,0
+1urc8ah,Aqui é o Brasil,owf2b66,Last_Cardiologist393,"Eu tô falando da rabuda, não da peituda",1.0,1783565854.0,True,Aparência física,peituda,1
+1urc8ah,Aqui é o Brasil,owf86st,DonViniciuss,A raba dela mal consegue se manter na traseira da moto de tão grande kkk,3.0,1783568080.0,False,,,0
+1urc8ah,Aqui é o Brasil,,[deletado],[removed],,1783570343.0,False,,,0
 1urc8ah,Aqui é o Brasil,owfeeyp,Last_Cardiologist393,"Real
-<image>",1.0,False,,
-1urc8ah,Aqui é o Brasil,owfbwu0,jao_vitu_bunitu,"Só vale quando é magra. Toda gordinha vai ter rabão, num conta.",3.0,True,Aparência física,gordinha
+<image>",1.0,1783570506.0,False,,,0
+1urc8ah,Aqui é o Brasil,owfbwu0,jao_vitu_bunitu,"Só vale quando é magra. Toda gordinha vai ter rabão, num conta.",3.0,1783569514.0,True,Aparência física,gordinha,1
 1urc8ah,Aqui é o Brasil,owfdc83,Last_Cardiologist393,"Rabão, é rabão
-<image>",6.0,False,,
-1urc8ah,Aqui é o Brasil,oweqnju,AdFit5716,"A moto tá pedindo arrego coitada, se estoura essa suspensão dá uns problemas",72.0,False,,
-1urc8ah,Aqui é o Brasil,owf2q9w,lucashc90,"Real, moto tá tão ""rebaixada"" que enrosca na primeira lombada kkkkk",12.0,False,,
-1urc8ah,Aqui é o Brasil,owh68fo,fray989,"Na primeira lombada a mola da suspensão já sofre uma boa deformação plástica. Se os dois andarem com essa moto com frequência, capaz até de fadigar ou encruar a ponto de causar uma fratura frágil catastrófica.",1.0,True,Submissão,frágil
-1urc8ah,Aqui é o Brasil,owhyjpv,du_cwb2000,"A suspensão dando batente na reta kkkkkkk, paralama quase encostando na roda",1.0,False,,
+<image>",7.0,1783570073.0,False,,,0
+1urc8ah,Aqui é o Brasil,,[deletado],[removed],,1783603180.0,False,,,0
+1urc8ah,Aqui é o Brasil,owhxekn,Last_Cardiologist393,Com esforço e dedicação dá pra escavar qlqr buraco,0.0,1783607064.0,False,,,0
+1urc8ah,Aqui é o Brasil,owhvpr0,Luxuria999,"Ele paga os caras pra comer ela, ela mesmo já disse isso",0.0,1783606621.0,True,Submissão,comer,1
+1urc8ah,Aqui é o Brasil,owhwsc0,Last_Cardiologist393,Gordão da Cuckold,0.0,1783606901.0,False,,,0
+1urc8ah,Aqui é o Brasil,owi5z03,nildo_chagass,Ela já tá quase do tamanho dele,0.0,1783609299.0,False,,,0
+1urc8ah,Aqui é o Brasil,,[deletado],[removed],,1783566427.0,False,,,0
+1urc8ah,Aqui é o Brasil,owfcye8,Last_Cardiologist393,,5.0,1783569922.0,False,,,0
+1urc8ah,Aqui é o Brasil,oweqnju,AdFit5716,"A moto tá pedindo arrego coitada, se estoura essa suspensão dá uns problemas",74.0,1783561796.0,False,,,0
+1urc8ah,Aqui é o Brasil,owf2q9w,lucashc90,"Real, moto tá tão ""rebaixada"" que enrosca na primeira lombada kkkkk",13.0,1783566009.0,False,,,0
+1urc8ah,Aqui é o Brasil,owh68fo,fray989,"Na primeira lombada a mola da suspensão já sofre uma boa deformação plástica. Se os dois andarem com essa moto com frequência, capaz até de fadigar ou encruar a ponto de causar uma fratura frágil catastrófica.",1.0,1783599138.0,True,Submissão,frágil,1
+1urc8ah,Aqui é o Brasil,owhyjpv,du_cwb2000,"A suspensão dando batente na reta kkkkkkk, paralama quase encostando na roda",1.0,1783607364.0,False,,,0
 1urc8ah,Aqui é o Brasil,ower1hx,Aleatorio-12,"Na boa, essa nicole é uma delícia kkkkkkkk 
-É muito bonita, mas é a famosa gordinha gostosa que acaba com qualquer um",62.0,True,Aparência física,"gordinha, gostosa"
-1urc8ah,Aqui é o Brasil,,[deletado],[removed],,False,,
-1urc8ah,Aqui é o Brasil,owfb9gt,Capital_Safe8344,"Cara mais se acha que eles tão pq se gostam ou rola muito dinheiro ali, pq esse xj aí e minha impressão que ele banca tudo pra ela inclusive dinheiro, e vai mantendo essa vida aí pq não vejo nada além disso",8.0,False,,
-1urc8ah,Aqui é o Brasil,owevbqt,Severe_Classroom4792,Ela e  famosa?,2.0,False,,
-1urc8ah,Aqui é o Brasil,owexw3c,Any-Nefariousness957,"Sim, é famosa por namorar esse cara que é famoso sem ninguém saber o porquê",27.0,False,,
-1urc8ah,Aqui é o Brasil,owf06ja,Prestigious_Face714,ele ficou famoso por causa dos memes dele em cima da moto mano,3.0,False,,
-1urc8ah,Aqui é o Brasil,owertiq,cokumam,O short socado no cu dela...,30.0,False,,
-1urc8ah,Aqui é o Brasil,owgpuge,No_Job_450,É porque mesmo em um relacionamento sério ela quer ser considerada bonita por rapazes desconhecidos.,8.0,False,,
-1urc8ah,Aqui é o Brasil,owerzwf,KindLovely2,É nada,1.0,False,,
-1urc8ah,Aqui é o Brasil,owewdxd,rrss-07,Esse gordo deve ter uma coleção de chifres de dar inveja a qualquer caçador... o tamanho da raba,24.0,False,,
-1urc8ah,Aqui é o Brasil,oweosjt,FlavinhoPneus,Primeira vez que vejo moto rebaixada,17.0,False,,
-1urc8ah,Aqui é o Brasil,,[deletado],[removed],,False,,
-1urc8ah,Aqui é o Brasil,owf03e5,Prestigious_Face714,"realmente meu mano, o mesmo sentimento aqui.",6.0,False,,
-1urc8ah,Aqui é o Brasil,,[deletado],[removed],,False,,
+É muito bonita, mas é a famosa gordinha gostosa que acaba com qualquer um",64.0,1783561928.0,True,Aparência física,"gordinha, gostosa",2
+1urc8ah,Aqui é o Brasil,,[deletado],[removed],,1783562205.0,False,,,0
+1urc8ah,Aqui é o Brasil,owfb9gt,Capital_Safe8344,"Cara mais se acha que eles tão pq se gostam ou rola muito dinheiro ali, pq esse xj aí e minha impressão que ele banca tudo pra ela inclusive dinheiro, e vai mantendo essa vida aí pq não vejo nada além disso",7.0,1783569265.0,False,,,0
+1urc8ah,Aqui é o Brasil,owevbqt,Severe_Classroom4792,Ela e  famosa?,2.0,1783563400.0,False,,,0
+1urc8ah,Aqui é o Brasil,owexw3c,Any-Nefariousness957,"Sim, é famosa por namorar esse cara que é famoso sem ninguém saber o porquê",27.0,1783564286.0,False,,,0
+1urc8ah,Aqui é o Brasil,owf0ji1,loordb_,🤣,0.0,1783565212.0,False,,,0
+1urc8ah,Aqui é o Brasil,owertiq,cokumam,O short socado no cu dela...,30.0,1783562196.0,False,,,0
+1urc8ah,Aqui é o Brasil,,[deletado],[removed],,1783592803.0,False,,,0
+1urc8ah,Aqui é o Brasil,owhr8ka,anaclarapoha,"?KK,pra vc usar short significa atenção de homem mano?KKKKKKKKKKKKKKJIJ",-7.0,1783605413.0,False,,,0
+1urc8ah,Aqui é o Brasil,owi86m9,eliezerDeveloper,Short desse tipo sim. Usa algo mais discreto,4.0,1783609872.0,False,,,0
+1urc8ah,Aqui é o Brasil,owerzwf,KindLovely2,É nada,1.0,1783562257.0,False,,,0
+1urc8ah,Aqui é o Brasil,owewdxd,rrss-07,Esse gordo deve ter uma coleção de chifres de dar inveja a qualquer caçador... o tamanho da raba,26.0,1783563763.0,False,,,0
+1urc8ah,Aqui é o Brasil,oweosjt,FlavinhoPneus,Primeira vez que vejo moto rebaixada,17.0,1783561165.0,False,,,0
+1urc8ah,Aqui é o Brasil,,[deletado],[removed],,1783561209.0,False,,,0
+1urc8ah,Aqui é o Brasil,,[deletado],[removed],,1783593179.0,False,,,0
+1urc8ah,Aqui é o Brasil,oweqgh7,Curious_Moment630,ele morreu num foi não?,-4.0,1783561729.0,False,,,0
+1urc8ah,Aqui é o Brasil,oweqzcu,LuhRodigo,"Ainda não pô, tá vivo e tá emagrecendo",13.0,1783561907.0,False,,,0
+1urc8ah,Aqui é o Brasil,oweqv3h,exercisingbutts,Não,6.0,1783561867.0,False,,,0
+1urc8ah,Aqui é o Brasil,owerj7m,Busy_Palpitation539,"ainda não , ainda",6.0,1783562097.0,False,,,0
+1urc8ah,Aqui é o Brasil,owf1o5a,rimzler,Isso serve pra vc e todos nós aqui tbm,1.0,1783565620.0,False,,,0
+1urc8ah,Aqui é o Brasil,,[deletado],[removed],,1783561772.0,False,,,0
+1urc8ah,Aqui é o Brasil,oweqyn0,TangoMalandro,"Não, inclusive emagreceu pra caramba. Perdeu uns 130kg",2.0,1783561900.0,False,,,0
+1urc8ah,Aqui é o Brasil,owf1s2c,hardcoreladys,"Quem morreu foi o Ganley hehehehe
+O gordinho aí está invicto e com mulher gostosa.
+Essa matemática é muito doida.",0.0,1783565660.0,True,Capacidade cognitiva; Aparência física,doida; gostosa,2
+1urc8ah,Aqui é o Brasil,owfdl5f,Tyozao,Mas eles não tinham separado?,1.0,1783570173.0,False,,,0
+1urc8ah,Aqui é o Brasil,,[deletado],[removed],,1783561466.0,False,,,0
 1urc8ah,Aqui é o Brasil,owh49ji,meupaunoseurobo,"Meu pau na sua narina!
 Bip-
 bop,
 sou
 um
-bot!",4.0,True,Sexualidade,pau
-1urc8ah,Aqui é o Brasil,owero6m,Eren-iega,"A moto é aquele titã do god of war, que tem que segurar o planeta",12.0,False,,
-1urc8ah,Aqui é o Brasil,owetf8g,Real_Satisfaction583,Atlas,2.0,False,,
-1urc8ah,Aqui é o Brasil,owevf7k,Eren-iega,Esse mesmo,1.0,False,,
-1urc8ah,Aqui é o Brasil,owesblq,Zulrambe,Tentando se promover como gordão da xj e promoveu da mulher dele o cuzão e a xota,12.0,False,,
+bot!",4.0,1783598465.0,True,Sexualidade,pau,1
+1urc8ah,Aqui é o Brasil,owgjwsg,Flipm83,Pergunta pertinente,0.0,1783590048.0,False,,,0
+1urc8ah,Aqui é o Brasil,owew4h1,killer_queen_User,Os cara pisa no messi dentro da área ué,-1.0,1783563672.0,False,,,0
+1urc8ah,Aqui é o Brasil,owero6m,Eren-iega,"A moto é aquele titã do god of war, que tem que segurar o planeta",11.0,1783562145.0,False,,,0
+1urc8ah,Aqui é o Brasil,owetf8g,Real_Satisfaction583,Atlas,3.0,1783562742.0,False,,,0
+1urc8ah,Aqui é o Brasil,owevf7k,Eren-iega,Esse mesmo,1.0,1783563432.0,False,,,0
+1urc8ah,Aqui é o Brasil,owesblq,Zulrambe,Tentando se promover como gordão da xj e promoveu da mulher dele o cuzão e a xota,12.0,1783562366.0,False,,,0
 1urc8ah,Aqui é o Brasil,owfal86,Sensitive_Nothing510,"Um dos rabos mais bonitos do Brasil na minha opinião.
-O da mina é bonito tbm",8.0,False,,
-1urc8ah,Aqui é o Brasil,oweurxf,DesignerProfessor547,O que ele tem de pança ela não tem de bunda,5.0,False,,
-1urc8ah,Aqui é o Brasil,owethq5,Apenas_Centavos,uma gordinha com rabetão....,5.0,True,Aparência física,gordinha
-1urc8ah,Aqui é o Brasil,owevn3v,Bitter_Land_258,Gordinha mais linda q já vi,4.0,True,Aparência física,gordinha
-1urc8ah,Aqui é o Brasil,owexv1q,silens_tempestas,,4.0,False,,
-1urc8ah,Aqui é o Brasil,owf841h,6Alucard6,Esse é o Casemiro? Não acompanho muito,4.0,False,,
-1urc8ah,Aqui é o Brasil,owf0bpf,Prestigious_Face714,"Dento a vida toda
-<image>",2.0,False,,
-1urc8ah,Aqui é o Brasil,owi2zm9,New_Horse3440,"Ah moto, ""para, tira que eu vou cagar,.tira que eu vou cagar ""....",2.0,False,,
-1urc8ah,Aqui é o Brasil,oweok4c,paodemel69,Como de boa.,13.0,False,,
-1urc8ah,Aqui é o Brasil,oweqzqi,FatalModelCustomer,Você tem pinto pra isso? Eu não sei nem como esse gordão encaixa ali.,17.0,False,,
-1urc8ah,Aqui é o Brasil,owet0ij,WayAccomplished6689,"Simples, ele não encaixa",14.0,False,,
-1urc8ah,Aqui é o Brasil,owez018,Last_Cardiologist393,Infelizmente só da pra comer de frente,1.0,False,,
-1urc8ah,Aqui é o Brasil,,[deletado],[deleted],,False,,
-1urc8ah,Aqui é o Brasil,oweqm53,exercisingbutts,Tu come o obeso motociclista?,4.0,False,,
-1urc8ah,Aqui é o Brasil,owezogo,Queijocosmico,sim,1.0,False,,
-1urc8ah,Aqui é o Brasil,owf1ze4,hardcoreladys,Brabo!,1.0,False,,
-1urc8ah,Aqui é o Brasil,owet7xu,MaximumPayne7,Não ironicamente um ótimo video de marketing para essa moto.,2.0,False,,
-1urc8ah,Aqui é o Brasil,oweuvau,Severe_Classroom4792,A moto : coé chefe desce logo,2.0,False,,
-1urc8ah,Aqui é o Brasil,owf4hlg,Solidao-Eterna,"Nossa, dois elefantes em cima da moto, a moto anda  até com dificuldade",2.0,False,,
-1urc8ah,Aqui é o Brasil,owf4yk6,haazr,se a mina peida a moto empina,2.0,False,,
-1urc8ah,Aqui é o Brasil,owf9mh1,Ecstatic-Pop-540,,2.0,False,,
-1urc8ah,Aqui é o Brasil,owffot7,Mr_Bullfred,Geral falando do bufante dela,2.0,False,,
-1urc8ah,Aqui é o Brasil,owfsnc3,Witty-Switch-7421,A suspensão da moto sendo trocada toda semana... Droga..,2.0,False,,
-1urc8ah,Aqui é o Brasil,owhp956,Public-Philosopher14,<image>,2.0,False,,
-1urc8ah,Aqui é o Brasil,owhzetd,Smart_Pass_8781,Dêem um prêmio a engenharia que construiu tal maquína resistênte.,2.0,False,,
-1urc8ah,Aqui é o Brasil,owepp7x,Many_Departure_5726,Queria vê esse gordola rolando ladeira baixo,5.0,False,,
-1urc8ah,Aqui é o Brasil,oweqm3k,Mean_Garage1534,Em inglês: this is Brazil.,1.0,False,,
-1urc8ah,Aqui é o Brasil,owetcox,souzatb,Moto com airbag é novidade,1.0,False,,
-1urc8ah,Aqui é o Brasil,oweujjz,JavaByPashaa90,que som de scape horroroso é esse dessa xj6???kk na minha época era bem mais bonito kkk,1.0,False,,
-1urc8ah,Aqui é o Brasil,owev3eb,EstouSempreCerto,essa moto da pra rodar ifood por uns 100 anos,1.0,False,,
-1urc8ah,Aqui é o Brasil,owexdfq,Coriollis45,O tanto que esse cara deve ter de chifre,1.0,False,,
-1urc8ah,Aqui é o Brasil,owexhk1,silens_tempestas,Gente? Desde quando existe moto rebaixada???,1.0,False,,
-1urc8ah,Aqui é o Brasil,owexr5n,Any-Nefariousness957,Pqp o cara parece uma coxinha,1.0,False,,
-1urc8ah,Aqui é o Brasil,owezk3i,dgovaladares,Que moto sofrida,1.0,False,,
-1urc8ah,Aqui é o Brasil,owf0216,Advogado-por-ai,XJ parece uma pop com eles em cima.,1.0,False,,
-1urc8ah,Aqui é o Brasil,owf0jc2,pedroivotarso,Tenho dó da moto,1.0,False,,
-1urc8ah,Aqui é o Brasil,owf2anp,gabrielcachs,"Nunca paguei por putaria, mas esse é uma que pagaria OnlyFans com gosto. Adoro um gordelicia.",1.0,True,Sexualidade,puta
-1urc8ah,Aqui é o Brasil,owf4has,AdSuccessful8031,Porque eu só consigo me lembrar do vídeo dele rolando no asfalto? Kkkkkkkkkkkkkk,1.0,False,,
-1urc8ah,Aqui é o Brasil,owf5qxv,Common-Stop3690,"Eu entrava dentro dessa mulher dele
-Ela ia  conhecer homem de verdade",1.0,False,,
-1urc8ah,Aqui é o Brasil,owf6nlp,fors4kenpanda,O dia q essa mina fizer um onlyfans vai ser a primeira e última vez q vou gastar com pornografia,1.0,True,Sexualidade,porno
-1urc8ah,Aqui é o Brasil,owf8xsm,Urubu_Sommelier,Temos que admitir: essa moto é resistente e potente pra aguentar tanto peso,1.0,False,,
-1urc8ah,Aqui é o Brasil,owf98iq,mclopes1,O único jeito destes dois se acasalarem é em uma piscina,1.0,False,,
-1urc8ah,Aqui é o Brasil,owfgf5b,baianinho74,"Na minha cabeça, eu consigo.",1.0,False,,
-1urc8ah,Aqui é o Brasil,owfin4c,AnomalusDev,A punheta da noite ja ta garantida,1.0,False,,
-1urc8ah,Aqui é o Brasil,owfx41z,Arguida,Se beija não mete e se mete não beija,1.0,False,,
-1urc8ah,Aqui é o Brasil,owgd2dw,battousainordestino,"A moto: ""tira q vou cagar""",1.0,False,,
-1urc8ah,Aqui é o Brasil,owhgmos,UtraOp,A Bela e a Esfera,1.0,False,,
-1urc8ah,Aqui é o Brasil,owhltf5,Pennysclayton95,Sou xonado nessa leitoa rabuda. Espero ter uma assim um dia 🙏🙏🙏,1.0,False,,
-1urc8ah,Aqui é o Brasil,owhtda0,AryonGothic,"Isso que é um belo casal, ela está absorvendo a gordura dele!",1.0,False,,
-1urc8ah,Aqui é o Brasil,,[deletado],[removed],,False,,
-1urc8ah,Aqui é o Brasil,oweyocg,Comprehensive-Order9,"Krl essa mina é muito gostosa, eu e meu amigo sempre vamos no perfil ver se ela já soltou um OF...",0.0,True,Aparência física,gostosa
-1urc8ah,Aqui é o Brasil,owezd7y,UsuallyHorny-7,Era só leitada dentro slk,0.0,False,,
-1urc8ah,Aqui é o Brasil,owfayre,Even-Application-223,Doença monetizado que lindo.,0.0,False,,
-1urc8ah,Aqui é o Brasil,owfcfkn,22mole,Pensa numa moto forte,0.0,False,,
-1urc8ah,Aqui é o Brasil,owfcsol,Effective_Double_163,CORNÃO DA XJ,0.0,False,,
-1urc8ah,Aqui é o Brasil,owfg5in,Ecstatic-Pen-7169,a coitada quase caindo da moto,0.0,False,,
-1urc8ah,Aqui é o Brasil,owfgoap,oldboy012,Acheibq era cg é xj,0.0,False,,
-1urc8ah,Aqui é o Brasil,owfj3go,DifferentAd5742,Dq a pouco vai está gorda igual a ele.,0.0,True,Aparência física,gorda
-1urc8ah,Aqui é o Brasil,owfnonp,No_Fuel5447,Dominic Gordeto,0.0,False,,
-1urc8ah,Aqui é o Brasil,owfomwv,yanubnt,É impressão minha ou o motor tá quase tocando o chão?,0.0,False,,
-1urc8ah,Aqui é o Brasil,owfqd18,Designer_Ad_376,"atras do XJ ela parece anorexica... mas a raba ta bonita, gordinha cinturada com uma raba bonita. As coxonas tambem nao tao ruins nao. Era dento.",0.0,True,Aparência física,gordinha
-1urc8ah,Aqui é o Brasil,owftc3p,Frequent-Mixture-916,Motora acıdım…,0.0,False,,
-1urc8ah,Aqui é o Brasil,owfv84e,Jacklisbon,Tenho pena da mota,0.0,False,,
-1urc8ah,Aqui é o Brasil,owfyg5g,allucard883,"Deve ser gostosinho ir na garupa dele, macio.",0.0,False,,
-1urc8ah,Aqui é o Brasil,owg33jd,Both-Garden-1612,Que belo peidante hein.,0.0,False,,
+O da mina é bonito tbm",8.0,1783569008.0,False,,,0
+1urc8ah,Aqui é o Brasil,owfw9qc,flowey_the_flower18,Kkkkkkkkkkj,0.0,1783578383.0,False,,,0
+1urc8ah,Aqui é o Brasil,oweurxf,DesignerProfessor547,O que ele tem de pança ela não tem de bunda,6.0,1783563209.0,True,Aparência física,bunda,1
+1urc8ah,Aqui é o Brasil,owethq5,Apenas_Centavos,uma gordinha com rabetão....,5.0,1783562766.0,True,Aparência física,gordinha,1
+1urc8ah,Aqui é o Brasil,owevn3v,Bitter_Land_258,Gordinha mais linda q já vi,4.0,1783563507.0,True,Aparência física,gordinha,1
+1urc8ah,Aqui é o Brasil,owexv1q,silens_tempestas,,5.0,1783564276.0,False,,,0
+1urc8ah,Aqui é o Brasil,owf841h,6Alucard6,Esse é o Casemiro? Não acompanho muito,4.0,1783568051.0,False,,,0
+1urc8ah,Aqui é o Brasil,owhp956,Public-Philosopher14,<image>,3.0,1783604865.0,False,,,0
+1urc8ah,Aqui é o Brasil,owhzetd,Smart_Pass_8781,Dêem um prêmio a engenharia que construiu tal maquína resistênte.,2.0,1783607591.0,False,,,0
+1urc8ah,Aqui é o Brasil,owi2zm9,New_Horse3440,"Ah moto, ""para, tira que eu vou cagar,.tira que eu vou cagar ""....",3.0,1783608526.0,False,,,0
+1urc8ah,Aqui é o Brasil,oweok4c,paodemel69,Como de boa.,14.0,1783561085.0,False,,,0
+1urc8ah,Aqui é o Brasil,oweqzqi,FatalModelCustomer,Você tem pinto pra isso? Eu não sei nem como esse gordão encaixa ali.,15.0,1783561911.0,False,,,0
+1urc8ah,Aqui é o Brasil,owet0ij,WayAccomplished6689,"Simples, ele não encaixa",15.0,1783562601.0,False,,,0
+1urc8ah,Aqui é o Brasil,owez018,Last_Cardiologist393,Infelizmente só da pra comer de frente,1.0,1783564672.0,True,Submissão,comer,1
+1urc8ah,Aqui é o Brasil,,[deletado],[deleted],,1783568285.0,False,,,0
+1urc8ah,Aqui é o Brasil,owf9f2m,FatalModelCustomer,"Você nunca fez sexo pelo jeito. Tem nada a ver com porno, comedor de grama",-1.0,1783568557.0,True,Sexualidade,"porno, sexo",2
+1urc8ah,Aqui é o Brasil,oweqm53,exercisingbutts,Tu come o obeso motociclista?,4.0,1783561782.0,False,,,0
+1urc8ah,Aqui é o Brasil,owezogo,Queijocosmico,sim,1.0,1783564909.0,False,,,0
+1urc8ah,Aqui é o Brasil,owf1ze4,hardcoreladys,Brabo!,1.0,1783565733.0,False,,,0
+1urc8ah,Aqui é o Brasil,owet7xu,MaximumPayne7,Não ironicamente um ótimo video de marketing para essa moto.,2.0,1783562673.0,False,,,0
+1urc8ah,Aqui é o Brasil,oweuvau,Severe_Classroom4792,A moto : coé chefe desce logo,2.0,1783563242.0,False,,,0
+1urc8ah,Aqui é o Brasil,owf4hlg,Solidao-Eterna,"Nossa, dois elefantes em cima da moto, a moto anda  até com dificuldade",2.0,1783566663.0,False,,,0
+1urc8ah,Aqui é o Brasil,owf4yk6,haazr,se a mina peida a moto empina,2.0,1783566842.0,False,,,0
+1urc8ah,Aqui é o Brasil,owf9mh1,Ecstatic-Pop-540,,2.0,1783568635.0,False,,,0
+1urc8ah,Aqui é o Brasil,owffot7,Mr_Bullfred,Geral falando do bufante dela,2.0,1783571021.0,False,,,0
+1urc8ah,Aqui é o Brasil,owfin4c,AnomalusDev,A punheta da noite ja ta garantida,2.0,1783572250.0,False,,,0
+1urc8ah,Aqui é o Brasil,owfsnc3,Witty-Switch-7421,A suspensão da moto sendo trocada toda semana... Droga..,2.0,1783576694.0,False,,,0
+1urc8ah,Aqui é o Brasil,owhltf5,Pennysclayton95,Sou xonado nessa leitoa rabuda. Espero ter uma assim um dia 🙏🙏🙏,2.0,1783603900.0,False,,,0
+1urc8ah,Aqui é o Brasil,owhtda0,AryonGothic,"Isso que é um belo casal, ela está absorvendo a gordura dele!",2.0,1783605993.0,False,,,0
+1urc8ah,Aqui é o Brasil,owepp7x,Many_Departure_5726,Queria vê esse gordola rolando ladeira baixo,6.0,1783561473.0,False,,,0
+1urc8ah,Aqui é o Brasil,owepxls,Unlikely_Piece_4409,Se tu soubesse o tanto que ele é humilde nem falaria isso,-1.0,1783561551.0,False,,,0
+1urc8ah,Aqui é o Brasil,oweq1we,Many_Departure_5726,"Fade se,da o cu pra ele então",31.0,1783561593.0,False,,,0
+1urc8ah,Aqui é o Brasil,owerx6e,KindLovely2,Oloko ksksksks,5.0,1783562232.0,False,,,0
+1urc8ah,Aqui é o Brasil,owes23d,Fair_Presence4211,kkkkkkkkkkkkkkk,3.0,1783562278.0,False,,,0
+1urc8ah,Aqui é o Brasil,owfvtxt,flowey_the_flower18,Kkkkkkkkkkj,0.0,1783578174.0,False,,,0
+1urc8ah,Aqui é o Brasil,oweqm3k,Mean_Garage1534,Em inglês: this is Brazil.,1.0,1783561782.0,False,,,0
+1urc8ah,Aqui é o Brasil,owetcox,souzatb,Moto com airbag é novidade,1.0,1783562718.0,False,,,0
+1urc8ah,Aqui é o Brasil,oweujjz,JavaByPashaa90,que som de scape horroroso é esse dessa xj6???kk na minha época era bem mais bonito kkk,1.0,1783563129.0,False,,,0
+1urc8ah,Aqui é o Brasil,owev3eb,EstouSempreCerto,essa moto da pra rodar ifood por uns 100 anos,1.0,1783563319.0,False,,,0
+1urc8ah,Aqui é o Brasil,owexdfq,Coriollis45,O tanto que esse cara deve ter de chifre,1.0,1783564106.0,False,,,0
+1urc8ah,Aqui é o Brasil,owexhk1,silens_tempestas,Gente? Desde quando existe moto rebaixada???,1.0,1783564147.0,False,,,0
+1urc8ah,Aqui é o Brasil,owexr5n,Any-Nefariousness957,Pqp o cara parece uma coxinha,1.0,1783564239.0,False,,,0
+1urc8ah,Aqui é o Brasil,owfw22i,flowey_the_flower18,Kkkkkkkkkkj,0.0,1783578282.0,False,,,0
+1urc8ah,Aqui é o Brasil,owezk3i,dgovaladares,Que moto sofrida,1.0,1783564866.0,False,,,0
+1urc8ah,Aqui é o Brasil,owf0216,Advogado-por-ai,XJ parece uma pop com eles em cima.,1.0,1783565041.0,False,,,0
+1urc8ah,Aqui é o Brasil,owf0jc2,pedroivotarso,Tenho dó da moto,1.0,1783565210.0,False,,,0
+1urc8ah,Aqui é o Brasil,owf2anp,gabrielcachs,"Nunca paguei por putaria, mas esse é uma que pagaria OnlyFans com gosto. Adoro um gordelicia.",1.0,1783565849.0,True,Sexualidade,puta,1
+1urc8ah,Aqui é o Brasil,owf4has,AdSuccessful8031,Porque eu só consigo me lembrar do vídeo dele rolando no asfalto? Kkkkkkkkkkkkkk,1.0,1783566659.0,False,,,0
+1urc8ah,Aqui é o Brasil,owf6nlp,fors4kenpanda,O dia q essa mina fizer um onlyfans vai ser a primeira e última vez q vou gastar com pornografia,1.0,1783567489.0,True,Sexualidade,porno,1
+1urc8ah,Aqui é o Brasil,owf8xsm,Urubu_Sommelier,Temos que admitir: essa moto é resistente e potente pra aguentar tanto peso,1.0,1783568371.0,False,,,0
+1urc8ah,Aqui é o Brasil,owf98iq,mclopes1,O único jeito destes dois se acasalarem é em uma piscina,1.0,1783568486.0,False,,,0
+1urc8ah,Aqui é o Brasil,owfgf5b,baianinho74,"Na minha cabeça, eu consigo.",1.0,1783571320.0,False,,,0
+1urc8ah,Aqui é o Brasil,owfx41z,Arguida,Se beija não mete e se mete não beija,1.0,1783578786.0,False,,,0
+1urc8ah,Aqui é o Brasil,owgd2dw,battousainordestino,"A moto: ""tira q vou cagar""",1.0,1783586638.0,False,,,0
+1urc8ah,Aqui é o Brasil,owhgmos,UtraOp,A Bela e a Esfera,1.0,1783602390.0,False,,,0
+1urc8ah,Aqui é o Brasil,,[deletado],[removed],,1783564407.0,False,,,0
+1urc8ah,Aqui é o Brasil,,[deletado],[deleted],,1783572747.0,False,,,0
+1urc8ah,Aqui é o Brasil,,[deletado],[removed],,1783573943.0,False,,,0
+1urc8ah,Aqui é o Brasil,,[deletado],[deleted],,1783575812.0,False,,,0
+1urc8ah,Aqui é o Brasil,owhccb1,StraightPromise3596,queria tambem,0.0,1783601099.0,False,,,0
+1urc8ah,Aqui é o Brasil,,[deletado],[deleted],,1783603528.0,False,,,0
+1urc8ah,Aqui é o Brasil,owhlbad,StraightPromise3596,será mesmo?,0.0,1783603755.0,False,,,0
+1urc8ah,Aqui é o Brasil,,[deletado],[deleted],,1783604277.0,False,,,0
+1urc8ah,Aqui é o Brasil,owhqxh3,StraightPromise3596,só me avisar por favor,0.0,1783605328.0,False,,,0
+1urc8ah,Aqui é o Brasil,oweyocg,Comprehensive-Order9,"Krl essa mina é muito gostosa, eu e meu amigo sempre vamos no perfil ver se ela já soltou um OF...",0.0,1783564557.0,True,Aparência física,gostosa,1
+1urc8ah,Aqui é o Brasil,owezd7y,UsuallyHorny-7,Era só leitada dentro slk,0.0,1783564799.0,False,,,0
+1urc8ah,Aqui é o Brasil,owhp8is,Specialist_Purple744,"De tu ne, safado 🤭🤭😏😏😏",0.0,1783604860.0,False,,,0
+1urc8ah,Aqui é o Brasil,owfayre,Even-Application-223,Doença monetizado que lindo.,0.0,1783569151.0,False,,,0
+1urc8ah,Aqui é o Brasil,owfcfkn,22mole,Pensa numa moto forte,0.0,1783569716.0,False,,,0
+1urc8ah,Aqui é o Brasil,owfcsol,Effective_Double_163,CORNÃO DA XJ,0.0,1783569859.0,False,,,0
+1urc8ah,Aqui é o Brasil,owfg5in,Ecstatic-Pen-7169,a coitada quase caindo da moto,0.0,1783571211.0,False,,,0
+1urc8ah,Aqui é o Brasil,owfgoap,oldboy012,Acheibq era cg é xj,0.0,1783571424.0,False,,,0
+1urc8ah,Aqui é o Brasil,owfj3go,DifferentAd5742,Dq a pouco vai está gorda igual a ele.,0.0,1783572442.0,True,Aparência física,gorda,1
+1urc8ah,Aqui é o Brasil,owfnonp,No_Fuel5447,Dominic Gordeto,0.0,1783574431.0,False,,,0
+1urc8ah,Aqui é o Brasil,owfomwv,yanubnt,É impressão minha ou o motor tá quase tocando o chão?,0.0,1783574858.0,False,,,0
+1urc8ah,Aqui é o Brasil,owfqd18,Designer_Ad_376,"atras do XJ ela parece anorexica... mas a raba ta bonita, gordinha cinturada com uma raba bonita. As coxonas tambem nao tao ruins nao. Era dento.",0.0,1783575648.0,True,Aparência física,gordinha,1
+1urc8ah,Aqui é o Brasil,owftc3p,Frequent-Mixture-916,Motora acıdım…,0.0,1783577009.0,False,,,0
+1urc8ah,Aqui é o Brasil,owfv84e,[deletado],Tenho pena da mota,0.0,1783577888.0,False,,,0
+1urc8ah,Aqui é o Brasil,owfyg5g,allucard883,"Deve ser gostosinho ir na garupa dele, macio.",0.0,1783579423.0,False,,,0
+1urc8ah,Aqui é o Brasil,owg33jd,Both-Garden-1612,Que belo peidante hein.,0.0,1783581641.0,False,,,0
 1urc8ah,Aqui é o Brasil,owg8v18,oProfesssor,"Cara, que moto boa mano.
-Os fabricantes devem estar orgulhosos",0.0,False,,
-1urc8ah,Aqui é o Brasil,owg987m,Senior-Seesaw8068,Moto guerreira,0.0,False,,
+Os fabricantes devem estar orgulhosos",0.0,1783584504.0,False,,,0
+1urc8ah,Aqui é o Brasil,owg987m,Senior-Seesaw8068,Moto guerreira,0.0,1783584689.0,False,,,0
 1urc8ah,Aqui é o Brasil,owgcv6h,BasedEmu,"É nois! Brasil porra.
-That ass is truly something else.",0.0,False,,
-1urc8ah,Aqui é o Brasil,owgejvb,eomoonnovamente,Pra quem quer saber o nome Nicolle Caroline,0.0,False,,
-1urc8ah,Aqui é o Brasil,owgmq5f,Senhor_Sesshomaru,"Airbag embutido, o cara no corpo todo a mina na parte frontal e inferior.",0.0,True,Submissão,inferior
-1urc8ah,Aqui é o Brasil,owgp2q1,BigLudovico,minha nossa senhora,0.0,False,,
-1urc8ah,Aqui é o Brasil,owgt5dl,ConstructionPale7274,Pobre moto,0.0,False,,
-1urc8ah,Aqui é o Brasil,owgtxq0,xCabilburBR,"Delicia, meu heroi.",0.0,False,,
-1urc8ah,Aqui é o Brasil,owgvhnl,Sensitive_Will_7972,Ouu shi,0.0,False,,
-1urc8ah,Aqui é o Brasil,owgvn2s,LokoPato69,não sabia que a XJ6 vinha com airbags,0.0,False,,
-1urc8ah,Aqui é o Brasil,owgwi1s,JuniorPossession3038,Coitada da moto,0.0,False,,
-1urc8ah,Aqui é o Brasil,owgwxnh,brrdt,Queria ter a força dessa moto,0.0,False,,
-1urc8ah,Aqui é o Brasil,owgxl2a,Soft-Environment-714,Ela sozinha é meio gorda mas ela com ele é gostosa? kkkkk,0.0,True,Aparência física,"gorda, gostosa"
-1urc8ah,Aqui é o Brasil,owgy3w9,Cool_Mall_5700,Pq esse gordão nunca é autuado por pilotar sem capacete ?,0.0,False,,
-1urc8ah,Aqui é o Brasil,owgy4k0,Budget_Canary3904,Kkkkkk,0.0,False,,
-1urc8ah,Aqui é o Brasil,owgyn6r,No-Exercise-4587,,0.0,False,,
-1urc8ah,Aqui é o Brasil,owgypha,joWlesss,Queria ser forte igual essa moto,0.0,False,,
-1urc8ah,Aqui é o Brasil,owgzmho,unknowseeker,Living the dream,0.0,False,,
-1urc8ah,Aqui é o Brasil,owgzx9j,TomatoParticular2693,"Por isso o hexa não vem, é o karma",0.0,False,,
-1urc8ah,Aqui é o Brasil,owh0v64,Frost_Winter11,A moto quase se desmanchando kkkkk,0.0,False,,
-1urc8ah,Aqui é o Brasil,owh1h2m,Nukizada,"Ele paga pra alguém comer, não tem como",0.0,False,,
-1urc8ah,Aqui é o Brasil,owh3goh,DaRaMa123,Jesuis. Que bosta!,0.0,False,,
-1urc8ah,Aqui é o Brasil,owh3saa,Cautious-Economist-3,E o capacete o feladaput@?,0.0,False,,
-1urc8ah,Aqui é o Brasil,owh3te0,uniquakkjk,Nossa se ele não falasse pensei q aí era Inglaterra,0.0,False,,
-1urc8ah,Aqui é o Brasil,owh4jv4,InviteMundane4335,Qual o @?,0.0,False,,
-1urc8ah,Aqui é o Brasil,owh4s8s,SingleMan2501,Bostil sendo bostil,0.0,False,,
-1urc8ah,Aqui é o Brasil,owh5grc,Wonderful_Most_6464,Ele acha que isso tudo é só dele🤣🤣🤣🤣🫵🫵🫵,0.0,False,,
-1urc8ah,Aqui é o Brasil,owh60ol,User_paulolima,Podem me julgar mas eu bagacaria a mulher dele pprt,0.0,False,,
-1urc8ah,Aqui é o Brasil,owh64qp,EragonY4,Deus me perdoe mas que rabo imenso da porra 😭,0.0,False,,
-1urc8ah,Aqui é o Brasil,owh69fa,No_Community7987,"Lembrei dele caindo de moto,rolando no asfalto pqp gordo demais kkkkkkkkkkkkkkkkkkkkkkkkkk",0.0,False,,
-1urc8ah,Aqui é o Brasil,owh6c7y,IcyConversation5463,Esse pou e macumbeiro kkkkkk nao e possivel kkkkkk,0.0,False,,
-1urc8ah,Aqui é o Brasil,owh6qfz,FlatwormTemporary436,Mal tem espaço pra ela fica kkkkkk,0.0,False,,
-1urc8ah,Aqui é o Brasil,owh6rz4,Guanabara33,😭💩 A Moto,0.0,False,,
-1urc8ah,Aqui é o Brasil,owh6x0h,BodybuilderTime2827,Esse é o Casemiro?,0.0,False,,
-1urc8ah,Aqui é o Brasil,owh7sxz,Round-Band1288,Caisse debaixo de um onibus.,0.0,False,,
-1urc8ah,Aqui é o Brasil,owh7xo6,Sad_Swordfish4132,Cadê o @ da moça da frente?,0.0,False,,
-1urc8ah,Aqui é o Brasil,owh87y9,Chance_Elk2496,A moto tem 7 mil cilindradas mas tá chorando pra carregar um planeta e um satélite natural ao mesmo tempo.,0.0,False,,
-1urc8ah,Aqui é o Brasil,owh9qhi,Due-Housing-9755,Coitada da moto,0.0,False,,
-1urc8ah,Aqui é o Brasil,owhb6ub,Defiant-Amoeba6380,Quase não sobra lugar pra moça sentar,0.0,False,,
-1urc8ah,Aqui é o Brasil,owhbh7t,Luisota,Um sapo cururu e um rã subiram em uma moto...,0.0,False,,
-1urc8ah,Aqui é o Brasil,owhbsmh,Vegetable_Shape8414,nunca tinha visto uma moto pedir socorro,0.0,False,,
-1urc8ah,Aqui é o Brasil,owhdqtp,WilZeraa,A mina parece magra perto dele,0.0,False,,
-1urc8ah,Aqui é o Brasil,owhexoi,tijja72,Se cair rola até o japão,0.0,False,,
-1urc8ah,Aqui é o Brasil,owhf9uk,SnooSongs2345,primeira vez que vejo moto rebaixada,0.0,False,,
+That ass is truly something else.",0.0,1783586538.0,False,,,0
+1urc8ah,Aqui é o Brasil,owgejvb,eomoonnovamente,Pra quem quer saber o nome Nicolle Caroline,0.0,1783587385.0,False,,,0
+1urc8ah,Aqui é o Brasil,owgmq5f,Senhor_Sesshomaru,"Airbag embutido, o cara no corpo todo a mina na parte frontal e inferior.",0.0,1783591374.0,True,Submissão,inferior,1
+1urc8ah,Aqui é o Brasil,owgp2q1,BigLudovico,minha nossa senhora,0.0,1783592458.0,False,,,0
+1urc8ah,Aqui é o Brasil,owgt5dl,ConstructionPale7274,Pobre moto,0.0,1783594224.0,False,,,0
+1urc8ah,Aqui é o Brasil,owgtxq0,xCabilburBR,"Delicia, meu heroi.",0.0,1783594546.0,False,,,0
+1urc8ah,Aqui é o Brasil,owgvhnl,Sensitive_Will_7972,Ouu shi,0.0,1783595172.0,False,,,0
+1urc8ah,Aqui é o Brasil,owgvn2s,LokoPato69,não sabia que a XJ6 vinha com airbags,0.0,1783595233.0,False,,,0
+1urc8ah,Aqui é o Brasil,owgwi1s,JuniorPossession3038,Coitada da moto,0.0,1783595576.0,False,,,0
+1urc8ah,Aqui é o Brasil,owgwxnh,brrdt,Queria ter a força dessa moto,0.0,1783595745.0,False,,,0
+1urc8ah,Aqui é o Brasil,owgxl2a,Soft-Environment-714,Ela sozinha é meio gorda mas ela com ele é gostosa? kkkkk,0.0,1783595997.0,True,Aparência física,"gorda, gostosa",2
+1urc8ah,Aqui é o Brasil,owgy3w9,Cool_Mall_5700,Pq esse gordão nunca é autuado por pilotar sem capacete ?,0.0,1783596201.0,False,,,0
+1urc8ah,Aqui é o Brasil,owgy4k0,Budget_Canary3904,Kkkkkk,0.0,1783596208.0,False,,,0
+1urc8ah,Aqui é o Brasil,owgyn6r,No-Exercise-4587,,0.0,1783596407.0,False,,,0
+1urc8ah,Aqui é o Brasil,owgypha,joWlesss,Queria ser forte igual essa moto,0.0,1783596432.0,False,,,0
+1urc8ah,Aqui é o Brasil,owgzmho,unknowseeker,Living the dream,0.0,1783596785.0,False,,,0
+1urc8ah,Aqui é o Brasil,owgzx9j,TomatoParticular2693,"Por isso o hexa não vem, é o karma",0.0,1783596899.0,False,,,0
+1urc8ah,Aqui é o Brasil,owh0v64,Frost_Winter11,A moto quase se desmanchando kkkkk,0.0,1783597252.0,False,,,0
+1urc8ah,Aqui é o Brasil,owh1h2m,Nukizada,"Ele paga pra alguém comer, não tem como",0.0,1783597476.0,True,Submissão,comer,1
+1urc8ah,Aqui é o Brasil,owh3goh,DaRaMa123,Jesuis. Que bosta!,0.0,1783598185.0,False,,,0
+1urc8ah,Aqui é o Brasil,owh3saa,Cautious-Economist-3,E o capacete o feladaput@?,0.0,1783598298.0,False,,,0
+1urc8ah,Aqui é o Brasil,owh3te0,uniquakkjk,Nossa se ele não falasse pensei q aí era Inglaterra,0.0,1783598308.0,False,,,0
+1urc8ah,Aqui é o Brasil,owh4jv4,InviteMundane4335,Qual o @?,0.0,1783598564.0,False,,,0
+1urc8ah,Aqui é o Brasil,owh4s8s,SingleMan2501,Bostil sendo bostil,0.0,1783598644.0,False,,,0
+1urc8ah,Aqui é o Brasil,owh5grc,Wonderful_Most_6464,Ele acha que isso tudo é só dele🤣🤣🤣🤣🫵🫵🫵,0.0,1783598880.0,False,,,0
+1urc8ah,Aqui é o Brasil,owh60ol,User_paulolima,Podem me julgar mas eu bagacaria a mulher dele pprt,0.0,1783599066.0,False,,,0
+1urc8ah,Aqui é o Brasil,owh64qp,EragonY4,Deus me perdoe mas que rabo imenso da porra 😭,0.0,1783599104.0,False,,,0
+1urc8ah,Aqui é o Brasil,owh6c7y,IcyConversation5463,Esse pou e macumbeiro kkkkkk nao e possivel kkkkkk,0.0,1783599173.0,False,,,0
+1urc8ah,Aqui é o Brasil,owh6qfz,FlatwormTemporary436,Mal tem espaço pra ela fica kkkkkk,0.0,1783599306.0,False,,,0
+1urc8ah,Aqui é o Brasil,owh6rz4,Guanabara33,😭💩 A Moto,0.0,1783599321.0,False,,,0
+1urc8ah,Aqui é o Brasil,owh7sxz,Round-Band1288,Caisse debaixo de um onibus.,0.0,1783599656.0,False,,,0
+1urc8ah,Aqui é o Brasil,owh7xo6,Sad_Swordfish4132,Cadê o @ da moça da frente?,0.0,1783599698.0,False,,,0
+1urc8ah,Aqui é o Brasil,owh87y9,Chance_Elk2496,A moto tem 7 mil cilindradas mas tá chorando pra carregar um planeta e um satélite natural ao mesmo tempo.,0.0,1783599790.0,False,,,0
+1urc8ah,Aqui é o Brasil,owh9qhi,Due-Housing-9755,Coitada da moto,0.0,1783600277.0,False,,,0
+1urc8ah,Aqui é o Brasil,owhb6ub,Defiant-Amoeba6380,Quase não sobra lugar pra moça sentar,0.0,1783600739.0,False,,,0
+1urc8ah,Aqui é o Brasil,owhbh7t,Luisota,Um sapo cururu e um rã subiram em uma moto...,0.0,1783600830.0,False,,,0
+1urc8ah,Aqui é o Brasil,owhbsmh,Vegetable_Shape8414,nunca tinha visto uma moto pedir socorro,0.0,1783600929.0,False,,,0
+1urc8ah,Aqui é o Brasil,owhdqtp,WilZeraa,A mina parece magra perto dele,0.0,1783601533.0,False,,,0
+1urc8ah,Aqui é o Brasil,owhexoi,tijja72,Se cair rola até o japão,0.0,1783601889.0,False,,,0
+1urc8ah,Aqui é o Brasil,owhf9uk,SnooSongs2345,primeira vez que vejo moto rebaixada,0.0,1783601988.0,False,,,0
+1urc8ah,Aqui é o Brasil,owhfkik,Environmental-Plan-9,Que máquina…,0.0,1783602075.0,False,,,0
+1urc8ah,Aqui é o Brasil,owhi3or,Lolo-RuindadePura,Ela sentando na roda da moto porque ele ocupa o banco todo💔,0.0,1783602824.0,False,,,0
+1urc8ah,Aqui é o Brasil,owhixc6,D_Heineon,Como pode um gordão fodido desses com uma gostosa dessas pqp,0.0,1783603067.0,True,Aparência física,gostosa,1
+1urc8ah,Aqui é o Brasil,owhjv8x,The-Shitter,Sorvete de casquinha andando de moto,0.0,1783603339.0,False,,,0
+1urc8ah,Aqui é o Brasil,owhkdu9,Realistic_Account787,Ta mais pra Globo... da morte.,0.0,1783603488.0,False,,,0
+1urc8ah,Aqui é o Brasil,owhmeb6,CRVG171,Moto rebaixada,0.0,1783604067.0,False,,,0
+1urc8ah,Aqui é o Brasil,owhob9e,No-Draw6073,,0.0,1783604604.0,False,,,0
+1urc8ah,Aqui é o Brasil,owhpzfx,ChildhoodNew5167,Poor bike they don’t make suspensions for that load unless it’s got 18 wheels,0.0,1783605069.0,False,,,0
+1urc8ah,Aqui é o Brasil,owhsgh5,Internal-Seat3006,A menina quase foi jogada para fora 😂,0.0,1783605744.0,False,,,0
+1urc8ah,Aqui é o Brasil,owg6qdw,FaDoRobertoDinamite,"Ele é cheio de moto, carro, é gente boa, tá lutando contra a obesidade, tem uma namorada gostosa e tem gente criticando ele por causa disso",-1.0,1783583443.0,True,Aparência física,gostosa,1
+1urc8ah,Aqui é o Brasil,owgwxdj,Sensitive_Will_7972,Sempre vai ter alguém pra criticar.,0.0,1783595743.0,False,,,0

@@ -1,128 +1,176 @@
-﻿submission_id,submission_title,comment_id,author,body,score,flagged_by_keyword,flagged_categories,matched_keywords
+﻿submission_id,submission_title,comment_id,author,body,score,created_utc,flagged_by_keyword,flagged_categories,matched_keywords,keyword_occurrences
 1v95yd3,Nojinho,p0b5rsz,AutoModerator,"Entre no nosso server do Discord:
 https://discord.gg/q4CTNM8kV
 ;)
 I am a bot, and this action was performed automatically. Please
 contact the moderators of this subreddit
-if you have any questions or concerns.",,False,,
-1v95yd3,Nojinho,p0b742a,StillHer3_,"Senti pena, genuinamente.",278.0,False,,
-1v95yd3,Nojinho,p0b6snc,Any-Nefariousness957,Meu deus do céu,152.0,False,,
-1v95yd3,Nojinho,p0bcx32,Busy_Palpitation539,não sobrou nada,77.0,False,,
-1v95yd3,Nojinho,p0bfu5v,Same_Aardvark_3673,<image>,64.0,False,,
-1v95yd3,Nojinho,p0ihzd7,PleasantChest7101,Kkkkkkk,3.0,False,,
-1v95yd3,Nojinho,p0qshyf,SuperLufe2019,<image>,3.0,False,,
-1v95yd3,Nojinho,p0j1jsn,Penisosvaldo,"Isso foi desprezo,ela poderia ser mais sensível e delicada na hora de expressar que não quer nada com o sujeito,Precisa tratar o cara igual uma coisa? Isso e verdadeiramente Cruel",2.0,True,Deslegitimação,sensível
-1v95yd3,Nojinho,p0bglng,StudentDriverBR,"o meme de não sobrar nada para o beta provavelmente não vai acabar, porque se isso acabar não vai sobrar nada e isso seria brutal.",101.0,False,,
-1v95yd3,Nojinho,p0cz8re,AmazingPhilosophy921,"É atemporal porque em algum momento, não sobra nada",42.0,False,,
-1v95yd3,Nojinho,p0j0b3g,Objective_Start567,"Nem o meme de sobrar nada pro beta sobra pra ele, brutal.",5.0,False,,
-1v95yd3,Nojinho,p0ig00e,lucoweb,big reflect.,3.0,False,,
-1v95yd3,Nojinho,p0bcirs,carloslet,<image>,57.0,False,,
-1v95yd3,Nojinho,p0cew4u,Clone-Scout,"Já estive na mesma posição, a menina que era apaixonado dar um abraço e um beijo no rosto em 4 amigos em fila um a um, e na minha vez ela acenar. De propósito mesmo, para ser ruim. Primeira lição da vida, conheça a pessoa antes de investir sentimento, rostinhos bonitos escondem melhor do que qualquer coisa.",41.0,False,,
-1v95yd3,Nojinho,p0ig8ek,lucoweb,pior que a lata da menina tb nem é tudo isso,3.0,False,,
-1v95yd3,Nojinho,p0jbbtc,Clone-Scout,"Acho que na adolescência, quando todo mundo e esquisito, essa deve ser uma das meninas mais bonitas da escola dela, espero que o rapaz da foto tenha aprendido a lição, e não se culpado. :/",9.0,False,,
-1v95yd3,Nojinho,p0gxdwd,SquareKZi_74official,Isso é verdade,4.0,False,,
-1v95yd3,Nojinho,p0i8p4q,ExpertDescription200,palavras sábias para os jovens emocionados de hj,2.0,False,,
-1v95yd3,Nojinho,p0jbtom,Clone-Scout,"E ainda assim eu sei que, mesmo que ouvissem, eles não seguiriam, infelizmente o “efeito halo” é forte demais, alguém de boa aparência tem que ferrar muito a vida de alguém para esse UM alguém perder, todos então? Nunca vão perder, a maioria sempre será carregado pelo efeito.",4.0,False,,
-1v95yd3,Nojinho,p0k3xc3,ExpertDescription200,"meu único consolo é que essa galera aí se acomoda na vida com os enormes privilégios da beleza, sem lembrar que é tudo ilusão e efêmero. se tudo que a pessoa tem é mantido pela beleza, em breve não vai sobrar nada. é a minoria que tem a consciência de não depender disso e apenas usá-la como alavanca.",4.0,False,,
-1v95yd3,Nojinho,p0k4kf6,Clone-Scout,"Eu concordo, acontece bastante. Eu não desejo o mal para ninguém, e nem me preocupo se vai acontecer ou não, tem gente que faz o errado e nunca é punido mesmo… Mas quando acontece tem tanta justiça poética que dá gosto. Hahaha (foi o que aconteceu no meu caso)",1.0,False,,
-1v95yd3,Nojinho,p0k62ci,ExpertDescription200,"Qual foi a justiça poética do seu caso? E sim, concordo sobre não querer o mal de ninguém. Quis dizer que é um alento saber que essa injustiça da vida na verdade tem revés se não vier com sabedoria. Muito pior que isso é a injustiça econômica, que muitas vezes a gente vê herdeiros fazendo tudo errado e mesmo assim permanecendo ricos.",2.0,False,,
-1v95yd3,Nojinho,p0k7i7n,Clone-Scout,"Ah, muita coisa! A aparência passou com a idade, os maus hábitos alimentares e de saúde venceram quando a adolescência passou e o metabolismo desacelero, e quando isso aconteceu ela perdeu as “amizades” que tinha só por ser a bonita popular, acontece que na vida adulta ninguém quer de amigo gente chata que só sabe ficar quieto no canto sendo rosto bonita. Muitas histórias chegarem em mim anos depois, até sobre o que ela falava de mim pelas costas, mas não cabe expor aqui. Haha",4.0,True,Deslegitimação,chata
+if you have any questions or concerns.",,1785261424.0,False,,,0
+1v95yd3,Nojinho,,[deletado],[removed],,1785261750.0,False,,,0
+1v95yd3,Nojinho,p0e7s9t,Awkward-Tree3075,Ela não é obrigada a gostar dele irmão,-181.0,1785293692.0,False,,,0
+1v95yd3,Nojinho,p0eas5t,Junim7,"não me leva a mal, mano, mas você é retardado?
+ninguém disse que ela é obrigada a gostar dele, nem no post e nem no comentário.",120.0,1785294790.0,False,,,0
+1v95yd3,Nojinho,p0ee5gp,faucettales2004,Uma tigela de downvotes para um usuário burro,77.0,1785296073.0,False,,,0
+1v95yd3,Nojinho,p0eor2z,Awkward-Tree3075,Só falei fatos doa a quem doer,-121.0,1785300310.0,False,,,0
+1v95yd3,Nojinho,p0fqgwm,Satori-Chan,Só não te chamo de burro pra não ofender o burro.,42.0,1785318352.0,False,,,0
+1v95yd3,Nojinho,p0gktds,faucettales2004,"Meu filho, o ponto do vídeo não é nem esse, se você tiver mais neurônios
+Não gostar é uma coisa. Agora, não querer encostar no cara como se ele fosse bosta é sacanagem e humilhante
+Entendeu agora ou quer que desenhe pra você?",22.0,1785329840.0,False,,,0
+1v95yd3,Nojinho,p0hnp05,Active-Substance-205,"Não discordo que o comentário do cara seja burro mas acho que o pessoal tá exagerando na reação. Eu não costumo encostar nas pessoas durante esse tipo de foto também, eu nem faço por querer é totalmente inconsciente.
+Pesquisa ""Keanu Reeves not touching people in pictures"" e é a mesma coisa até com a esposa. Tem quem seja assim naturalmente. Se o muleque vê uma foto com a mina que ele tá afim e tem essa visão, isso vai muito mais de uma insegurança e problemas mal resolvidos do que uma simples foto.",5.0,1785340211.0,True,Submissão,esposa,1
+1v95yd3,Nojinho,p0ifsmi,lucoweb,vc não vai convencer ninguém sendo chato.,3.0,1785347241.0,False,,,0
+1v95yd3,Nojinho,p0iw5tk,NyarlathotepKing,Achamos o rejeitado,3.0,1785351387.0,False,,,0
+1v95yd3,Nojinho,p0e8cpq,777videira777,"Óbvio que ela não é obrigada a gostar dele, mas o ponto não é esse",46.0,1785293896.0,False,,,0
+1v95yd3,Nojinho,p0e86sp,Caernn,"isso nao da direito dela fazer essas coisas, cara o cara é feito de bosta agora?",31.0,1785293835.0,False,,,0
+1v95yd3,Nojinho,p0g69bg,Sr_Coiso,"Entendi, então já que tu és o grandioso dono da verdade, agora eu vou tratar toda mulher que eu não me sentir romanticamente atraído como se fosse um rato leproso.
+Ganda lógica",9.0,1785324993.0,False,,,0
+1v95yd3,Nojinho,p0icnqo,Straight_Scallion_25,"Maior quantidade de downvotes que eu já vi, mas é merecido, burro pra caralho, não sabe interpretar texto",6.0,1785346457.0,False,,,0
+1v95yd3,Nojinho,p0jg2gs,TerribleTable8,Farm infinita de downvotes,4.0,1785356573.0,False,,,0
+1v95yd3,Nojinho,p0iipb5,Sea_Friendship2246,Eu ouvi lendas de tal idiotice,3.0,1785347963.0,False,,,0
+1v95yd3,Nojinho,p0fx2aw,Joapolis,"Não é sobre ela querer ou não gostar dele, mas pô ela nem abraça o cara direto, abraçar não custa nada",4.0,1785321344.0,False,,,0
+1v95yd3,Nojinho,p0p15gx,rogerisj,"Foto abraçado é um ato amigável, não amoroso. Atitude da guria foi de repulsa ou vergonha.",0.0,1785427662.0,False,,,0
+1v95yd3,Nojinho,p0b6snc,Any-Nefariousness957,Meu deus do céu,152.0,1785261671.0,False,,,0
+1v95yd3,Nojinho,p0bcx32,Busy_Palpitation539,não sobrou nada,75.0,1785263190.0,False,,,0
+1v95yd3,Nojinho,p0bfu5v,Same_Aardvark_3673,<image>,64.0,1785263926.0,False,,,0
+1v95yd3,Nojinho,p0ihzd7,PleasantChest7101,Kkkkkkk,4.0,1785347784.0,False,,,0
+1v95yd3,Nojinho,p0qshyf,SuperLufe2019,<image>,1.0,1785443832.0,False,,,0
+1v95yd3,Nojinho,p0tn3l5,Wonderful-Lab-615,"LKKKKKKKKKKK ah gente me perdoem, mas se ele não tivesse me stalkeado, e tivesse sido mais tranquilo (e não me tocado de forma indevida) eu deixaria sobrar pro beta 1 vez, mas não foi o caso.
+No resumo, o beta é beta e tem motivo, por isso nunca sobra nada pro beta",0.0,1785478671.0,False,,,0
+1v95yd3,Nojinho,,[deletado],[removed],,1785352787.0,False,,,0
+1v95yd3,Nojinho,p0owsqt,Wonderful-Lab-615,"Dependendo precisa sim mano, eu já tive um mano que era obcecado por mim no 5/6/7° ano, o cara me agarrava sem consentimento ALGUM, me cutucava, ficava me encarando e etc.
+Aconteceu a mesma coisa comigo, tirei ele no amigo oculto e precisei abraçar, tu não sabe o quão feliz ele ficou e o quão triste eu fiquei, aquilo validou alguma coisa na cabeça dele de ""ela gosta de mim sim, ela até me abraçou!"" E depois ele ficou 1 semana TODA me enchendo mais a porra do saco até eu mudar de escola.
+Edit: sim, eu dizia explicitamente: NÃO. GOSTO. DE. VOCÊ. SAÍA DA MINHA COLA.
+ele nunca saiu, nunca desistiu.",-1.0,1785426556.0,False,,,0
+1v95yd3,Nojinho,p0rmsqk,TackleNo7960,Não parece ser o caso do garoto ali do post,1.0,1785452473.0,False,,,0
+1v95yd3,Nojinho,p159shr,Fickle_Artichoke7169,"O homem quando é afim de uma mulher ele automaticamente acha que ela tbm está, é psicológico",0.0,1785621393.0,False,,,0
+1v95yd3,Nojinho,p0bglng,StudentDriverBR,"o meme de não sobrar nada para o beta provavelmente não vai acabar, porque se isso acabar não vai sobrar nada e isso seria brutal.",103.0,1785264120.0,False,,,0
+1v95yd3,Nojinho,p0cz8re,AmazingPhilosophy921,"É atemporal porque em algum momento, não sobra nada",44.0,1785279198.0,False,,,0
+1v95yd3,Nojinho,p0j0b3g,Objective_Start567,"Nem o meme de sobrar nada pro beta sobra pra ele, brutal.",6.0,1785352463.0,False,,,0
+1v95yd3,Nojinho,p0ig00e,lucoweb,big reflect.,5.0,1785347292.0,False,,,0
+1v95yd3,Nojinho,p0bcirs,carloslet,<image>,59.0,1785263091.0,False,,,0
+1v95yd3,Nojinho,p0cew4u,Clone-Scout,"Já estive na mesma posição, a menina que era apaixonado dar um abraço e um beijo no rosto em 4 amigos em fila um a um, e na minha vez ela acenar. De propósito mesmo, para ser ruim. Primeira lição da vida, conheça a pessoa antes de investir sentimento, rostinhos bonitos escondem melhor do que qualquer coisa.",43.0,1785273355.0,False,,,0
+1v95yd3,Nojinho,p0ig8ek,lucoweb,pior que a lata da menina tb nem é tudo isso,5.0,1785347350.0,False,,,0
+1v95yd3,Nojinho,p0jbbtc,Clone-Scout,"Acho que na adolescência, quando todo mundo e esquisito, essa deve ser uma das meninas mais bonitas da escola dela, espero que o rapaz da foto tenha aprendido a lição, e não se culpado. :/",6.0,1785355331.0,False,,,0
+1v95yd3,Nojinho,p1eybaa,Alternative_Work_658,"Não apenas esquisito, muitos adolescentes são que ainda tem a mentalidade de uma criança, de falar o que pensam, mas sem essa inocência, são cruéis de propósito por humilhar outros colegas que não se ""adequam"" a sua maneira de viver, em diversos sentidos da palavra.
+Isso vem uma pessoa que já foi humilhado na adolescentes e ensino médio, tanto por meninos, como por meninas.",0.0,1785749567.0,False,,,0
+1v95yd3,Nojinho,p0gxdwd,SquareKZi_74official,Isso é verdade,4.0,1785333422.0,False,,,0
+1v95yd3,Nojinho,p0i8p4q,ExpertDescription200,palavras sábias para os jovens emocionados de hj,1.0,1785345470.0,False,,,0
+1v95yd3,Nojinho,p0jbtom,Clone-Scout,"E ainda assim eu sei que, mesmo que ouvissem, eles não seguiriam, infelizmente o “efeito halo” é forte demais, alguém de boa aparência tem que ferrar muito a vida de alguém para esse UM alguém perder, todos então? Nunca vão perder, a maioria sempre será carregado pelo efeito.",3.0,1785355461.0,False,,,0
+1v95yd3,Nojinho,p0k3xc3,ExpertDescription200,"meu único consolo é que essa galera aí se acomoda na vida com os enormes privilégios da beleza, sem lembrar que é tudo ilusão e efêmero. se tudo que a pessoa tem é mantido pela beleza, em breve não vai sobrar nada. é a minoria que tem a consciência de não depender disso e apenas usá-la como alavanca.",4.0,1785363279.0,False,,,0
+1v95yd3,Nojinho,p0k4kf6,Clone-Scout,"Eu concordo, acontece bastante. Eu não desejo o mal para ninguém, e nem me preocupo se vai acontecer ou não, tem gente que faz o errado e nunca é punido mesmo… Mas quando acontece tem tanta justiça poética que dá gosto. Hahaha (foi o que aconteceu no meu caso)",1.0,1785363472.0,False,,,0
+1v95yd3,Nojinho,p0k62ci,ExpertDescription200,"Qual foi a justiça poética do seu caso? E sim, concordo sobre não querer o mal de ninguém. Quis dizer que é um alento saber que essa injustiça da vida na verdade tem revés se não vier com sabedoria. Muito pior que isso é a injustiça econômica, que muitas vezes a gente vê herdeiros fazendo tudo errado e mesmo assim permanecendo ricos.",2.0,1785363924.0,False,,,0
+1v95yd3,Nojinho,p0k7i7n,Clone-Scout,"Ah, muita coisa! A aparência passou com a idade, os maus hábitos alimentares e de saúde venceram quando a adolescência passou e o metabolismo desacelero, e quando isso aconteceu ela perdeu as “amizades” que tinha só por ser a bonita popular, acontece que na vida adulta ninguém quer de amigo gente chata que só sabe ficar quieto no canto sendo rosto bonita. Muitas histórias chegarem em mim anos depois, até sobre o que ela falava de mim pelas costas, mas não cabe expor aqui. Haha",4.0,1785364373.0,True,Deslegitimação,chata,1
 1v95yd3,Nojinho,p0nbkfb,United-Scene2261,"não vai sobrar nada você falou?
-brutal.",1.0,False,,
-1v95yd3,Nojinho,p0pbequ,ExpertDescription200,"sobra nada pra Stacy e pro Chad, brotal",1.0,False,,
-1v95yd3,Nojinho,p0b6ljq,Same_Aardvark_3673,"Se ele tiver um Glow up, então talvez sobre",106.0,False,,
-1v95yd3,Nojinho,p0ba4ng,Impressive-Air-4272,aí não vai sobrar nada pra ela,79.0,False,,
-1v95yd3,Nojinho,p0bd59j,Same_Aardvark_3673,"Brutal, uma hora alguém fica sem nada",52.0,False,,
+brutal.",1.0,1785409679.0,False,,,0
+1v95yd3,Nojinho,p0pbequ,ExpertDescription200,"sobra nada pra Stacy e pro Chad, brotal",1.0,1785430277.0,False,,,0
+1v95yd3,Nojinho,p11wvm7,Ruimna,Cara vocês são umas portas de tão burros. É ÓBVIO que se a pessoa não gosta de você e ela PERCEBE que você gosta dela ela vai te evitar. MDS do céu 2+2=4,-1.0,1785584235.0,False,,,0
+1v95yd3,Nojinho,p0b6ljq,Same_Aardvark_3673,"Se ele tiver um Glow up, então talvez sobre",109.0,1785261623.0,False,,,0
+1v95yd3,Nojinho,p0ba4ng,Impressive-Air-4272,aí não vai sobrar nada pra ela,77.0,1785262501.0,False,,,0
+1v95yd3,Nojinho,p0bd59j,Same_Aardvark_3673,"Brutal, uma hora alguém fica sem nada",52.0,1785263247.0,False,,,0
 1v95yd3,Nojinho,p0bjiiz,Impressive-Air-4272,"alguém tem que chorar pra nois rir
-alguém tem que sobrar nada pra sobrar algo pra nois",35.0,False,,
-1v95yd3,Nojinho,p0bl3li,GamesofTobii,<image>,40.0,False,,
-1v95yd3,Nojinho,p0ckteo,MatMADNESSart,,13.0,False,,
-1v95yd3,Nojinho,p0dlmok,LixoDesumilde,<image>,13.0,False,,
-1v95yd3,Nojinho,p0e1ogr,No-Entrepreneur7167,Melhor assim,1.0,False,,
-1v95yd3,Nojinho,p0ccmec,Pervism,ele tem muito mais chance que ela. Nem precisa muito.,9.0,False,,
-1v95yd3,Nojinho,p0c855s,Greedy_Ad3026,"mas até la ele vai ter que pegar usado ou seminovo, de fábrica só chad",2.0,False,,
-1v95yd3,Nojinho,p0hv0lf,usuariocabuloso,Mds,1.0,False,,
-1v95yd3,Nojinho,p0b8djb,CergiuPistoleiro,O homem abandonado por Deus,36.0,False,,
-1v95yd3,Nojinho,p0bae9q,ateuatoa,,24.0,False,,
-1v95yd3,Nojinho,p0bh8a4,K-L4NG0,"Bem q dizem q o amor é cego, carenagem da mina toda amassada slk",75.0,False,,
-1v95yd3,Nojinho,p0eb0xs,Junim7,"no 9° ano, eu gostava de uma mina que era bem parecida com a da foto",11.0,False,,
-1v95yd3,Nojinho,p0co0ls,dgr_sla,n é tão feia assim,9.0,True,Aparência física,feia
-1v95yd3,Nojinho,p0cq93x,K-L4NG0,"Nn é horrenda, mas tem cara de tia de cantina",20.0,False,,
-1v95yd3,Nojinho,p0cshj9,dgr_sla,justo,2.0,False,,
-1v95yd3,Nojinho,p0dj1ut,SkillCompetitive1848,kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk,1.0,False,,
-1v95yd3,Nojinho,p0igkk9,lucoweb,"tá no mesmo nível do mlq ali, então não tinha que ter sido escrota com aquela mãozinha voadora",1.0,False,,
-1v95yd3,Nojinho,p0cyiqf,UglyDucklingB,"São claramente dois pré-adolescentes ou adolescentes ali, não vamos normalizar insultar a aparência de criança fml",16.0,False,,
-1v95yd3,Nojinho,p0eakop,evilsummoned_2,Voce é novato na internet?,20.0,False,,
-1v95yd3,Nojinho,p0ef6ib,UglyDucklingB,Às vezes eu gostaria de ser :'),1.0,False,,
-1v95yd3,Nojinho,p0d99u8,K-L4NG0,"So falo oq eu acho, perdao a sinceridade 😔",11.0,False,,
-1v95yd3,Nojinho,p0fqwma,Ajax01020,"Porra, normalizaram zoar bebê, zoar alguém com discernimento o suficiente pra postar uma foto não é nada perto disso",1.0,False,,
-1v95yd3,Nojinho,p0blvi6,xCabilburBR,Sai do fake Droozy.,1.0,False,,
-1v95yd3,Nojinho,p0blzb7,K-L4NG0,Sla quem é esse loko ae,4.0,False,,
-1v95yd3,Nojinho,p0bksxd,OZY_1K1,Aquela é uma camisa da banda sistema para baixo?,15.0,False,,
-1v95yd3,Nojinho,p0dgao9,dead-hollow-knight,Sistema feudal,12.0,False,,
-1v95yd3,Nojinho,p0e3rv6,Tortoise_Knight,Sistema fodão,4.0,False,,
-1v95yd3,Nojinho,p0fb16b,This_Shit_Reseted_My,Síndrome de Down.,4.0,False,,
-1v95yd3,Nojinho,p0ia3lc,Loner1337,Sistema de uma descida,2.0,False,,
-1v95yd3,Nojinho,p0bs2tl,Necessary-Bug-5625,"E ele se sujeitou a isso, sendo q ela é abaixo da média ainda",29.0,False,,
-1v95yd3,Nojinho,p0dm6oq,LixoDesumilde,Zoar o amor dos outros é paia dms man,1.0,False,,
-1v95yd3,Nojinho,p0e2tcf,Necessary-Bug-5625,"Isso não é amor, a mina tem nojo do betinha",14.0,False,,
-1v95yd3,Nojinho,p0e4uip,LixoDesumilde,"Sim, por isso mesmo. Ele gostava dela e foi rejeitado, isso já é triste o suficiente, precisa mesmo zoar o cara? É isso que você quer fazer? Chutar um soldado desarmado e caído no chão?",9.0,False,,
-1v95yd3,Nojinho,p0fawat,This_Shit_Reseted_My,Que nada quando ele crescer vai pensar nossa mina maior feia e eu era maior gado ainda kkk.,7.0,True,Aparência física,feia
-1v95yd3,Nojinho,p0g6x11,Sr_Coiso,"Pode até pensar, mas não deixa de ser paia",1.0,False,,
+alguém tem que sobrar nada pra sobrar algo pra nois",37.0,1785264852.0,False,,,0
+1v95yd3,Nojinho,p0bl3li,GamesofTobii,<image>,39.0,1785265250.0,False,,,0
+1v95yd3,Nojinho,p0ckteo,MatMADNESSart,,14.0,1785274992.0,False,,,0
+1v95yd3,Nojinho,p0dlmok,LixoDesumilde,<image>,12.0,1785286230.0,False,,,0
+1v95yd3,Nojinho,p0ihfj6,RaulTheTriblader,Alguém tem q se fuder,0.0,1785347648.0,False,,,0
+1v95yd3,Nojinho,p0e1ogr,No-Entrepreneur7167,Melhor assim,1.0,1785291559.0,False,,,0
+1v95yd3,Nojinho,p0c855s,Greedy_Ad3026,"mas até la ele vai ter que pegar usado ou seminovo, de fábrica só chad",1.0,1785271473.0,False,,,0
+1v95yd3,Nojinho,p0hv0lf,usuariocabuloso,Mds,1.0,1785342057.0,False,,,0
+1v95yd3,Nojinho,p0h11p2,VethGoat,"Olha bem para os dois, poderia ser a foto de 2 irmãos ou 2 primos de tão similares.
+Não é necessário Glow UP, ela não gosta dele por outros motivos, estética não é o problema nesse caso.",-1.0,1785334414.0,False,,,0
+1v95yd3,Nojinho,p0b8djb,CergiuPistoleiro,O homem abandonado por Deus,33.0,1785262066.0,False,,,0
+1v95yd3,Nojinho,p0gcyvy,omongetibetano,rejeitado pelo céu e pelo inferno.,0.0,1785327353.0,False,,,0
+1v95yd3,Nojinho,p0bh8a4,K-L4NG0,"Bem q dizem q o amor é cego, carenagem da mina toda amassada slk",76.0,1785264277.0,False,,,0
+1v95yd3,Nojinho,p0eb0xs,Junim7,"no 9° ano, eu gostava de uma mina que era bem parecida com a da foto",7.0,1785294883.0,False,,,0
+1v95yd3,Nojinho,p0co0ls,dgr_sla,n é tão feia assim,9.0,1785275890.0,True,Aparência física,feia,1
+1v95yd3,Nojinho,p0cq93x,K-L4NG0,"Nn é horrenda, mas tem cara de tia de cantina",22.0,1785276534.0,False,,,0
+1v95yd3,Nojinho,p0cshj9,dgr_sla,justo,2.0,1785277181.0,False,,,0
+1v95yd3,Nojinho,p0dj1ut,SkillCompetitive1848,kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk,1.0,1785285393.0,False,,,0
+1v95yd3,Nojinho,p0eqvbh,Dangerous-Wafer-5821,Hahahahahaha caralho,0.0,1785301215.0,False,,,0
+1v95yd3,Nojinho,p0igkk9,lucoweb,"tá no mesmo nível do mlq ali, então não tinha que ter sido escrota com aquela mãozinha voadora",1.0,1785347433.0,True,Conduta moral,escrota,1
+1v95yd3,Nojinho,p0cyiqf,UglyDucklingB,"São claramente dois pré-adolescentes ou adolescentes ali, não vamos normalizar insultar a aparência de criança fml",16.0,1785278980.0,False,,,0
+1v95yd3,Nojinho,p0eakop,evilsummoned_2,Voce é novato na internet?,19.0,1785294712.0,False,,,0
+1v95yd3,Nojinho,p0ef6ib,UglyDucklingB,Às vezes eu gostaria de ser :'),2.0,1785296468.0,False,,,0
+1v95yd3,Nojinho,p0d99u8,K-L4NG0,"So falo oq eu acho, perdao a sinceridade 😔",11.0,1785282289.0,False,,,0
+1v95yd3,Nojinho,p0fqwma,Ajax01020,"Porra, normalizaram zoar bebê, zoar alguém com discernimento o suficiente pra postar uma foto não é nada perto disso",1.0,1785318561.0,False,,,0
+1v95yd3,Nojinho,p0fr23z,Satori-Chan,Depende da criança,0.0,1785318632.0,False,,,0
+1v95yd3,Nojinho,p0blvi6,xCabilburBR,Sai do fake Droozy.,0.0,1785265445.0,False,,,0
+1v95yd3,Nojinho,p0blzb7,K-L4NG0,Sla quem é esse loko ae,2.0,1785265471.0,False,,,0
+1v95yd3,Nojinho,p0bksxd,OZY_1K1,Aquela é uma camisa da banda sistema para baixo?,15.0,1785265175.0,False,,,0
+1v95yd3,Nojinho,p0dgao9,dead-hollow-knight,Sistema feudal,13.0,1785284499.0,False,,,0
+1v95yd3,Nojinho,p0e3rv6,Tortoise_Knight,Sistema fodão,4.0,1785292279.0,False,,,0
+1v95yd3,Nojinho,p0fb16b,This_Shit_Reseted_My,Síndrome de Down.,5.0,1785310711.0,False,,,0
+1v95yd3,Nojinho,p0ia3lc,Loner1337,Sistema de uma descida,2.0,1785345820.0,False,,,0
+1v95yd3,Nojinho,p0bs2tl,Necessary-Bug-5625,"E ele se sujeitou a isso, sendo q ela é abaixo da média ainda",28.0,1785267024.0,False,,,0
+1v95yd3,Nojinho,p0dm6oq,LixoDesumilde,Zoar o amor dos outros é paia dms man,2.0,1785286409.0,False,,,0
+1v95yd3,Nojinho,p0e2tcf,Necessary-Bug-5625,"Isso não é amor, a mina tem nojo do betinha",14.0,1785291950.0,False,,,0
+1v95yd3,Nojinho,p0e4uip,LixoDesumilde,"Sim, por isso mesmo. Ele gostava dela e foi rejeitado, isso já é triste o suficiente, precisa mesmo zoar o cara? É isso que você quer fazer? Chutar um soldado desarmado e caído no chão?",9.0,1785292654.0,False,,,0
+1v95yd3,Nojinho,p0fawat,This_Shit_Reseted_My,Que nada quando ele crescer vai pensar nossa mina maior feia e eu era maior gado ainda kkk.,6.0,1785310643.0,True,Aparência física,feia,1
+1v95yd3,Nojinho,p0g6x11,Sr_Coiso,"Pode até pensar, mas não deixa de ser paia",1.0,1785325235.0,False,,,0
+1v95yd3,Nojinho,p0nbvrn,United-Scene2261,não sobrou nada,0.0,1785409802.0,False,,,0
 1v95yd3,Nojinho,p0bn1sb,MattesFreittas,"Complicado a vida desse cara aí, isso vai ficar batendo na cabeça dele por tanto tempo e no final, senão tiver cabeça só vai ficar triste e não vai conseguir seguir em frente tão bem.
-Complicado demais, triste de verdade isso.",11.0,False,,
-1v95yd3,Nojinho,p0csji0,GRAXXZy,"Ele n é beta, a mulher que é otária, o meu maior desejo nesse momento, é ficar trilionario sem fazer nada",10.0,False,,
-1v95yd3,Nojinho,p0d8vt9,DenovoeDenovo,"Só quem já passou por isso sabe como é ruim, no ensino fundamental as meninas se recusavam a dançar comigo, e por causa disso eu tinha que dançar com um colega autista grau 3 que tinha da minha sala. Por essas e outras hoje sou incel, fan do Naoya Zenin e do Regulus Corneas",17.0,False,,
-1v95yd3,Nojinho,p0dfiyj,PEDRAOOOO,<image>,16.0,False,,
-1v95yd3,Nojinho,p0dg5za,dead-hollow-knight,,5.0,False,,
+Complicado demais, triste de verdade isso.",11.0,1785265742.0,False,,,0
+1v95yd3,Nojinho,p0csji0,GRAXXZy,"Ele n é beta, a mulher que é otária, o meu maior desejo nesse momento, é ficar trilionario sem fazer nada",9.0,1785277198.0,False,,,0
+1v95yd3,Nojinho,p0d8vt9,DenovoeDenovo,"Só quem já passou por isso sabe como é ruim, no ensino fundamental as meninas se recusavam a dançar comigo, e por causa disso eu tinha que dançar com um colega autista grau 3 que tinha da minha sala. Por essas e outras hoje sou incel, fan do Naoya Zenin e do Regulus Corneas",18.0,1785282169.0,False,,,0
+1v95yd3,Nojinho,p0dfiyj,PEDRAOOOO,<image>,16.0,1785284256.0,False,,,0
+1v95yd3,Nojinho,p0dg5za,dead-hollow-knight,,5.0,1785284457.0,False,,,0
+1v95yd3,Nojinho,p166nv1,Sorry_Towel9618,"hmm, bem pq são todos seres humanos que merecem respeito? realmente",0.0,1785632591.0,False,,,0
 1v95yd3,Nojinho,p0gtsga,Heimder_Rondart,"Piior que acontecia comigo tb, mas eu mudei 180° na adolescência e até fã clube fizeram comigo.
 E isso só me deixou mais puto ainda, pois continuei sendo a mesma pessoa de sempre, só tinha ficado mais bonito. Foi ai que percebi o quanto o ser humaninho é um superficial de merd@ com raras exeções.
-E essa regra que aprendi lá atrás incrivelmente continua válida mesmo hoje algumas décadas depois",4.0,False,,
-1v95yd3,Nojinho,p0bkk9h,PauloAzevedo86,"Heroi: ""-Vilão me conte sobre seu passado.""",9.0,False,,
-1v95yd3,Nojinho,p0cpcum,GayLordfilm,O beta original. O antepassado de todos os betas,8.0,False,,
-1v95yd3,Nojinho,p0ch4x4,Difficult_Knee_2284,ja me ocorreram situações parecidas,6.0,False,,
-1v95yd3,Nojinho,p0bomnj,Sim_plista,Pior que são parecidos,7.0,False,,
-1v95yd3,Nojinho,p0j6555,MassiveTelephone4672,"Plot twist: são primos e, em um dia de bebedeira, ela vai dar pra ele e terão um filho todo torto. É isso que sobra pro beta.",1.0,False,,
-1v95yd3,Nojinho,p0btz9v,HoracioNErgumeno,"Essa aí tá se achando também, né? 😅",7.0,False,,
+E essa regra que aprendi lá atrás incrivelmente continua válida mesmo hoje algumas décadas depois",3.0,1785332424.0,False,,,0
+1v95yd3,Nojinho,p4yfiny,Reasonable_Turn_3774,"Caralho, aconteceu semelhante comigo, mas eu tive que dançar com uma guria gordinha que me odiava kk",1.0,1787282663.0,True,Aparência física,gordinha,1
+1v95yd3,Nojinho,p0iavtk,usuariocabuloso,"Incels só são uns vigaristas que perceberam que pessoas iguais a você precisam de uma resposta para este problema que voces não sabem lidar, mesmo que a resposta seja falsa, e consequentemente eles crescem na Internet dando vazão à essa dor, pois ninguém mais olhou pra vocês e validou o quão dolorido foi o que vocês passaram.
+Esse vídeo traz um esclarecimento gigantesco sobre esse problema:
+https://youtu.be/SWLpAWyFYHw",-2.0,1785346015.0,True,Conduta moral,falsa,1
+1v95yd3,Nojinho,p0bkk9h,PauloAzevedo86,"Heroi: ""-Vilão me conte sobre seu passado.""",8.0,1785265113.0,False,,,0
+1v95yd3,Nojinho,p0cpcum,GayLordfilm,O beta original. O antepassado de todos os betas,7.0,1785276272.0,False,,,0
+1v95yd3,Nojinho,p0ch4x4,Difficult_Knee_2284,ja me ocorreram situações parecidas,6.0,1785273973.0,False,,,0
+1v95yd3,Nojinho,p0bomnj,Sim_plista,Pior que são parecidos,7.0,1785266142.0,False,,,0
+1v95yd3,Nojinho,p0j6555,MassiveTelephone4672,"Plot twist: são primos e, em um dia de bebedeira, ela vai dar pra ele e terão um filho todo torto. É isso que sobra pro beta.",1.0,1785353985.0,False,,,0
+1v95yd3,Nojinho,p0btz9v,HoracioNErgumeno,"Essa aí tá se achando também, né? 😅",5.0,1785267517.0,False,,,0
 1v95yd3,Nojinho,p0codp3,CanalhadeMarca,"A rapariga é ele com cabelo longo e fica de graça
-<image>",4.0,False,,
+<image>",6.0,1785275994.0,False,,,0
 1v95yd3,Nojinho,p0dbmpp,Manelzito23,"Academia, musculos, skincare, ficar com cheiro bom e trabalhar numa petrolífera.
-Cabô os problema.",5.0,False,,
+Cabô os problema.",4.0,1785283027.0,False,,,0
 1v95yd3,Nojinho,p0btlya,Flotusxy,"Me deixa puto nessas histórias, porque o beta não é o cara que recebe uma dessas, o beta é o cara que recebe a humilhação e fica com cara de cu sem fazer nada, se fosse eu, teria mandado essa filha da puta ir tomar no olho do cu dela.
-""Ain ain, não quero encostar no cara porque ele é feio"" vai dar meia hora de cu sua vagabun-",17.0,True,Sexualidade,puta
-1v95yd3,Nojinho,p0cwij0,_manoel_noia_,Tava acreditando até vc mandar esse corte seco no final,4.0,False,,
-1v95yd3,Nojinho,p0cwrzh,Flotusxy,"Foi só pra efeito cômico, eu não ia deixar barato uma palhaçada dessas n",1.0,False,,
-1v95yd3,Nojinho,p0bfkos,NorrinGreenwood,Sempre tive curiosidade de saber que fim levou esses dois hoje em dia.,9.0,False,,
-1v95yd3,Nojinho,p0bkoug,PruneBoring7815,devia ter um youtuber que fosse atras do deenrolar desses memes,4.0,False,,
-1v95yd3,Nojinho,p0fpmf3,fellbulletsan,"A mina eu não sei, mas eu tenho o Facebook do cara, e ele tá sheipado hoje em dia",3.0,False,,
-1v95yd3,Nojinho,p0bmanb,Asonagic,foda caras...,4.0,False,,
-1v95yd3,Nojinho,p0c8srd,Zunketsu,"Os 2 são praticamente iguais ksksksks, se tivesse me mostrado só a foto eu teria pensado que eram irmãos.",2.0,False,,
+""Ain ain, não quero encostar no cara porque ele é feio"" vai dar meia hora de cu sua vagabun-",17.0,1785267421.0,True,Sexualidade,puta,1
+1v95yd3,Nojinho,p0cwij0,_manoel_noia_,Tava acreditando até vc mandar esse corte seco no final,4.0,1785278377.0,False,,,0
+1v95yd3,Nojinho,p0cwrzh,Flotusxy,"Foi só pra efeito cômico, eu não ia deixar barato uma palhaçada dessas n",1.0,1785278457.0,False,,,0
+1v95yd3,Nojinho,p0hnqny,robertnunes63,"A mina só n quis encostar no cara, que exagero man. É questão de superar tlgd",-2.0,1785340222.0,False,,,0
+1v95yd3,Nojinho,p0ib3mf,Flotusxy,"Brother, o cara é um ser humano, normal como eu e você, imagina uma pessoa ser tão mesquinha que não quer nem encostar em você por um desafio retardado desses, tem que levar um choque de realidade pra deixar de ser fdp",2.0,1785346069.0,False,,,0
+1v95yd3,Nojinho,p0k7s2i,robertnunes63,"Entendo tua visão man, so que pra mim xingar eh foda tlgd kkk, mas saquei teu lado",0.0,1785364457.0,False,,,0
+1v95yd3,Nojinho,p0hx6ja,usuariocabuloso,"Isto não é exagero. O cara é um ser humano, nao é feito de bosta!",2.0,1785342597.0,False,,,0
+1v95yd3,Nojinho,p0bfkos,NorrinGreenwood,Sempre tive curiosidade de saber que fim levou esses dois hoje em dia.,9.0,1785263859.0,False,,,0
+1v95yd3,Nojinho,p0bkoug,PruneBoring7815,devia ter um youtuber que fosse atras do deenrolar desses memes,5.0,1785265146.0,False,,,0
+1v95yd3,Nojinho,p0fpmf3,fellbulletsan,"A mina eu não sei, mas eu tenho o Facebook do cara, e ele tá sheipado hoje em dia",3.0,1785317945.0,False,,,0
+1v95yd3,Nojinho,p0bmanb,Asonagic,foda caras...,5.0,1785265551.0,False,,,0
+1v95yd3,Nojinho,p0c8srd,Zunketsu,"Os 2 são praticamente iguais ksksksks, se tivesse me mostrado só a foto eu teria pensado que eram irmãos.",4.0,1785271663.0,False,,,0
 1v95yd3,Nojinho,p0cqb5r,NO-HOLF,"A bet a feia ignorandono betinha premium 
-Kkkkk",4.0,True,Aparência física,feia
-1v95yd3,Nojinho,p0d08vu,Minstura,Pior q os dois são quase um ctrl C ctrl V,3.0,False,,
+Kkkkk",2.0,1785276550.0,True,Aparência física,feia,1
+1v95yd3,Nojinho,p0d08vu,Minstura,Pior q os dois são quase um ctrl C ctrl V,2.0,1785279500.0,False,,,0
 1v95yd3,Nojinho,p0dkm0t,LeonardoCouto,"Imagina ser tão ignorante pra ñ ser bom com a pessoa ou pra quem vc deu ou de quem vc recebeu presente num amigo oculto
-Esse garoto perdeu nada, sinceramente",3.0,True,Capacidade cognitiva,ignorante
-1v95yd3,Nojinho,p0ddx5e,--ColdBlooded--,"A menina tá com valor bem acima da tabela FIPE, ela não vale tudo isso não",5.0,False,,
-1v95yd3,Nojinho,p0c4twg,HorizonTheGate,Eu n julgaria o vilão,2.0,False,,
-1v95yd3,Nojinho,p0cbvbx,Sensitive_Nothing510,"E ela ainda é um looksmatch dele, o que torna ainda mais brutal",2.0,False,,
-1v95yd3,Nojinho,p0d2r08,guilherme_perigo,"Mas se observar bem, ele também nao ta tocando nela",2.0,False,,
-1v95yd3,Nojinho,p0dqyav,Futurelord678,"A mina mó boca de sacola, mais feia que o cara e ainda mete essa 😂",2.0,True,Aparência física,feia
-1v95yd3,Nojinho,p0bd5i9,Cool-Inspection3072,"Hora de virar vermelhopílula e farmar aura, sei lá, essas poha de criança",8.0,False,,
-1v95yd3,Nojinho,p0bfr1k,m0ck1nb1rd,Kkkkkkkk,1.0,False,,
-1v95yd3,Nojinho,p0bhdrc,Tiaguin_130,Old,1.0,False,,
-1v95yd3,Nojinho,p0bip1a,Asphay,Soldado Abatido e Executado,1.0,False,,
-1v95yd3,Nojinho,p0bm1b6,Equivalent-Way-1883,Mas ela encostou uai,1.0,False,,
-1v95yd3,Nojinho,p0bo6i5,Odd-Cartographer4493,O cara com todo direito de virar vilão kkkk,1.0,False,,
-1v95yd3,Nojinho,p0btqz7,coelholoner,"Na verdade ela ama ele, e nao encostou nele pra não chamar muito a atenção",1.0,False,,
-1v95yd3,Nojinho,p0ebl8w,Junim7,aquela imagem do sherek fechando o livro,6.0,False,,
-1v95yd3,Nojinho,p0c2mic,AlchemistTurtle,Entra pro World of Warcraft que lá você não será julgado meu amigo,1.0,False,,
-1v95yd3,Nojinho,p0c84id,Sobeksdream,Esse moleque já deve estar com uns 40 anos hj. Faz muito ansomque vejo essa imagem rolar na internet,1.0,False,,
-1v95yd3,Nojinho,p0cacgz,Acceptable_Money5519,"A guria deu uma  de John wikipia e não encostou no betinha, brutal parça",1.0,False,,
-1v95yd3,Nojinho,p0cebui,oceanic_idaho,Pior que dessa vez não sobrou nada,1.0,False,,
-1v95yd3,Nojinho,p0clpjx,Low-Imagination-6742,Triste isso,1.0,False,,
-1v95yd3,Nojinho,p0cu14h,Azoth616,Esperemos que ele deixe de ser gado dela,1.0,False,,
-1v95yd3,Nojinho,p0cuyia,WinterLord300,<image>,1.0,False,,
-1v95yd3,Nojinho,p0cxmkf,Global-Swimming-8744,"2 nerds betas, porra 😂",1.0,False,,
+Esse garoto perdeu nada, sinceramente",4.0,1785285898.0,True,Capacidade cognitiva,ignorante,1
+1v95yd3,Nojinho,p0ddx5e,[deletado],"A menina tá com valor bem acima da tabela FIPE, ela não vale tudo isso não",6.0,1785283748.0,False,,,0
+1v95yd3,Nojinho,p0c4twg,HorizonTheGate,Eu n julgaria o vilão,2.0,1785270345.0,False,,,0
+1v95yd3,Nojinho,p0cbvbx,Sensitive_Nothing510,"E ela ainda é um looksmatch dele, o que torna ainda mais brutal",2.0,1785272517.0,False,,,0
+1v95yd3,Nojinho,p0d2r08,guilherme_perigo,"Mas se observar bem, ele também nao ta tocando nela",2.0,1785280268.0,False,,,0
+1v95yd3,Nojinho,p0sgeee,Healthy-Singer5619,"Mano a mina mais nerd e autista ainda vai querer dá para o canalha, cafa. Não muda",0.0,1785462059.0,False,,,0
+1v95yd3,Nojinho,p0dqyav,Futurelord678,"A mina mó boca de sacola, mais feia que o cara e ainda mete essa 😂",2.0,1785287959.0,True,Aparência física,feia,1
+1v95yd3,Nojinho,p0bd5i9,Cool-Inspection3072,"Hora de virar vermelhopílula e farmar aura, sei lá, essas poha de criança",7.0,1785263249.0,False,,,0
+1v95yd3,Nojinho,p0bfr1k,m0ck1nb1rd,Kkkkkkkk,1.0,1785263904.0,False,,,0
+1v95yd3,Nojinho,p0bhdrc,Tiaguin_130,Old,1.0,1785264316.0,False,,,0
+1v95yd3,Nojinho,p0bip1a,Asphay,Soldado Abatido e Executado,1.0,1785264646.0,False,,,0
+1v95yd3,Nojinho,p0bm1b6,Equivalent-Way-1883,Mas ela encostou uai,1.0,1785265485.0,False,,,0
+1v95yd3,Nojinho,p0bo6i5,Odd-Cartographer4493,O cara com todo direito de virar vilão kkkk,1.0,1785266028.0,False,,,0
+1v95yd3,Nojinho,p0btqz7,coelholoner,"Na verdade ela ama ele, e nao encostou nele pra não chamar muito a atenção",1.0,1785267457.0,False,,,0
+1v95yd3,Nojinho,p0ebl8w,Junim7,aquela imagem do sherek fechando o livro,6.0,1785295096.0,False,,,0
+1v95yd3,Nojinho,p0c2mic,AlchemistTurtle,Entra pro World of Warcraft que lá você não será julgado meu amigo,1.0,1785269771.0,False,,,0
+1v95yd3,Nojinho,p0c84id,Sobeksdream,Esse moleque já deve estar com uns 40 anos hj. Faz muito ansomque vejo essa imagem rolar na internet,1.0,1785271468.0,False,,,0
+1v95yd3,Nojinho,p0cacgz,Acceptable_Money5519,"A guria deu uma  de John wikipia e não encostou no betinha, brutal parça",1.0,1785272097.0,False,,,0
+1v95yd3,Nojinho,p0cebui,oceanic_idaho,Pior que dessa vez não sobrou nada,1.0,1785273199.0,False,,,0
+1v95yd3,Nojinho,p0clpjx,Low-Imagination-6742,Triste isso,1.0,1785275241.0,False,,,0
+1v95yd3,Nojinho,p0cu14h,Azoth616,Esperemos que ele deixe de ser gado dela,1.0,1785277635.0,False,,,0
+1v95yd3,Nojinho,p0cuyia,WinterLord300,<image>,1.0,1785277910.0,False,,,0
+1v95yd3,Nojinho,p0cxmkf,Global-Swimming-8744,"2 nerds betas, porra 😂",1.0,1785278713.0,False,,,0
 1v95yd3,Nojinho,p0dh2r3,Away-Stranger-2122,"Sabe como fazer ela mudar da água pro vinho contigo?
 Trate-a pior que lixo, fique com alguma garota aleatória na frente dela (desde que ela veja), depois trate a presença dela como descartável e sempre que ela começar a se distanciar, a convide para algo e em cima da hora desmarque.
 Em pouco tempo 3 coisas podem acontecer:
@@ -130,116 +178,153 @@ Em pouco tempo 3 coisas podem acontecer:
 2- você vai desencantar dela.
 3- ela não vai querer mais ficar no seu ciclo social
 Pra todos o resultados, você  ganha.
-Depois disso, alguma coisa sobrará pro beta. Use com sabedoria.",1.0,False,,
-1v95yd3,Nojinho,p0fw5pr,chupoxotas,Conselhos que eu daria quando tinha 16 anos:,2.0,False,,
-1v95yd3,Nojinho,p0g7yel,Away-Stranger-2122,"Claramente ele tem 16 anos... se fossem adultos., eu daria conselhos para adultos.",1.0,False,,
-1v95yd3,Nojinho,p0didyt,Fenrir_louko,Do:),1.0,False,,
-1v95yd3,Nojinho,p0eb5hj,No-Programmer5655,"Coisa de menina bestalhada🙄 sou mulher e sério, isso pra mim se assemelha a querer humilhar a pessoa passivamente, zoado! É só um abraço, fala sério 🤨😒",1.0,True,Submissão,passiva
-1v95yd3,Nojinho,p0esiav,Sharp-Delivery-4477,AONDE ESTA PEDRO INACIO EM 2026?,1.0,False,,
-1v95yd3,Nojinho,p0fd2r5,frieren_dormindo,"Isso já aconteceu comigo. No verdade ou desafio, a garrafa gritou desafio para a menina. O desafio? Me beijar. Ela disse na minha cara que tinha nojo. Mudou para verdade",1.0,False,,
-1v95yd3,Nojinho,p0fvnq5,chupoxotas,Nesse caso aí o beta ainda é melhor em aparência do que a guria kkkk,1.0,False,,
-1v95yd3,Nojinho,p0fwqgf,Artistic-Mechanic-69,"a mina tem maior cara de nerd, mas vai pagar de gostosana.",1.0,True,Aparência física,gostosa
-1v95yd3,Nojinho,p0gu7to,Upset_Client_1639,"oloko, os dois são o mesmo só que o sexo oposto.",1.0,True,Sexualidade,sexo
-1v95yd3,Nojinho,p0h0ea0,Historical_File_9160,<image>,1.0,False,,
-1v95yd3,Nojinho,p0ib3ty,PaleFly,"Sinceramente isso nao quer dizer nada. Pode ser interpretado tbm como se ela fosse afim dele e por isso nao queria abraçar, pq ficou com vergonha",1.0,False,,
-1v95yd3,Nojinho,p0icm4h,Mobile-Barnacle-6869,"Fácil de resolver, chega nessa mina, fala que ela é  incrível, que vc confia muito nela, que ela mostra que é uma pessoa de confiança e que vc pode contar com a juda dela, aí fala que ela é a melhor amiga que alguem pode ter e pede ela  apresentar pra você a melhor amiga dela. Depois, so aguarde a mágica acontecer.",1.0,False,,
-1v95yd3,Nojinho,p0te22l,Oompa-Loompa_onCrack,"Desde mlkinho eu sempre sofri o mais cliche dos bullyings. Cuecao, porrada, top 1 da lista na escola dos mais feios, por aí vai... eu me sentia tão excluído que eu n conseguia coragem nem pra achar um lugar na internet e nos jogos online, preferindo o mundinho do single player e a internet sozinho. De certa forma isso acabou me fazendo ter contato constante com a galera que me rejeitava e pouco contato com esse grupo de gente que passou o mesmo que eu. Hoje em dia vejo que isso foi bom. De pouquinho em pouquinho fui aprendendo a agir e descobrindo como o mundo é grande e repleto de gente. Fui desde ganhar as primeiras risadinhas da galera, até fazer parte de um grupo de amigos, pegar umas feinhas, pegar umas gatinhas, perder o cabaço com uma feinha, comer gatinhas, namorar uma gatinha, pegar uma mina top, namorar uma mina top e hoje em dia ter vivido tanto que to tirando um celibato pq to cansado de comer xereca sem sentir um rush maneiro. eu sei pra caralho como é sofrer mas as vzs eu dou umas viajadas se a estrutura da internet que permitiu a galera sofrida de se juntar e falar sobre a própria dor criou uma sensação falsa de acolhimento ao mesmo tempo que engessou essas pessoas naquela forma de ser, impedindo-as de enfrentar o desconforto e conquistar a própria felicidade. Não existe betinha e alfa meus parceiros. tem gente que da sorte e tem gente que dá azar mas o mundo é grande e tem espaço pra geral❤️",1.0,True,Conduta moral,falsa
-1v95yd3,Nojinho,p0bpmsu,Livid-Bullfrog8442,"Porra a mina mó zuada e vc gosta dela ? Qual seu problema mano, é só começar a não dar a mínima pra ela q ela passa a gostar de vc kkkkk",3.0,False,,
-1v95yd3,Nojinho,p0bqiej,Impressive-Air-4272,continua sendo cuzona tho,3.0,False,,
-1v95yd3,Nojinho,p0bqgw7,Impressive-Air-4272,achei ela gata ngl,1.0,False,,
-1v95yd3,Nojinho,p0bxru2,Infamous_Window8518,"Problema do jovem homem é a inexperiência, um pouco mais velho ele nem ligaria pra isso e estaria indo pra próxima... se tiver amadurecido.",1.0,False,,
-1v95yd3,Nojinho,p0d4czp,LouisFarvo,"realmente ele precisa se tratar, pensar, escrever e postar é foda",0.0,False,,
-1v95yd3,Nojinho,p0djx0c,Fun_Chef6983,Brutal,0.0,False,,
-1v95yd3,Nojinho,p0dxkse,Present-Mongoose3318,Tadinho man,0.0,False,,
-1v95yd3,Nojinho,p0dylfe,yanb07,Brutal,0.0,False,,
-1v95yd3,Nojinho,p0e0ue0,lucky_kiroma,"Eu acho que conheço essa garota de algum lugar, qual o nome dela?",0.0,False,,
-1v95yd3,Nojinho,p0e43af,yajimboroninz,A mina parece a Damares cruzada com tartaruga. Perdeu nada.,0.0,False,,
-1v95yd3,Nojinho,p0e7orz,Angeloharem,"Mas também, mó cara de nerd e escreve parecendo uma criança de 4 anos. Eu tive nojo só de tentar ler oque você escreveu. Ajuda a te ajudar amigo.",0.0,False,,
-1v95yd3,Nojinho,p0e943f,Solidao-Eterna,"Nossa que merda.. acho que o pior sentimento que um homem pode ter é se sentir um bosta, sei como é isso, me senti assim quase a vida toda",0.0,False,,
-1v95yd3,Nojinho,p0e9uvu,DecisionTrick3849,"Era só ele levar um tapão na consciencia, comer 1 quilo de aveia com ovo por dia na academia que ele ia moggar a betina",0.0,False,,
+Depois disso, alguma coisa sobrará pro beta. Use com sabedoria.",1.0,1785284751.0,False,,,0
+1v95yd3,Nojinho,p0fw5pr,chupoxotas,Conselhos que eu daria quando tinha 16 anos:,3.0,1785320951.0,False,,,0
+1v95yd3,Nojinho,p0g7yel,Away-Stranger-2122,"Claramente ele tem 16 anos... se fossem adultos., eu daria conselhos para adultos.",1.0,1785325616.0,False,,,0
+1v95yd3,Nojinho,p0hya1j,usuariocabuloso,<image>,0.0,1785342873.0,False,,,0
+1v95yd3,Nojinho,p0didyt,Fenrir_louko,Do:),1.0,1785285177.0,False,,,0
+1v95yd3,Nojinho,p0eb5hj,No-Programmer5655,"Coisa de menina bestalhada🙄 sou mulher e sério, isso pra mim se assemelha a querer humilhar a pessoa passivamente, zoado! É só um abraço, fala sério 🤨😒",1.0,1785294931.0,True,Submissão,passiva,1
+1v95yd3,Nojinho,p0esiav,Sharp-Delivery-4477,AONDE ESTA PEDRO INACIO EM 2026?,1.0,1785301935.0,False,,,0
+1v95yd3,Nojinho,p0fd2r5,frieren_dormindo,"Isso já aconteceu comigo. No verdade ou desafio, a garrafa gritou desafio para a menina. O desafio? Me beijar. Ela disse na minha cara que tinha nojo. Mudou para verdade",1.0,1785311729.0,False,,,0
+1v95yd3,Nojinho,p0fvnq5,chupoxotas,Nesse caso aí o beta ainda é melhor em aparência do que a guria kkkk,1.0,1785320731.0,False,,,0
+1v95yd3,Nojinho,p0fwqgf,Artistic-Mechanic-69,"a mina tem maior cara de nerd, mas vai pagar de gostosana.",1.0,1785321202.0,True,Aparência física,gostosa,1
+1v95yd3,Nojinho,p0gu7to,Upset_Client_1639,"oloko, os dois são o mesmo só que o sexo oposto.",1.0,1785332544.0,True,Sexualidade,sexo,1
+1v95yd3,Nojinho,p0h0ea0,Historical_File_9160,<image>,1.0,1785334240.0,False,,,0
+1v95yd3,Nojinho,p0ib3ty,PaleFly,"Sinceramente isso nao quer dizer nada. Pode ser interpretado tbm como se ela fosse afim dele e por isso nao queria abraçar, pq ficou com vergonha",1.0,1785346071.0,False,,,0
+1v95yd3,Nojinho,p0sgtio,Healthy-Singer5619,"Mano para, pfv.",0.0,1785462199.0,False,,,0
+1v95yd3,Nojinho,p0icm4h,Mobile-Barnacle-6869,"Fácil de resolver, chega nessa mina, fala que ela é  incrível, que vc confia muito nela, que ela mostra que é uma pessoa de confiança e que vc pode contar com a juda dela, aí fala que ela é a melhor amiga que alguem pode ter e pede ela  apresentar pra você a melhor amiga dela. Depois, so aguarde a mágica acontecer.",1.0,1785346445.0,False,,,0
+1v95yd3,Nojinho,p0te22l,Oompa-Loompa_onCrack,"Desde mlkinho eu sempre sofri o mais cliche dos bullyings. Cuecao, porrada, top 1 da lista na escola dos mais feios, por aí vai... eu me sentia tão excluído que eu n conseguia coragem nem pra achar um lugar na internet e nos jogos online, preferindo o mundinho do single player e a internet sozinho. De certa forma isso acabou me fazendo ter contato constante com a galera que me rejeitava e pouco contato com esse grupo de gente que passou o mesmo que eu. Hoje em dia vejo que isso foi bom. De pouquinho em pouquinho fui aprendendo a agir e descobrindo como o mundo é grande e repleto de gente. Fui desde ganhar as primeiras risadinhas da galera, até fazer parte de um grupo de amigos, pegar umas feinhas, pegar umas gatinhas, perder o cabaço com uma feinha, comer gatinhas, namorar uma gatinha, pegar uma mina top, namorar uma mina top e hoje em dia ter vivido tanto que to tirando um celibato pq to cansado de comer xereca sem sentir um rush maneiro. eu sei pra caralho como é sofrer mas as vzs eu dou umas viajadas se a estrutura da internet que permitiu a galera sofrida de se juntar e falar sobre a própria dor criou uma sensação falsa de acolhimento ao mesmo tempo que engessou essas pessoas naquela forma de ser, impedindo-as de enfrentar o desconforto e conquistar a própria felicidade. Não existe betinha e alfa meus parceiros. tem gente que da sorte e tem gente que dá azar mas o mundo é grande e tem espaço pra geral❤️",1.0,1785474595.0,True,Conduta moral; Submissão,falsa; comer,3
+1v95yd3,Nojinho,p0bpmsu,Livid-Bullfrog8442,"Porra a mina mó zuada e vc gosta dela ? Qual seu problema mano, é só começar a não dar a mínima pra ela q ela passa a gostar de vc kkkkk",2.0,1785266398.0,False,,,0
+1v95yd3,Nojinho,p0bqiej,Impressive-Air-4272,continua sendo cuzona tho,3.0,1785266623.0,False,,,0
+1v95yd3,Nojinho,p0bqgw7,Impressive-Air-4272,achei ela gata ngl,1.0,1785266611.0,False,,,0
+1v95yd3,Nojinho,p0bxru2,Infamous_Window8518,"Problema do jovem homem é a inexperiência, um pouco mais velho ele nem ligaria pra isso e estaria indo pra próxima... se tiver amadurecido.",2.0,1785268504.0,False,,,0
+1v95yd3,Nojinho,p0djx0c,Fun_Chef6983,Brutal,0.0,1785285674.0,False,,,0
+1v95yd3,Nojinho,p0dxkse,Present-Mongoose3318,Tadinho man,0.0,1785290165.0,False,,,0
+1v95yd3,Nojinho,p0dylfe,yanb07,Brutal,0.0,1785290510.0,False,,,0
+1v95yd3,Nojinho,p0e0ue0,lucky_kiroma,"Eu acho que conheço essa garota de algum lugar, qual o nome dela?",0.0,1785291277.0,False,,,0
+1v95yd3,Nojinho,p0e43af,yajimboroninz,A mina parece a Damares cruzada com tartaruga. Perdeu nada.,0.0,1785292390.0,False,,,0
+1v95yd3,Nojinho,p0e7orz,Angeloharem,"Mas também, mó cara de nerd e escreve parecendo uma criança de 4 anos. Eu tive nojo só de tentar ler oque você escreveu. Ajuda a te ajudar amigo.",0.0,1785293658.0,False,,,0
+1v95yd3,Nojinho,p0e943f,Solidao-Eterna,"Nossa que merda.. acho que o pior sentimento que um homem pode ter é se sentir um bosta, sei como é isso, me senti assim quase a vida toda",0.0,1785294174.0,False,,,0
 1v95yd3,Nojinho,p0ee1f7,Tubaina66,"Ele também não tava encostando nela. Acho que a repulsa é recíproca.
-<image>",0.0,False,,
-1v95yd3,Nojinho,p0ef03g,HybridKnot,A mina parece o Greg versão Osasco e ainda quer escolher kkkkkkkk eh mole,0.0,False,,
+<image>",0.0,1785296030.0,False,,,0
+1v95yd3,Nojinho,p0ef03g,HybridKnot,A mina parece o Greg versão Osasco e ainda quer escolher kkkkkkkk eh mole,0.0,1785296400.0,False,,,0
 1v95yd3,Nojinho,p0eirwj,LucJoestarBR,"Ou ele fede ou ela é imbecil
 Acredito na segunda opção 
-(Só pode uma se considerar os meus ""ou ou"")",0.0,True,Capacidade cognitiva,imbecil
-1v95yd3,Nojinho,p0eme34,locura950,Cara... Pelo menos ela tá sorrindo...,0.0,False,,
+(Só pode uma se considerar os meus ""ou ou"")",0.0,1785297868.0,True,Capacidade cognitiva,imbecil,1
+1v95yd3,Nojinho,p0eme34,locura950,Cara... Pelo menos ela tá sorrindo...,0.0,1785299327.0,False,,,0
 1v95yd3,Nojinho,p0f3zhe,Aazy2,"Mano na real 
 Vc tem infinitas possibilidades de mima 
 Não é a primeira nem a última da sua vida 
 Cuida de ti irmão e transforma em um cara foda 
-E esquece essa mina degusta meio mundo se for necessário mas esquece essa filha da puta",0.0,True,Sexualidade,puta
-1v95yd3,Nojinho,p0fq827,Satori-Chan,Tenho um nojo e ódio de quem faz isso. Se acham tão acima de todos que não podem mostrar nem um pouco de carinho nem que seja pra tirar uma foto. Sorte do mlk essa piranha não presta.,0.0,True,Sexualidade,piranha
-1v95yd3,Nojinho,p0fshrt,Fraude_Honesta,eu na vida real /r,0.0,False,,
-1v95yd3,Nojinho,p0fvfqc,_apenas_um_idiota_,<image>,0.0,False,,
-1v95yd3,Nojinho,p0fyiq9,Dud17jw,"Olha mao dele pessoal, ela só retribuiu",0.0,False,,
-1v95yd3,Nojinho,p0g1pa2,MasterBuuizeL,Se alguém mandar o link do vid do esqueleto falando isso eu viro padre em xique xique bahia,0.0,False,,
-1v95yd3,Nojinho,p0g6t3j,Fluffy_Chicken_658,foda caras,0.0,False,,
+E esquece essa mina degusta meio mundo se for necessário mas esquece essa filha da puta",0.0,1785307310.0,True,Sexualidade,puta,1
+1v95yd3,Nojinho,p0fq827,Satori-Chan,Tenho um nojo e ódio de quem faz isso. Se acham tão acima de todos que não podem mostrar nem um pouco de carinho nem que seja pra tirar uma foto. Sorte do mlk essa piranha não presta.,0.0,1785318235.0,True,Sexualidade,piranha,1
+1v95yd3,Nojinho,p0fshrt,Fraude_Honesta,eu na vida real /r,0.0,1785319305.0,False,,,0
+1v95yd3,Nojinho,p0fvfqc,_apenas_um_idiota_,<image>,0.0,1785320633.0,False,,,0
+1v95yd3,Nojinho,p0fyiq9,Dud17jw,"Olha mao dele pessoal, ela só retribuiu",0.0,1785321964.0,False,,,0
+1v95yd3,Nojinho,p0g1pa2,MasterBuuizeL,Se alguém mandar o link do vid do esqueleto falando isso eu viro padre em xique xique bahia,0.0,1785323250.0,False,,,0
+1v95yd3,Nojinho,p0g6t3j,Fluffy_Chicken_658,foda caras,0.0,1785325195.0,False,,,0
 1v95yd3,Nojinho,p0g9dyw,TomaEssaRima,"Agora que ele postou isso,
 Mostrou falta de compromisso.
 Sem saber o contexto todo, dá pra imaginar....
-...uns cenários em que a menina está certa de evitar.",0.0,False,,
-1v95yd3,Nojinho,p0gb0fg,manelinxt,"Rapais você tá feio na foto mesmo, se apaixonar por uma gurizimha feia dessas tá fodido mesmo até de gosto kkkk",0.0,True,Aparência física,feia
-1v95yd3,Nojinho,p0gj0s4,Mundane_Reach_5116,"kkkk isso dai é evento canonico padronizado na vida de todo homem, do 8º ao 2º",0.0,False,,
-1v95yd3,Nojinho,p0grn4p,KondPlay,Nunca sobra nada,0.0,False,,
-1v95yd3,Nojinho,p0h4dsh,FellowBrother1200,"Pior que o mlk nem é feio, só é adolescente mesmo, e ainda é mais bonito que ela KAKAKAKAKAKA. It's fully over.",0.0,False,,
-1v95yd3,Nojinho,p0h9iud,Kitteh_47,ele tbm não tá encostando nela,0.0,False,,
-1v95yd3,Nojinho,p0ho0ux,Logical-Meat-2387,E quem não teria nojo? um beta raça pura,0.0,False,,
-1v95yd3,Nojinho,p0hzryl,Plot_me,Pior que ela tá no padrão dele mesmo,0.0,False,,
+...uns cenários em que a menina está certa de evitar.",0.0,1785326123.0,False,,,0
+1v95yd3,Nojinho,p0gb0fg,manelinxt,"Rapais você tá feio na foto mesmo, se apaixonar por uma gurizimha feia dessas tá fodido mesmo até de gosto kkkk",0.0,1785326690.0,True,Aparência física,feia,1
+1v95yd3,Nojinho,p0gj0s4,Mundane_Reach_5116,"kkkk isso dai é evento canonico padronizado na vida de todo homem, do 8º ao 2º",0.0,1785329293.0,False,,,0
+1v95yd3,Nojinho,p0grn4p,KondPlay,Nunca sobra nada,0.0,1785331820.0,False,,,0
+1v95yd3,Nojinho,p0h4dsh,FellowBrother1200,"Pior que o mlk nem é feio, só é adolescente mesmo, e ainda é mais bonito que ela KAKAKAKAKAKA. It's fully over.",0.0,1785335292.0,False,,,0
+1v95yd3,Nojinho,p0h9iud,Kitteh_47,ele tbm não tá encostando nela,0.0,1785336615.0,False,,,0
+1v95yd3,Nojinho,p0hzryl,Plot_me,Pior que ela tá no padrão dele mesmo,0.0,1785343249.0,False,,,0
 1v95yd3,Nojinho,p0i3bc1,usuariocabuloso,"O problema do jovem é esse. Baseamos nossa autoestima nas opiniões de quem está ao nosso redor; e frequentemente quem está ao nosso redor são pessoas podres que não merecem nem um pingo da nossa atenção.
 sabe o que é ser tão merda que...
 Esse trecho expõe bem isso. A infancia é o momento onde desenvolvemos nossa crença de merecimento de coisas boas e nossa crença de auto-valor.
 Se possuímos pessoas ruins ao nosso redor, que para se autopromover acreditam que é OK humilhar os outros, para subir na pirâmide social imaginária que existe naquele ambiente; crescemos com nossa autoestima na merda. Achando que não merecemos porra nenhuma de bom nessa vida; mas tudo é culpa do azar de termos pessoas horríveis ao nosso lado, que esquecem que tambem somos humanos, e olham apenas para as próprias questões pessoais.
 O problema é que quase nunca percebemos que o julgamento dos outros não é reflexo do que somos, de fato, mas sim da própria subjetividade deturpada deles. E por isso, crescemos acreditando que a opinião de todas as pessoas em relação à nós é negativa tal qual as pessoas ruins que convivemos na infância.
-Só percebendo que não somos quem eles nos dizem ser, e partir para procurar efetivamente quem realmente somos; sem se importar com o julgamento externo, é que seremos realmente felizes e completos.",0.0,False,,
-1v95yd3,Nojinho,p0i76y3,sombrando,😂😂😂o excesso de juventude o tempo resolve .kkkkk,0.0,False,,
-1v95yd3,Nojinho,p0ihca2,Thin_Extreme5810,"A mina nem é tão bonita assim, se ele parece de ser beta e corresse atrás de quem quisesse ele, isso não teria acontecido",0.0,False,,
-1v95yd3,Nojinho,p0ijoi6,Sea_Friendship2246,"Po, mas tbm sao 2 pivetes. Talvez a mina so seja desengonçada ou timida, ele mesmo nao ta tocando nela. Eu quando tinha essa idade tambem nao ia fazer diferente mesmo se gostasse da pessoa.",0.0,False,,
-1v95yd3,Nojinho,p0ikmn6,Key_Charge6450,"Porque existe gente assim? Sério, uma criatura que sente nojo de tocar em outro ser humano sem que ele esteja fisicamente sujo pra mim é um absurdo.",0.0,False,,
-1v95yd3,Nojinho,p0inzkt,Napo_leaozinho,Ela é literalmente ele mulher,0.0,False,,
-1v95yd3,Nojinho,p0ipfjw,AppointmentHumble904,Papo de cortar laço e investir em mudar de aparência,0.0,False,,
+Só percebendo que não somos quem eles nos dizem ser, e partir para procurar efetivamente quem realmente somos; sem se importar com o julgamento externo, é que seremos realmente felizes e completos.",0.0,1785344125.0,False,,,0
+1v95yd3,Nojinho,p0i76y3,sombrando,😂😂😂o excesso de juventude o tempo resolve .kkkkk,0.0,1785345094.0,False,,,0
+1v95yd3,Nojinho,p0ihca2,Thin_Extreme5810,"A mina nem é tão bonita assim, se ele parece de ser beta e corresse atrás de quem quisesse ele, isso não teria acontecido",0.0,1785347625.0,False,,,0
+1v95yd3,Nojinho,p0ijoi6,Sea_Friendship2246,"Po, mas tbm sao 2 pivetes. Talvez a mina so seja desengonçada ou timida, ele mesmo nao ta tocando nela. Eu quando tinha essa idade tambem nao ia fazer diferente mesmo se gostasse da pessoa.",0.0,1785348211.0,False,,,0
+1v95yd3,Nojinho,p0ikmn6,Key_Charge6450,"Porque existe gente assim? Sério, uma criatura que sente nojo de tocar em outro ser humano sem que ele esteja fisicamente sujo pra mim é um absurdo.",0.0,1785348453.0,False,,,0
+1v95yd3,Nojinho,p0inzkt,Napo_leaozinho,Ela é literalmente ele mulher,0.0,1785349297.0,False,,,0
+1v95yd3,Nojinho,p0ipfjw,AppointmentHumble904,Papo de cortar laço e investir em mudar de aparência,0.0,1785349661.0,False,,,0
 1v95yd3,Nojinho,p0it110,weedRick420,"Quem mandou ser Beta o suficiente pra n desencanar dessa mina que claramente nao quer ele kkkkkkkk
-os cara quer sempre uma mina bonitinha mas a skin dos cara nao condiz kkkk e ai fica todo chateadim com o mundo (nesse caso nem é tão assim, essa mina nem é bonita..mas com crtz ele é abaixo ainda assim)",0.0,False,,
-1v95yd3,Nojinho,p0iy7mo,RagnesVK,Mas será que ele n tava fedendo?,0.0,False,,
-1v95yd3,Nojinho,p0j0eot,brotin081,"Não sei a realidade desse cara, mas eu suponho que ela só não tenha afinidade com ele mesmo, eu sou feio pra Caralho e ainda tinha Mina me alisando no Ensino médio, é só não ser um esquisito glr",0.0,False,,
+os cara quer sempre uma mina bonitinha mas a skin dos cara nao condiz kkkk e ai fica todo chateadim com o mundo (nesse caso nem é tão assim, essa mina nem é bonita..mas com crtz ele é abaixo ainda assim)",0.0,1785350582.0,False,,,0
+1v95yd3,Nojinho,p0iy7mo,RagnesVK,Mas será que ele n tava fedendo?,0.0,1785351918.0,False,,,0
+1v95yd3,Nojinho,p0j0eot,brotin081,"Não sei a realidade desse cara, mas eu suponho que ela só não tenha afinidade com ele mesmo, eu sou feio pra Caralho e ainda tinha Mina me alisando no Ensino médio, é só não ser um esquisito glr",0.0,1785352489.0,False,,,0
 1v95yd3,Nojinho,p0jpxyy,_Sev7n,"Ela nem é bonita.
 Você parece mais bonito do que ela.
 Além do cabelo maneiro.
-Desencana dessa moça aí e foca na sua aparência, vc tem potencial.",0.0,False,,
-1v95yd3,Nojinho,p0jw05f,That-Chip-3575,Isso só acontece quando vc tem personalidade de punheteiro.,0.0,False,,
-1v95yd3,Nojinho,p0k27na,arie_1256,"Fiquei com pena mas, cara... se ele tem coragem de postar a foto com esse texto, talvez ela só o ache chato pra porra e com razão.",0.0,False,,
-1v95yd3,Nojinho,p0k4k9l,NoLawfulness8320,Isso é por cara do post: mano Tem muitos peixes no oceano cara e ela não vale apena,0.0,False,,
-1v95yd3,Nojinho,p0k9nq8,FaliaFirma,Vai vence na vida que ela vai acabar ficando o mais canalha e vai se arrepender quando ver onde você chegou… força betinha,0.0,False,,
-1v95yd3,Nojinho,p0kc6iy,shinoxwz,tadinho ele parece ser mo legal nao merece passar por isso,0.0,False,,
-1v95yd3,Nojinho,p0l13z0,Alternative-Lab8049,"Cruel,sério,muito cruel pra que isso?não encostar uma mão sequer?mão de ouro?oque o cara tá com o um vírus mortal na pele para evitar toca-lo com sua mão de princesa?trate algo assim como uma pessoa ,não como coisa.",0.0,False,,
-1v95yd3,Nojinho,p0l435b,certaincommentator18,BLZ AGORA ESQUECE ESSA BOSTA E PARTE PRA OUTRA QUE REALMENTE TE VALORIZE,0.0,False,,
+Desencana dessa moça aí e foca na sua aparência, vc tem potencial.",0.0,1785359227.0,False,,,0
+1v95yd3,Nojinho,p0jw05f,That-Chip-3575,Isso só acontece quando vc tem personalidade de punheteiro.,0.0,1785360942.0,False,,,0
+1v95yd3,Nojinho,p0k27na,arie_1256,"Fiquei com pena mas, cara... se ele tem coragem de postar a foto com esse texto, talvez ela só o ache chato pra porra e com razão.",0.0,1785362764.0,False,,,0
+1v95yd3,Nojinho,p0k4k9l,NoLawfulness8320,Isso é por cara do post: mano Tem muitos peixes no oceano cara e ela não vale apena,0.0,1785363470.0,False,,,0
+1v95yd3,Nojinho,p0k9nq8,FaliaFirma,Vai vence na vida que ela vai acabar ficando o mais canalha e vai se arrepender quando ver onde você chegou… força betinha,0.0,1785365041.0,False,,,0
+1v95yd3,Nojinho,p0kc6iy,shinoxwz,tadinho ele parece ser mo legal nao merece passar por isso,0.0,1785365826.0,False,,,0
+1v95yd3,Nojinho,p0l13z0,Alternative-Lab8049,"Cruel,sério,muito cruel pra que isso?não encostar uma mão sequer?mão de ouro?oque o cara tá com o um vírus mortal na pele para evitar toca-lo com sua mão de princesa?trate algo assim como uma pessoa ,não como coisa.",0.0,1785374064.0,False,,,0
+1v95yd3,Nojinho,p0l435b,certaincommentator18,BLZ AGORA ESQUECE ESSA BOSTA E PARTE PRA OUTRA QUE REALMENTE TE VALORIZE,0.0,1785375070.0,False,,,0
 1v95yd3,Nojinho,p0l92co,Comfortable_Ad2424,"Pensei que eram duas meninas 😂
-O garoto mal tem testosterona na lata, calma que vai sofrer muito ainda kk",0.0,False,,
-1v95yd3,Nojinho,p0ladi1,danielrrm1984,Pior que a menina é feia de dar pena,0.0,True,Aparência física,feia
-1v95yd3,Nojinho,p0lauby,GersonLucena,"ser feio é normal, mas seja musculoso...",0.0,False,,
-1v95yd3,Nojinho,p0lectd,Independent-Pie-8118,"Mds, esse é o tal do abraço virtual que o povo falava na pandemia?",0.0,False,,
-1v95yd3,Nojinho,p0ljnrl,Snoo84547,O pior de tudo é que o mlk é mais bem apresentado que a mina que diga-se de passagi é muito feinha kkkkkkkkk,0.0,False,,
+O garoto mal tem testosterona na lata, calma que vai sofrer muito ainda kk",0.0,1785376778.0,False,,,0
+1v95yd3,Nojinho,p0ladi1,danielrrm1984,Pior que a menina é feia de dar pena,0.0,1785377237.0,True,Aparência física,feia,1
+1v95yd3,Nojinho,p0lauby,GersonLucena,"ser feio é normal, mas seja musculoso...",0.0,1785377398.0,False,,,0
+1v95yd3,Nojinho,p0lectd,Independent-Pie-8118,"Mds, esse é o tal do abraço virtual que o povo falava na pandemia?",0.0,1785378613.0,False,,,0
+1v95yd3,Nojinho,p0ljnrl,Snoo84547,O pior de tudo é que o mlk é mais bem apresentado que a mina que diga-se de passagi é muito feinha kkkkkkkkk,0.0,1785380526.0,False,,,0
 1v95yd3,Nojinho,p0lp44p,Solid_Intention_7939,"Brutal
-<image>",0.0,False,,
-1v95yd3,Nojinho,p0lyl00,Mother_Tank_2919,"Que merda, ele é gatinho",0.0,False,,
-1v95yd3,Nojinho,p0mc82p,MyUglyDead,Esse meme do “não sobra nada” com “brutal” é um dos memes que eu sinto que não irá saturar nunca kkkkk,0.0,False,,
-1v95yd3,Nojinho,p0mg3y8,Brilliant-Luck9267,BRUTAL,0.0,False,,
-1v95yd3,Nojinho,p0ml7xs,Jessguinha,"Eu estudava em uma escolar particular uma época no ensino fundamental ( não era pobre mas meus pais sofriam todo mês pra pagar a mensalidade e quase sempre atrasava ) e teve um amigo secreto um ano e como a galera tinha uma condição financeira bacana todo mundo ganhou brinquedo nada muito wow mas uns brinquedos bacanas , lembro que minha mãe quis comprar um boneco de star war pro menino que eu tirei pra eu n passar vergonha e entregar uma parada zuada, e aí quase no final que todo mundo já tinha ganhado bonecos e bonecas quando chegou a a vez da pessoa que tirou o meu nome o filho da puta me deu de presente uma daquelas bandejas de prateleira brigadeiro de mercado de 10 reais ( e ainda estava com a etiqueta de preço ) , isso faz anos mas lembro que não hora eu tive um misto de raiva pela sacanagem e vergonha pela humilhação de ter que ir lá receber o brigadeiro como se fosse o melhor presente do mundo , lembro que nem comi aquela merda eu guardei na mochila e quando cheguei em casa joguei no lixo",0.0,True,Sexualidade,puta
-1v95yd3,Nojinho,p0mpdno,Tonhaodasfranjudas,"Ué, parecem irmãos poha",0.0,False,,
-1v95yd3,Nojinho,p0nwk7j,Samuelakacwjevskay,"ou ela tem muito respeito, já assisti todos os filmes do Kaeno Revs",0.0,False,,
-1v95yd3,Nojinho,p0o14it,bolas_doloridas,Brutal,0.0,False,,
-1v95yd3,Nojinho,p0op9nq,rolanatuaboca,<image>,0.0,False,,
-1v95yd3,Nojinho,p0pf88e,Plastic_Condition334,E ela é mais feia que ele. A menina parecia o banguela do Stranger Things.,0.0,True,Aparência física,feia
-1v95yd3,Nojinho,p0phkxc,Sworx_07,"Já comece a melhorar hoje parceiro, deixe de lamentar pelo seu passado e comece a mudsr seu futuro pra naonser que nem ontem",0.0,False,,
+<image>",0.0,1785382608.0,False,,,0
+1v95yd3,Nojinho,p0mc82p,MyUglyDead,Esse meme do “não sobra nada” com “brutal” é um dos memes que eu sinto que não irá saturar nunca kkkkk,0.0,1785392827.0,False,,,0
+1v95yd3,Nojinho,p0mg3y8,Brilliant-Luck9267,BRUTAL,0.0,1785394724.0,False,,,0
+1v95yd3,Nojinho,p0mpdno,Tonhaodasfranjudas,"Ué, parecem irmãos poha",0.0,1785399340.0,False,,,0
+1v95yd3,Nojinho,p0nwk7j,Samuelakacwjevskay,"ou ela tem muito respeito, já assisti todos os filmes do Kaeno Revs",0.0,1785416772.0,False,,,0
+1v95yd3,Nojinho,p0o14it,bolas_doloridas,Brutal,0.0,1785418104.0,False,,,0
+1v95yd3,Nojinho,p0op9nq,rolanatuaboca,<image>,0.0,1785424628.0,False,,,0
+1v95yd3,Nojinho,p0pf88e,Plastic_Condition334,E ela é mais feia que ele. A menina parecia o banguela do Stranger Things.,0.0,1785431243.0,True,Aparência física,feia,1
+1v95yd3,Nojinho,p0phkxc,Sworx_07,"Já comece a melhorar hoje parceiro, deixe de lamentar pelo seu passado e comece a mudsr seu futuro pra naonser que nem ontem",0.0,1785431837.0,False,,,0
 1v95yd3,Nojinho,p0ppy7l,leseraytahuna,"Eu fazia isso pra pessoa n ficar desconfortável com o toque físico de um 'estranho', não pq a pessoa me dá nojo...
-E o menino na foto ta fazendo o mesmo..",0.0,False,,
-1v95yd3,Nojinho,p0q4ai1,Busy_Treacle7310,quanta gente feia nessa imagem,0.0,True,Aparência física,feia
-1v95yd3,Nojinho,p0qkqh7,WriterElegant4108,"Não seja beta, saiba conversar, seja confiante, dê em cima da mina e tome um fora de cabeça erguida",0.0,False,,
-1v95yd3,Nojinho,p0qxq8r,geekrevoltado,"Mas sabe o que é pior do que isso? Tornar isso público, numa rede social. Aí é querer jogar a merda no ventilador, e ser zoado pro resto da vida.",0.0,False,,
-1v95yd3,Nojinho,p0rfe20,Audrey-V,"realmente, meme de facebook 2014",0.0,False,,
+E o menino na foto ta fazendo o mesmo..",0.0,1785433929.0,False,,,0
+1v95yd3,Nojinho,p0q4ai1,Busy_Treacle7310,quanta gente feia nessa imagem,0.0,1785437575.0,True,Aparência física,feia,1
+1v95yd3,Nojinho,p0qkqh7,WriterElegant4108,"Não seja beta, saiba conversar, seja confiante, dê em cima da mina e tome um fora de cabeça erguida",0.0,1785441830.0,False,,,0
+1v95yd3,Nojinho,p0qxq8r,geekrevoltado,"Mas sabe o que é pior do que isso? Tornar isso público, numa rede social. Aí é querer jogar a merda no ventilador, e ser zoado pro resto da vida.",0.0,1785445207.0,False,,,0
+1v95yd3,Nojinho,p0rfe20,Audrey-V,"realmente, meme de facebook 2014",0.0,1785450217.0,False,,,0
 1v95yd3,Nojinho,p0roh21,dirtynastykid,"talvez a foto foi tirada antes ou depois dela encostar?
 talvez tem pessoas que simplesmente não gostam de contato físico?
-vcs são doentes, metem uma historinha de coitado em tudo pqp vão viver kkkkkkkkk",0.0,False,,
-1v95yd3,Nojinho,p0saonl,Striking-Tip5302,Ela é uma nerdola feia igual a ele. Mas as mulheres medem a sua beleza com o tanto de DMS de gados que elas recebem. Aí elas perdem a consciência da realidade.,0.0,True,Aparência física,feia
-1v95yd3,Nojinho,p101yv7,Chemical_Earth7904,"Porra, mas os 2 tão no msm nivel de beleza fisica",0.0,False,,
-1v95yd3,Nojinho,p11wtfw,Ruimna,Cara vocês são umas portas de tão burro. É ÓBVIO que se a pessoa não gosta de você e ela PERCEBE que você gosta dela ela vai te evitar. MDS do céu 2+2=4,0.0,False,,
+vcs são doentes, metem uma historinha de coitado em tudo pqp vão viver kkkkkkkkk",0.0,1785452997.0,False,,,0
+1v95yd3,Nojinho,p0saonl,Striking-Tip5302,Ela é uma nerdola feia igual a ele. Mas as mulheres medem a sua beleza com o tanto de DMS de gados que elas recebem. Aí elas perdem a consciência da realidade.,0.0,1785460169.0,True,Aparência física,feia,1
+1v95yd3,Nojinho,p101yv7,Chemical_Earth7904,"Porra, mas os 2 tão no msm nivel de beleza fisica",0.0,1785553110.0,False,,,0
+1v95yd3,Nojinho,p11wtfw,Ruimna,Cara vocês são umas portas de tão burro. É ÓBVIO que se a pessoa não gosta de você e ela PERCEBE que você gosta dela ela vai te evitar. MDS do céu 2+2=4,0.0,1785584209.0,False,,,0
+1v95yd3,Nojinho,p12y053,HubrisNSFW,MEU DEUS DO CÉU NÃO SOBROU NADA,0.0,1785596768.0,False,,,0
+1v95yd3,Nojinho,p131p61,afbabis,"E ele não é feio cara, deve ser a personalidade pq nn é possível",0.0,1785597852.0,False,,,0
+1v95yd3,Nojinho,p13kdre,No_Moose_1033,Parece a foto de um porno ruim,0.0,1785603231.0,True,Sexualidade,porno,1
+1v95yd3,Nojinho,p13uf6s,coelho_o,Parece a garota da minha escola kkkk,0.0,1785606095.0,False,,,0
+1v95yd3,Nojinho,p14czzn,oyasucat,"eu ja fui assim na infância, mas eu era desse jeito c todos os meninos, sla pq",0.0,1785611438.0,False,,,0
+1v95yd3,Nojinho,p14utg7,Josepa_o12,Meu Deus.....não....não sobrou nada...,0.0,1785616761.0,False,,,0
+1v95yd3,Nojinho,p16refi,GlassCandle8762,<image>,0.0,1785640295.0,False,,,0
+1v95yd3,Nojinho,p1ad3bc,galoerr0r,"Sabe o que é ajudar alguém e essa pessoa te xingar, e logo após isso beijar a pessoa mais escrota possível?",0.0,1785690835.0,True,Conduta moral,escrota,1
+1v95yd3,Nojinho,p1brjve,Lumpy-Outcome9173,"Não sei porque, mas eu tenho um tesão estranho por esses caras fracassados",0.0,1785704741.0,False,,,0
+1v95yd3,Nojinho,p1d1bdr,Massive-Leg-9394,<image>,0.0,1785719258.0,False,,,0
+1v95yd3,Nojinho,p1ey10g,Alternative_Work_658,,0.0,1785749426.0,False,,,0
+1v95yd3,Nojinho,p1h0rv0,Typical_Key_6948,"Norma, a garota que eu gostava cuspiu na minha cara uma v z que fui falar com ela na escola com dois beijinhos na bochecha",0.0,1785773661.0,False,,,0
+1v95yd3,Nojinho,p1jobmr,vivianeeszv,gente tadinho ☹️,0.0,1785799100.0,False,,,0
+1v95yd3,Nojinho,p1kflj8,Miojo_Kun,Depois desse dia que o Paulo Muzy começou a malhar,0.0,1785807955.0,True,Sexualidade,pau,1
+1v95yd3,Nojinho,p5yccr2,SenhorSasaki,<image>,0.0,1787723353.0,False,,,0
+1v95yd3,Nojinho,p0bfvct,Sanppyx,kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk,0.0,1785263935.0,False,,,0
+1v95yd3,Nojinho,p0blg9n,Odd_Income_6509,Oque caralhos é uma grta,0.0,1785265338.0,False,,,0
+1v95yd3,Nojinho,p0bo40q,BedEducational4068,"""garota""",1.0,1785266010.0,False,,,0
+1v95yd3,Nojinho,p0c2mxb,Odd_Income_6509,"Hoje em dia qualquer palavra que se pensar é abreviada, se duvidar até cu pode ser abreviado",-1.0,1785269774.0,False,,,0
+1v95yd3,Nojinho,p0c4ccg,KaleidoscopicFate,Esse meme é antigo pra caralho vovô,6.0,1785270224.0,False,,,0
+1v95yd3,Nojinho,p0e41sv,Tortoise_Knight,"O cu é irredutível, maldito quem der um jeito de abreviar",1.0,1785292375.0,False,,,0
+1v95yd3,Nojinho,p0iyeak,Odd_Income_6509,Caralho sou odiado por conta de abreviação kkkk,0.0,1785351967.0,False,,,0
+1v95yd3,Nojinho,p0bwsss,Few_String_2531,garota eu acho,1.0,1785268250.0,False,,,0
+1v95yd3,Nojinho,p0blqjp,xCabilburBR,"As vezes pode ser o exato oposto, a mina tem medo de relar e acabar mijando guaraná na hora. 🙂",0.0,1785265410.0,False,,,0
+1v95yd3,Nojinho,p0bnmc0,tiophil9995,Sei não essa aí tá parecendo mais a irmã dele,0.0,1785265886.0,False,,,0
+1v95yd3,Nojinho,p0e4e2w,Leather-Cow5052,BRUUUUUU-TAAAAAAAAAAALLLL!!!!!,-1.0,1785292495.0,False,,,0
+1v95yd3,Nojinho,p0g2tq6,D-Esh,Acho engraçado querer xingar a menina por isso kkkkkk,-1.0,1785323688.0,False,,,0
+1v95yd3,Nojinho,,[deletado],[removed],,1785327451.0,False,,,0
+1v95yd3,Nojinho,p0gfm1m,GodIcarus6616,"Ninguém é obrigado a gostar, mas o abraço pela formalidade da foto é questão de educação.",1.0,1785328216.0,False,,,0
+1v95yd3,Nojinho,,[deletado],[removed],,1785332281.0,False,,,0
+1v95yd3,Nojinho,p0kk6vb,GodIcarus6616,"Se a pessoa é assim, é melhor nem participar desses eventos sociais. Terapia também é bom.",0.0,1785368408.0,False,,,0
+1v95yd3,Nojinho,p0gh059,RolaFofinha,Eram irmãos,-1.0,1785328661.0,False,,,0
+1v95yd3,Nojinho,p0bsqz7,voe_tex,"Essa imagem já tem mais de uma década que está rodando na internet, esse cara provavelmente já mudou muito e até superou isso, e ela provavelmente já deve ter esquecido dele também '_'",-4.0,1785267198.0,False,,,0
+1v95yd3,Nojinho,p0c0eru,eowynalysanne,"Como mulher, a pergunta que fica na minha cabeça é: nojo dele ou medo de ser chamada de v@di@?",-9.0,1785269191.0,False,,,0
+1v95yd3,Nojinho,p0ccvju,ContributionBusy3020,Kkkkkkkkk medo de ser chamada de vadia. Não faz o menor sentido pensar isso,7.0,1785272798.0,True,Sexualidade,vadia,1
+1v95yd3,Nojinho,p0cfe9b,eowynalysanne,"Toda menina pensa na adolescência. As que não pensam são justamente as que levam fama de vadia.
+Eu tinha PÂNICO disso. Não dava brecha nenhuma por isso.",-4.0,1785273493.0,True,Sexualidade,vadia,1
+1v95yd3,Nojinho,p0c000n,Expert-Broccoli-6982,A mao do cara esta do mesmo jeito.,-2.0,1785269083.0,False,,,0
+1v95yd3,Nojinho,p0e7q9p,Awkward-Tree3075,"Pq que a guria é obrigada a gostar do cara tbm, porra os caras criam uma imagem idealizada da pessoa como se tivesse reverenciando um altar, porra se a pessoa não gosta de vc só para de gostar dela, comece a gostar de pessoas que gostam de vcs tbm",-2.0,1785293672.0,False,,,0
+1v95yd3,Nojinho,p0che83,Dead_Tool,"Pra que postar então, pqp",-3.0,1785274045.0,False,,,0

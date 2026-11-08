@@ -69,6 +69,42 @@ def get_reddit_cookie() -> str | None:
     return os.environ.get(COOKIE_ENV_VAR) or _read_env_file(COOKIE_ENV_VAR)
 
 
+def cookie_header_to_playwright_cookies(
+    cookie_header: str,
+) -> list[dict[str, str]]:
+    """Converte um cabecalho ``Cookie`` na lista que o Playwright espera.
+
+    O Playwright nao aceita a string crua do cabecalho ``Cookie``
+    (``nome1=valor1; nome2=valor2``) -- precisa de uma lista de
+    dicionarios, um por cookie, com dominio e caminho explicitos.
+
+    Parameters
+    ----------
+    cookie_header : str
+        Valor do cabecalho ``Cookie``, no formato copiado do DevTools.
+
+    Returns
+    -------
+    list[dict[str, str]]
+        Cookies prontos para ``BrowserContext.add_cookies``.
+    """
+    cookies = []
+    for part in cookie_header.split(";"):
+        part = part.strip()
+        if not part or "=" not in part:
+            continue
+        name, _, value = part.partition("=")
+        cookies.append(
+            {
+                "name": name.strip(),
+                "value": value.strip(),
+                "domain": ".reddit.com",
+                "path": "/",
+            }
+        )
+    return cookies
+
+
 def build_headers(user_agent: str) -> dict[str, str]:
     """Monta os cabecalhos de requisicao, incluindo cookie se houver.
 

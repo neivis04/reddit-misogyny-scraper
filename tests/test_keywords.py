@@ -1,5 +1,6 @@
 from reddit_scraper.keywords import (
     OFFENSIVE_KEYWORDS_BY_CATEGORY,
+    count_keyword_occurrences,
     format_matches,
     match_categories,
 )
@@ -66,3 +67,22 @@ def test_format_matches_multiple_categories():
     categories, keywords = format_matches(matches)
     assert categories == "Sexualidade; Capacidade cognitiva"
     assert keywords == "vadia, piranha; burra"
+
+
+def test_count_keyword_occurrences_counts_repeats():
+    """Deve somar cada ocorrencia, nao so marcar presenca do termo."""
+    text = "pau grande, pau medio e pau pequeno"
+    assert count_keyword_occurrences(text, {"Sexualidade": ["pau"]}) == 3
+
+
+def test_count_keyword_occurrences_sums_across_terms_and_categories():
+    """Deve somar ocorrencias de varios termos e categorias diferentes."""
+    text = "burra, burra e vadia"
+    total = count_keyword_occurrences(text, SAMPLE_CATEGORIES)
+    assert total == 3
+
+
+def test_count_keyword_occurrences_no_match_is_zero():
+    """Sem nenhum termo encontrado, a contagem deve ser zero."""
+    text = "comentario neutro sobre o dia"
+    assert count_keyword_occurrences(text, SAMPLE_CATEGORIES) == 0

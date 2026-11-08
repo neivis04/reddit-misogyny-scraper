@@ -24,19 +24,12 @@ import re
 OFFENSIVE_KEYWORDS_BY_CATEGORY: dict[str, list[str]] = {
     "Capacidade cognitiva": [
         "burra",
-        "idiota",
         "imbecil",
         "ignorante",
         "inútil",
-        "leiga",
-        "analfabeta",
-        "retardada",
-        "irracional",
         "doida",
         "louca",
-        "desequilibrada",
         "maluca",
-        "pirada",
     ],
     "Aparência física": [
         "feia",
@@ -44,19 +37,14 @@ OFFENSIVE_KEYWORDS_BY_CATEGORY: dict[str, list[str]] = {
         "gordinha",
         "velha",
         "horrorosa",
-        "bunduda",
+        "bunda",
         "gostosa",
+        "peituda",
     ],
     "Sexualidade": [
         "safada",
-        "vagabunda",
         "piranha",
-        "prostituta",
         "vadia",
-        "galinha",
-        "cachorra",
-        "vulgar",
-        "indecente",
         "porno",
         "pornô",
         "sexo",
@@ -64,67 +52,33 @@ OFFENSIVE_KEYWORDS_BY_CATEGORY: dict[str, list[str]] = {
         "puta",
         "pau",
         "arrombada",
-        "fetiche",
     ],
     "Conduta moral": [
-        "imoral",
-        "desonesta",
+        "escrota",
         "mentirosa",
         "falsa",
-        "traidora",
-        "oportunista",
-        "interesseira",
-        "manipuladora",
-        "aproveitadora",
-        "irresponsável",
-        "negligente",
+        "corna",
         "perdida",
         "hipócrita",
     ],
     "Submissão": [
-        "frustrada",
-        "submissa",
-        "dependente",
-        "obediente",
-        "servil",
         "doméstica",
         "inferior",
         "frágil",
         "passiva",
+        "comer",
+        "esposa",
+        "casada",
     ],
     "Instabilidade emocional": [
         "hormonal",
-        "tpm",
         "emocional",
-        "sentimental",
-        "instável",
-        "volátil",
         "imprevisível",
-        "menstruação",
-        "complicada",
-        "possessiva",
         "confusa",
     ],
     "Deslegitimação": [
-        "dramática",
-        "exagerada",
         "chata",
-        "reclamona",
         "vitima",
-        "emotiva",
-        "sensível",
-        "chorona",
-        "neurótica",
-        "paranoica",
-    ],
-    "Criação": [
-        "pai",
-        "ausente",
-        "mãe",
-        "abandonada",
-        "criança",
-        "solo",
-        "filha",
     ],
 }
 
@@ -180,6 +134,43 @@ def match_categories(
         if found:
             matches[category] = found
     return matches
+
+
+def count_keyword_occurrences(
+    text: str,
+    keywords_by_category: dict[str, list[str]] | None = None,
+) -> int:
+    """Conta quantas vezes, ao todo, termos da lista aparecem no texto.
+
+    Ao contrario de `match_categories` (que so marca se um termo
+    aparece, uma vez), soma cada ocorrencia -- um comentario que repete
+    "pau" tres vezes conta 3, nao 1.
+
+    Parameters
+    ----------
+    text : str
+        Texto a ser analisado (ex.: corpo de um comentario).
+    keywords_by_category : dict[str, list[str]] or None
+        Termos agrupados por categoria. Usa
+        `OFFENSIVE_KEYWORDS_BY_CATEGORY` quando omitido.
+
+    Returns
+    -------
+    int
+        Numero total de ocorrencias de termos da lista no texto.
+    """
+    keywords_by_category = (
+        keywords_by_category
+        if keywords_by_category is not None
+        else OFFENSIVE_KEYWORDS_BY_CATEGORY
+    )
+    lowered = text.lower()
+    total = 0
+    for terms in keywords_by_category.values():
+        for term in terms:
+            pattern = rf"\b{re.escape(term)}"
+            total += len(re.findall(pattern, lowered))
+    return total
 
 
 def format_matches(matches: dict[str, list[str]]) -> tuple[str, str]:

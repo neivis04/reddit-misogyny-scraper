@@ -1,4 +1,3 @@
-import requests
 from bs4 import BeautifulSoup
 
 from reddit_scraper import html_scraper
@@ -9,7 +8,6 @@ from reddit_scraper.html_scraper import (
     extract_more_children_ids,
     extract_submission_id,
     extract_submission_title,
-    fetch_html,
     parse_comments,
     slugify,
 )
@@ -241,62 +239,16 @@ def test_rows_from_json_things_ignores_more_stub():
 def test_collect_more_children_rows_survives_request_failure(monkeypatch):
     """Falha na busca nao deve propagar erro, so registrar e seguir."""
 
-    def _raise(*_args, **_kwargs):
-        raise requests.ConnectionError("bloqueado")
+    def _raise(_session, *_args, **_kwargs):
+        raise RuntimeError("bloqueado")
 
     monkeypatch.setattr(html_scraper, "fetch_more_children", _raise)
 
     rows = collect_more_children_rows(
-        "abc123", "Titulo", ["t1_x"], SAMPLE_CATEGORIES
+        object(), "abc123", "Titulo", ["t1_x"], SAMPLE_CATEGORIES
     )
 
     assert rows == []
-
-
-class _FakeResponse:
-    def __init__(self, url: str, text: str = "") -> None:
-        self.url = url
-        self.text = text
-
-    def raise_for_status(self) -> None:
-        return None
-
-
-def test_fetch_html_raises_when_redirected_to_login(monkeypatch):
-    """Redirecionamento para /login/ deve virar LoginRequiredError."""
-    login_url = (
-        "https://old.reddit.com/login/?reason=lor2&dest=https%3A%2F%2F"
-        "old.reddit.com%2Fr%2Fsub%2Fcomments%2Fabc123%2Ftitulo%2F"
-    )
-
-    def _fake_get(*_args, **_kwargs):
-        return _FakeResponse(login_url)
-
-    monkeypatch.setattr(html_scraper.requests, "get", _fake_get)
-
-    try:
-        fetch_html("https://old.reddit.com/r/sub/comments/abc123/titulo/")
-        raised = False
-    except LoginRequiredError:
-        raised = True
-
-    assert raised
-
-
-def test_fetch_html_returns_text_when_not_redirected(monkeypatch):
-    """Sem redirecionamento para login, deve devolver o HTML normalmente."""
-
-    def _fake_get(*_args, **_kwargs):
-        return _FakeResponse(
-            "https://old.reddit.com/r/sub/comments/abc123/titulo/",
-            text="<html>conteudo</html>",
-        )
-
-    monkeypatch.setattr(html_scraper.requests, "get", _fake_get)
-
-    html = fetch_html("https://old.reddit.com/r/sub/comments/abc123/titulo/")
-
-    assert html == "<html>conteudo</html>"
 
 
 def test_parse_comments_extracts_created_utc(monkeypatch):
@@ -321,27 +273,51 @@ def test_collect_post_comments_requests_page_with_limit_param(monkeypatch):
     monkeypatch.setattr(
         html_scraper,
         "resolve_to_old_reddit",
-        lambda _url: "https://old.reddit.com/r/sub/comments/abc123/t/",
+        lambda _session, _url: "https://old.reddit.com/r/sub/comments/abc123/t/",
     )
 
-    def _fake_fetch_html(url):
+    def _fake_fetch_html(_session, url):
         captured["url"] = url
         return SAMPLE_HTML
 
     monkeypatch.setattr(html_scraper, "fetch_html", _fake_fetch_html)
 
     html_scraper.collect_post_comments(
-        "https://www.reddit.com/r/sub/comments/abc123/t/"
+        object(), "https://www.reddit.com/r/sub/comments/abc123/t/"
     )
 
     assert "limit=500" in captured["url"]
+
+
+def test_collect_post_comments_raises_on_blank_page(monkeypatch):
+    """Pagina sem titulo e sem comentarios deve virar erro, nao CSV vazio."""
+    monkeypatch.setattr(
+        html_scraper,
+        "resolve_to_old_reddit",
+        lambda _session, _url: "https://old.reddit.com/r/sub/comments/abc123/t/",
+    )
+    monkeypatch.setattr(
+        html_scraper,
+        "fetch_html",
+        lambda _session, _url: "<html><body></body></html>",
+    )
+
+    try:
+        html_scraper.collect_post_comments(
+            object(), "https://www.reddit.com/r/sub/comments/abc123/t/"
+        )
+        raised = False
+    except RuntimeError:
+        raised = True
+
+    assert raised
 
 
 def test_collect_more_children_rows_fetches_nested_more_stubs(monkeypatch):
     """Stubs "more" aninhados devem ser buscados na rodada seguinte."""
     calls = []
 
-    def _fake_fetch_more_children(_link_id, children_ids):
+    def _fake_fetch_more_children(_session, _link_id, children_ids):
         calls.append(list(children_ids))
         if children_ids == ["t1_a"]:
             return [
@@ -386,11 +362,21 @@ def test_collect_more_children_rows_fetches_nested_more_stubs(monkeypatch):
     monkeypatch.setattr(html_scraper.time, "sleep", lambda _s: None)
 
     rows = collect_more_children_rows(
-        "abc123", "Titulo", ["t1_a"], SAMPLE_CATEGORIES
+        object(), "abc123", "Titulo", ["t1_a"], SAMPLE_CATEGORIES
     )
 
     assert [row["comment_id"] for row in rows] == ["a", "b"]
     assert calls == [["t1_a"], ["t1_b"]]
+
+
+class _FakeBrowserSession:
+    """Dublê de BrowserSession para testar sem abrir um navegador real."""
+
+    def __enter__(self):
+        return self
+
+    def __exit__(self, *_exc_info):
+        return False
 
 
 def test_collect_and_save_posts_skips_login_required_posts(
@@ -398,10 +384,13 @@ def test_collect_and_save_posts_skips_login_required_posts(
 ):
     """Post que exige login deve ser pulado, sem gerar CSV vazio."""
 
-    def _raise(_url):
+    def _raise(_session, _url):
         raise LoginRequiredError("exige login")
 
     monkeypatch.setattr(html_scraper, "collect_post_comments", _raise)
+    monkeypatch.setattr(
+        html_scraper, "BrowserSession", _FakeBrowserSession
+    )
 
     saved_paths = collect_and_save_posts(
         ["https://old.reddit.com/r/sub/comments/abc123/titulo/"], tmp_path

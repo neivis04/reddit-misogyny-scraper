@@ -37,6 +37,7 @@ import requests
 from reddit_scraper.auth import build_headers
 from reddit_scraper.keywords import (
     OFFENSIVE_KEYWORDS_BY_CATEGORY,
+    count_keyword_occurrences,
     format_matches,
     match_categories,
 )
@@ -167,6 +168,9 @@ def flatten_comments(
                 "flagged_by_keyword": bool(matches),
                 "flagged_categories": flagged_categories,
                 "matched_keywords": matched_keywords,
+                "keyword_occurrences": count_keyword_occurrences(
+                    body, keywords_by_category
+                ),
             }
         )
         replies = data.get("replies")

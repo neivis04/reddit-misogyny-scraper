@@ -3,13 +3,17 @@
 old.reddit.com ainda serve paginas renderizadas no servidor (ao
 contrario do site novo, que e uma SPA em React e so entrega o conteudo
 depois de rodar JS no navegador). Isso permite fazer scraping direto
-com requests + BeautifulSoup, sem precisar de credenciais da API
-oficial do Reddit (PRAW/OAuth).
+do HTML com BeautifulSoup, sem precisar de credenciais da API oficial
+do Reddit (PRAW/OAuth).
 
 Desde 2026 o Reddit exige login mesmo em old.reddit.com para alguns
-posts (ver `LoginRequiredError`). Para contornar isso sem OAuth, as
-requisicoes reusam o cookie de uma sessao ja autenticada no navegador,
-configurado conforme `reddit_scraper.auth`; sem esse cookie, o scraper
+posts (ver `LoginRequiredError`), e passou tambem a bloquear
+requisicoes feitas com bibliotecas HTTP comuns (``requests``) mesmo
+com cookie e headers de navegador -- um bloqueio por "impressao
+digital" de rede, nao so por falta de login. Por isso as paginas sao
+carregadas com um navegador real (Chromium via Playwright, ver
+`reddit_scraper.browser_session`), que reusa o cookie de sessao
+configurado em `reddit_scraper.auth`; sem esse cookie, o scraper
 continua funcionando normalmente para posts que nao exigem login.
 
 A pagina inicial e pedida com ``?limit=500`` (o maximo aceito pelo
@@ -33,12 +37,17 @@ from pathlib import Path
 from urllib.parse import urlparse
 
 import pandas as pd
-import requests
 from bs4 import BeautifulSoup
 
-from reddit_scraper.auth import build_headers
+from reddit_scraper.browser_session import (
+    LOGIN_REQUIRED_PATH,
+    BrowserSession,
+    LoginRequiredError,
+    PlaywrightError,
+)
 from reddit_scraper.keywords import (
     OFFENSIVE_KEYWORDS_BY_CATEGORY,
+    count_keyword_occurrences,
     format_matches,
     match_categories,
 )
@@ -48,12 +57,8 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-USER_AGENT = (
-    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
-    "(KHTML, like Gecko) Chrome/124.0 Safari/537.36"
-)
 REQUEST_DELAY_SECONDS = 2.0
-REQUEST_TIMEOUT_SECONDS = 15
+POST_DELAY_SECONDS = 10.0
 POST_ID_RE = re.compile(r"/comments/([a-z0-9]+)/")
 SLUG_RE = re.compile(r"[^a-z0-9]+")
 MORE_CHILDREN_ONCLICK_RE = re.compile(
@@ -61,36 +66,27 @@ MORE_CHILDREN_ONCLICK_RE = re.compile(
 )
 MORE_CHILDREN_URL = "https://old.reddit.com/api/morechildren.json"
 MORE_CHILDREN_CHUNK_SIZE = 100
-MORE_CHILDREN_MAX_ROUNDS = 6
-LOGIN_REQUIRED_PATH = "/login/"
+MORE_CHILDREN_MAX_ROUNDS = 7
 COMMENT_PAGE_LIMIT = 500
 
 
-class LoginRequiredError(RuntimeError):
-    """Erro levantado quando o Reddit exige login para ver o post.
-
-    Pode acontecer com qualquer post desde que o Reddit passou a
-    exigir conta logada em old.reddit.com (mais comum em posts NSFW ou
-    de subreddits restritos). Configurar um cookie de sessao via
-    `reddit_scraper.auth` evita esse erro para posts que a propria
-    conta usada tenha permissao de ver.
-    """
-
-
-def resolve_to_old_reddit(url: str) -> str:
+def resolve_to_old_reddit(session: BrowserSession, url: str) -> str:
     """Resolve redirecionamentos para a URL equivalente em old.reddit.com.
 
     URLs que ja contem ``/comments/<id>/`` sao resolvidas localmente,
-    so trocando o dominio, sem nenhuma requisicao -- evita bater em
-    ``www.reddit.com``, cujo bloqueio anti-bot costuma ser mais
-    agressivo que o de ``old.reddit.com`` (ver 403 "Blocked"). Apenas
-    links de compartilhamento (``/s/...``), que nao trazem o id do
-    post na URL, precisam de uma requisicao para seguir o
-    redirecionamento -- essa requisicao e feita direto em
-    old.reddit.com, pelo mesmo motivo.
+    so trocando o dominio, sem nenhuma navegacao. Links de
+    compartilhamento (``/s/...``), que nao trazem o id do post na URL,
+    precisam de uma navegacao real para seguir o redirecionamento --
+    e essa navegacao tem que ser feita em www.reddit.com (dominio
+    original do link), porque old.reddit.com nao entende esse formato
+    de link curto e devolveria uma pagina qualquer (ex.: a tela de
+    criar post) em vez do post de verdade.
 
     Parameters
     ----------
+    session : BrowserSession
+        Sessao de navegador ja aberta, usada para resolver links de
+        compartilhamento.
     url : str
         URL de um post do Reddit, incluindo links de compartilhamento
         (``/s/...``).
@@ -99,32 +95,35 @@ def resolve_to_old_reddit(url: str) -> str:
     -------
     str
         URL canonica do post no dominio old.reddit.com.
-    """
-    old_reddit_url = urlparse(url)._replace(netloc="old.reddit.com").geturl()
 
+    Raises
+    ------
+    LoginRequiredError
+        Se o Reddit redirecionar para a tela de login ao resolver um
+        link de compartilhamento.
+    """
     if POST_ID_RE.search(url):
-        canonical = old_reddit_url.split("?")[0].rstrip("/")
+        canonical = url.split("?")[0].rstrip("/")
         return urlparse(canonical)._replace(netloc="old.reddit.com").geturl()
 
-    response = requests.get(
-        old_reddit_url,
-        headers=build_headers(USER_AGENT),
-        allow_redirects=True,
-        timeout=REQUEST_TIMEOUT_SECONDS,
-    )
-    response.raise_for_status()
-    canonical = response.url.split("?")[0].rstrip("/")
+    final_url = session.resolve_url(url)
+    if LOGIN_REQUIRED_PATH in urlparse(final_url).path:
+        msg = f"Reddit exige login para resolver este link: {url}"
+        raise LoginRequiredError(msg)
+    canonical = final_url.split("?")[0].rstrip("/")
     parsed = urlparse(canonical)
     return parsed._replace(netloc="old.reddit.com").geturl()
 
 
-def fetch_html(url: str) -> str:
-    """Baixa o HTML de uma URL, com User-Agent de navegador.
+def fetch_html(session: BrowserSession, url: str) -> str:
+    """Carrega uma URL num navegador real e devolve o HTML renderizado.
 
     Parameters
     ----------
+    session : BrowserSession
+        Sessao de navegador ja aberta.
     url : str
-        URL a ser baixada.
+        URL a ser carregada.
 
     Returns
     -------
@@ -137,19 +136,7 @@ def fetch_html(url: str) -> str:
         Se o Reddit redirecionar para a tela de login (post NSFW ou
         de subreddit restrito).
     """
-    response = requests.get(
-        url,
-        headers=build_headers(USER_AGENT),
-        timeout=REQUEST_TIMEOUT_SECONDS,
-    )
-    response.raise_for_status()
-    if LOGIN_REQUIRED_PATH in urlparse(response.url).path:
-        msg = (
-            f"Reddit exige login para ver este post (provavelmente "
-            f"NSFW ou restrito): {url}"
-        )
-        raise LoginRequiredError(msg)
-    return response.text
+    return session.fetch_html(url)
 
 
 def extract_submission_id(url: str) -> str:
@@ -296,6 +283,9 @@ def parse_comments(
                 "flagged_by_keyword": bool(matches),
                 "flagged_categories": flagged_categories,
                 "matched_keywords": matched_keywords,
+                "keyword_occurrences": count_keyword_occurrences(
+                    body, keywords_by_category
+                ),
             }
         )
 
@@ -331,11 +321,15 @@ def extract_more_children_ids(soup: BeautifulSoup) -> list[str]:
     return ids
 
 
-def fetch_more_children(link_id: str, children_ids: list[str]) -> list[dict]:
+def fetch_more_children(
+    session: BrowserSession, link_id: str, children_ids: list[str]
+) -> list[dict]:
     """Busca comentarios colapsados via o endpoint api/morechildren.json.
 
     Parameters
     ----------
+    session : BrowserSession
+        Sessao de navegador ja aberta.
     link_id : str
         Fullname do post (``t3_<id>``).
     children_ids : list[str]
@@ -348,7 +342,7 @@ def fetch_more_children(link_id: str, children_ids: list[str]) -> list[dict]:
         Nos ``t1``/``more`` retornados pela API, no mesmo formato do
         endpoint publico ``.json``.
     """
-    response = requests.get(
+    payload = session.fetch_json(
         MORE_CHILDREN_URL,
         params={
             "api_type": "json",
@@ -357,11 +351,8 @@ def fetch_more_children(link_id: str, children_ids: list[str]) -> list[dict]:
             "sort": "confidence",
             "limit_children": "false",
         },
-        headers=build_headers(USER_AGENT),
-        timeout=REQUEST_TIMEOUT_SECONDS,
     )
-    response.raise_for_status()
-    return response.json()["json"]["data"]["things"]
+    return payload["json"]["data"]["things"]
 
 
 def _rows_from_json_things(
@@ -411,6 +402,9 @@ def _rows_from_json_things(
                 "flagged_by_keyword": bool(matches),
                 "flagged_categories": flagged_categories,
                 "matched_keywords": matched_keywords,
+                "keyword_occurrences": count_keyword_occurrences(
+                    body, keywords_by_category
+                ),
             }
         )
         replies = data.get("replies")
@@ -459,6 +453,7 @@ def _more_stub_ids_from_things(things: list[dict]) -> list[str]:
 
 
 def collect_more_children_rows(
+    session: BrowserSession,
     submission_id: str,
     submission_title: str,
     children_ids: list[str],
@@ -471,12 +466,14 @@ def collect_more_children_rows(
     aninhados dentro dos comentarios que acabaram de ser buscados
     (ver `_more_stub_ids_from_things`), que entao sao buscados na
     rodada seguinte, ate `max_rounds` rodadas ou nao haver mais stubs
-    novos. Se uma busca falhar (ex.: endpoint bloqueado nesta rede),
-    registra um aviso e devolve o que ja tiver sido coletado ate ali,
-    em vez de propagar o erro.
+    novos. Se uma busca falhar (ex.: bloqueio nesta rede), registra um
+    aviso e devolve o que ja tiver sido coletado ate ali, em vez de
+    propagar o erro.
 
     Parameters
     ----------
+    session : BrowserSession
+        Sessao de navegador ja aberta.
     submission_id : str
         Id do post ao qual os comentarios pertencem.
     submission_title : str
@@ -517,8 +514,8 @@ def collect_more_children_rows(
             made_any_request = True
             chunk = pending[index : index + MORE_CHILDREN_CHUNK_SIZE]
             try:
-                things = fetch_more_children(link_id, chunk)
-            except requests.RequestException as exc:
+                things = fetch_more_children(session, link_id, chunk)
+            except (PlaywrightError, RuntimeError) as exc:
                 logger.warning(
                     "Falha ao buscar comentarios colapsados (%s); "
                     "seguindo so com os comentarios ja coletados.",
@@ -597,11 +594,15 @@ def _count_flags(rows: list[dict]) -> tuple[int, int]:
     return keywords_found, len(categories_found)
 
 
-def collect_post_comments(post_url: str) -> pd.DataFrame:
+def collect_post_comments(
+    session: BrowserSession, post_url: str
+) -> pd.DataFrame:
     """Coleta todos os comentarios de um unico post do Reddit.
 
     Parameters
     ----------
+    session : BrowserSession
+        Sessao de navegador ja aberta.
     post_url : str
         URL do post (aceita links de compartilhamento ``/s/...``).
 
@@ -612,8 +613,8 @@ def collect_post_comments(post_url: str) -> pd.DataFrame:
     """
     logger.info("Extraindo comentarios de %s", post_url)
 
-    old_reddit_url = resolve_to_old_reddit(post_url)
-    html = fetch_html(f"{old_reddit_url}?limit={COMMENT_PAGE_LIMIT}")
+    old_reddit_url = resolve_to_old_reddit(session, post_url)
+    html = fetch_html(session, f"{old_reddit_url}?limit={COMMENT_PAGE_LIMIT}")
     soup = BeautifulSoup(html, "lxml")
 
     submission_id = extract_submission_id(old_reddit_url)
@@ -625,9 +626,18 @@ def collect_post_comments(post_url: str) -> pd.DataFrame:
     more_ids = extract_more_children_ids(soup)
     if more_ids:
         more_rows = collect_more_children_rows(
-            submission_id, submission_title, more_ids
+            session, submission_id, submission_title, more_ids
         )
         rows.extend(more_rows)
+
+    if not submission_title and not rows and not more_ids:
+        msg = (
+            f"Pagina retornada para {post_url} veio sem titulo e sem "
+            f"comentarios -- provavel bloqueio/verificacao extra do "
+            f"Reddit, nao um post vazio de verdade. Pulando sem salvar "
+            f"CSV."
+        )
+        raise RuntimeError(msg)
 
     if not rows and not more_ids:
         logger.warning(
@@ -671,22 +681,47 @@ def collect_and_save_posts(urls: list[str], output_dir: Path) -> list[Path]:
     -------
     list[pathlib.Path]
         Caminhos dos arquivos CSV salvos, na mesma ordem de `urls`.
+
+    Notes
+    -----
+    Um erro num post especifico (login exigido, link quebrado, post
+    deletado, falha de rede pontual etc.) e registrado e pulado -- nao
+    interrompe a coleta dos demais posts da lista.
+
+    Cada post abre um navegador novo (em vez de reusar um unico
+    navegador para todos), com uma pausa maior entre posts
+    (`POST_DELAY_SECONDS`) do que entre chamadas tecnicas dentro de um
+    mesmo post. O Reddit parece aplicar alguma verificacao extra
+    depois de varias navegacoes seguidas numa mesma sessao de
+    navegador -- navegar poucas vezes por sessao, com mais tempo entre
+    posts, se aproxima mais do padrao de uso real.
     """
     saved_paths = []
     for index, url in enumerate(urls):
         if index > 0:
-            time.sleep(REQUEST_DELAY_SECONDS)
+            time.sleep(POST_DELAY_SECONDS)
 
         start_time = time.perf_counter()
 
         try:
-            df = collect_post_comments(url)
+            with BrowserSession() as session:
+                df = collect_post_comments(session, url)
         except LoginRequiredError as exc:
             logger.warning("Pulando %s: %s", url, exc)
             continue
+        except (ValueError, PlaywrightError, RuntimeError) as exc:
+            logger.warning(
+                "Pulando %s: falha inesperada na coleta (%s: %s)",
+                url,
+                type(exc).__name__,
+                exc,
+            )
+            continue
 
         title = df["submission_title"].iloc[0] if not df.empty else ""
-        submission_id = df["submission_id"].iloc[0] if not df.empty else "post"
+        submission_id = (
+            df["submission_id"].iloc[0] if not df.empty else "post"
+        )
 
         filename = f"{slugify(title)}_{submission_id}.csv"
         output_path = output_dir / filename
